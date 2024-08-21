@@ -1,0 +1,1260 @@
+@charset "UTF-8";
+
+.nav_lowerpage .navWrap li.development a::after,
+.footerarea .foot-navi .inner .foot-navi__in li.development a::after{
+  transform: translate(0, 0) !important;
+}
+
+
+@media (max-width: 1000px) {
+.nav_lowerpage .navWrap li.development a::after,
+.footerarea .foot-navi .inner .foot-navi__in li.development a::after{
+    display: none !important;
+  }
+}
+
+/*共通*/
+
+
+@media (max-width: 640px){
+.page-title h2{
+        font-size: 2.8rem;
+}
+}
+
+
+.page .page_intro{
+    text-align: center;
+}
+
+.page .page_intro h3{
+    color: #6CBFD7;
+    font-size: 3.6em;
+    margin-bottom: 40px;
+    letter-spacing: 0.1em;
+}
+
+.page .page_intro h3.mb00{
+    margin-bottom: 0;
+}
+
+.page .page_intro h3 sup{
+    font-size: 14px;
+}
+
+.page .page_intro p.intro_text{
+    font-size: 1.8em;
+    line-height: 2.0;
+    letter-spacing: 0.2em;
+}
+
+.contents_in p.eng {
+    width: 100%;
+    padding-left: 20px;
+    line-height: 1.0;
+    font-size: 8.0rem;
+    margin-bottom: 20px;
+    color: #B1CED8;
+}
+
+.imgBox {
+    position: relative;
+}
+
+.imgBox p.ttl {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 100%;
+      transform: translateY(-50%) translateX(-50%);
+  -webkit- transform: translateY(-50%) translateX(-50%);
+    font-size: 3.0em;
+    line-height: 2.0;
+    letter-spacing: 0.2em;
+    color: #fff;
+    text-align: center;
+}
+
+.imgBox p.scroll{
+    position: absolute;
+    display: inline-block;
+    left: 50%;
+    text-align: center;
+    bottom: 50px;
+    font-size: 10px;
+    color: #B1CED8;
+    line-height: 1.0;
+}
+
+
+/* 線の描写 */
+.imgBox p.scroll::after{
+  content: "";
+  position: absolute;
+  top: 10px;
+    left: 50%;
+  width: 1px;
+  height: 30px;
+    margin-top: 10px;
+  background: #B1CED8;
+    /*線の動き1.4秒かけて動く。永遠にループ*/
+  animation: pathmove2 2.0s ease-in-out infinite;
+  opacity:0;
+}
+
+/*高さ・位置・透過が変化して線が上から下に動く*/
+@keyframes pathmove2{
+  0%{
+    height:0;
+    top:0;
+    opacity: 0;
+  }
+  30%{
+    height:30px;
+    opacity: 1;
+  }
+  100%{
+    height:0;
+    top:50px;
+    opacity: 0;
+  }
+}
+
+@media (max-width: 1000px) {
+    
+.page .page_intro h3{
+    font-size: 2.8em;
+}
+
+.page .page_intro p.intro_text{
+    font-size: 1.8em;
+}
+
+.contents_in p.eng {
+    padding-left: 5%;
+    font-size: 5.0rem;
+    line-height: 1.0;
+}
+    
+.imgBox p.ttl {
+    font-size: 2.4em;
+}    
+    
+    
+.imgBox p.scroll{
+    left: 47%;
+    bottom: 35px;
+}    
+    
+/* 線の描写 */
+.imgBox p.scroll::after{
+  height: 30px;
+}   
+    
+    
+/*高さ・位置・透過が変化して線が上から下に動く*/
+@keyframes pathmove2{
+  0%{
+    height:0;
+    top:0;
+    opacity: 0;
+  }
+  30%{
+    height:15px;
+    opacity: 1;
+  }
+  100%{
+    height:0;
+    top:35px;
+    opacity: 0;
+  }
+}
+
+}
+
+
+@media (max-width: 1000px) {
+    
+.page .page_intro h3{
+    margin-bottom: 20px;
+}
+.contents_in p.eng {
+    font-size: 3.0rem;
+}
+   
+.ttlBox {
+    height: 30vh;
+}  
+    
+.ttlBox img {
+    height: auto;
+    width: 100%;
+    max-width: inherit;
+}  
+    
+    
+.imgBox p.scroll{
+    left: 45%;
+    bottom: 20px;
+}    
+    
+/* 線の描写 */
+.imgBox p.scroll::after{
+  height: 30px;
+}   
+    
+    
+/*高さ・位置・透過が変化して線が上から下に動く*/
+@keyframes pathmove2{
+  0%{
+    height:0;
+    top:0;
+    opacity: 0;
+  }
+  30%{
+    height:20px;
+    opacity: 1;
+  }
+  100%{
+    height:0;
+    top:40px;
+    opacity: 0;
+  }
+}    
+    
+}
+
+
+/*sec-intro*/
+.page .sec-intro{
+    padding: 160px 0;
+}
+
+@media (max-width: 1000px) {
+.page .sec-intro{
+    padding: 60px 0;
+}
+    
+}
+
+@media (max-width: 640px){
+.page .page_intro p.intro_text {
+    text-align: left;
+}
+}
+
+
+/*contents_in*/
+.page .contents_in .imgBox{
+    position: relative;
+    overflow: hidden;
+} 
+
+
+.page .contents_in .station{
+background: linear-gradient(to bottom, #253339, #4E6D77);
+}
+
+.page .contents_in .station .page_intro{
+    padding: 160px 0;
+}
+
+.page .station .page_intro p.intro_text{
+    color: #fff;
+}
+
+.page .contents_in .station_map{
+    position: relative;
+}
+
+.page .contents_in .station_map img{
+    width: 100%;
+    max-width: inherit;
+    height: auto;
+}
+    
+
+
+.page .sec-birth{
+    margin-top: 100px;
+}   
+
+
+.page .sec-birth .video{
+    max-width:800px;
+    height: auto;
+    margin: 0 auto;
+}   
+
+.page .sec-toshin .imgBox img{
+    width: 100%;
+    max-width: inherit;
+    height: auto;
+}    
+
+
+/*remodal*/
+
+.remodal{
+    max-width:900px;
+    height: auto;
+    margin: 0 auto;
+}  
+
+
+.remodal video#modalvideo{
+    max-width:800px;
+    height: auto;
+    margin: 0 auto;
+}  
+
+
+
+
+
+@media (max-width: 1000px) {
+.page .contents_in .station {
+    padding-bottom: 0;
+}    
+.page .contents_in .station .page_intro{
+    padding: 60px 0;
+} 
+}
+
+
+@media (max-width: 640px) {
+.page .sec-birth{
+    margin-top: 40px;
+}   
+    
+/*remodal*/
+
+.remodal{
+    max-width:inherit;
+    width: 100%;
+    padding: 20px;
+    height: auto;
+    margin: 0 auto;
+}  
+
+
+.remodal video#modalvideo{
+    max-width:inherit;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}  
+    
+    
+    
+.page .contents_in .station_map .photo.sp_slide{
+    overflow-x: scroll;
+    position: relative;
+    }    
+    
+.page .contents_in .station_map .photo.sp_slide img.map{
+    position: relative;
+    width: 200%;
+    height: auto;
+    z-index: 1;
+}    
+    
+.page .contents_in .station_map .photo.sp_slide img.swipe_icon{
+    width: 60px;
+    height: auto;
+    position: fixed;
+    z-index: 10;
+    top: 10px;
+    left: 10px;
+    background-color:rgba(0,0,0,0.10);
+    padding: 10px;
+    border-radius: 10px;
+}   
+    
+    
+.page .contents_in .imgBox img {
+    width: 100%;
+    max-width: inherit;
+    height: auto;
+}
+      
+.page .sec-toshin.contents_in .imgBox img{
+    width: 100%;
+    max-width: inherit;
+    height: auto;
+}      
+}
+
+
+/*sec-station*/
+
+.sec-station {
+    margin-top: 160px;
+    background: linear-gradient(to bottom, #253339, #4E6D77);
+    color: #EFEFEF;
+    padding: 160px 0 10px;
+}
+
+.sec-station .histry_con{
+    display: flex;
+    justify-content: center;
+    margin: 80px 0;
+}
+
+.sec-station .histry_con .histry_single{
+    width: 20%;
+    margin: 0 1%;
+    padding-top: 30px;
+    position: relative;
+}
+
+.sec-station .histry_con .histry_single:nth-child(2){
+    margin-top: 40px;
+}
+
+.sec-station .histry_con .histry_single:nth-child(3){
+    margin-top: 80px;
+}
+
+.sec-station .histry_con .histry_single:nth-child(4){
+    margin-top: 120px;
+}
+
+
+.sec-station .histry_con .histry_single .photo{
+    position: relative;
+    z-index: 1;
+}
+
+.sec-station .histry_con .histry_single h4{
+    text-align: center;
+    font-size: 60px;
+    line-height: 1.0;
+    color: #6CBFD7;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+}
+
+.sec-station .histry_con .histry_single h4 span{
+    font-size: 20px;
+}
+
+.sec-station .histry_con .histry_single p.name{
+    text-align: center;
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+.sec-station .histry_con .histry_single p.name img{
+    width: 22px;
+    vertical-align: middle;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+
+.sec-station .histry_con .histry_single ul{
+    display: table;
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 2px 0;
+}
+
+
+.sec-station .histry_con .histry_single ul.w25{
+    width: 25%;
+}
+
+.sec-station .histry_con .histry_single ul.w50{
+    width: 50%;
+}
+
+.sec-station .histry_con .histry_single ul.w75{
+    width: 75%;
+}
+
+.sec-station .histry_con .histry_single ul li{
+    display: table-cell;
+    vertical-align: middle;
+    padding: 0.8em 0;
+    line-height: 1.0;
+    color: #fff;
+    font-size: 10px;
+    width: 25%;
+    text-align: center;
+    position: relative;
+}
+
+/*
+.sec-station .histry_con .histry_single ul li span{
+      position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+}*/
+
+
+.sec-station .histry_con .histry_single ul li:first-child{
+    margin-left: 0;
+}
+
+.sec-station .histry_con .histry_single ul li.business{
+    background-color: #009EDE;
+}
+
+.sec-station .histry_con .histry_single ul li.office{
+    background-color: #49A8B0;
+}
+
+.sec-station .histry_con .histry_single ul li.culture{
+    background-color: #CB75AA;
+}
+
+.sec-station .histry_con .histry_single ul li.hotel{
+    background-color: #A4A757;
+}
+
+.sec-station .histry_con .histry_single ul li.bus{
+    background-color: #915137;
+}
+
+
+/*value_con*/
+
+.sec-station .value_con{
+    border-top: 1px solid #B7B7B7;
+    padding: 80px 0 160px;
+}
+
+.sec-station .value_con .value{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+
+.sec-station .value_con .value .left{
+    width: 46%;
+}
+
+.sec-station .value_con .value .left .photo{
+    position: relative;
+}
+
+.sec-station .value_con .value .right{
+    width: 50%;
+}
+
+.sec-station .value_con .value .right h4{
+    color: #6CBFD7;
+    font-size: 3.6em;
+    margin-bottom: 30px;
+    letter-spacing: 0.1em;
+}
+.sec-station .value_con .value .right p.text{
+    font-size: 14px;
+    line-height: 1.8;
+    letter-spacing: 0.2em;
+}
+
+
+.sec-station .value_con .chika{
+    background-color: #fff;
+    padding: 40px;
+}
+
+.sec-station .value_con .chika h4{
+    font-size: 20px;
+    margin-bottom: 30px;
+    color: #333;
+    text-align: center;
+}
+
+
+@media (max-width: 640px){
+.sec-station {
+    margin-top: 60px;
+    padding: 60px 0;
+}
+    
+.sec-station .histry_con {
+    flex-wrap: wrap;
+    margin: 40px auto;
+    width: 94%;
+    justify-content: space-between;
+}    
+    
+.sec-station .histry_con .histry_single {
+    width: 48%;
+    margin: 0 1%;
+    padding-top: 30px;
+    position: relative;
+}    
+    
+.sec-station .histry_con .histry_single:nth-child(3) {
+    margin-top: 0px;
+}    
+  
+.sec-station .histry_con .histry_single:nth-child(2),    
+.sec-station .histry_con .histry_single:nth-child(4) {
+    margin-top: 60px;
+}    
+    
+.sec-station .histry_con .histry_single h4 {
+    font-size: 40px;
+}   
+.sec-station .histry_con .histry_single h4 span {
+    font-size: 16px;
+}    
+    
+.sec-station .histry_con .histry_single p.name {
+    font-size: 13px;
+    margin: 10px 0;
+}    
+    
+.sec-station .histry_con .histry_single p.name img {
+    width: 15px;
+}    
+    
+.sec-station .histry_con .histry_single ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}    
+    
+.sec-station .histry_con .histry_single ul.w25,
+.sec-station .histry_con .histry_single ul.w50,
+.sec-station .histry_con .histry_single ul.w75{
+    width: 100%;
+}  
+    
+    
+    
+.sec-station .histry_con .histry_single ul li {
+    width: 49%;
+    margin-bottom: 3px;
+}    
+    
+.sec-station .histry_con .histry_single ul li:nth-child(2n+1) {
+    margin-left: 0;
+}    
+    
+
+.sec-station .value_con {
+    padding: 40px 0;
+}    
+   
+.sec-station .value_con .value {
+    flex-direction: column;
+    margin-bottom: 40px;
+}  
+    
+.sec-station .value_con .value .left,
+.sec-station .value_con .value .right{
+    width: 100%;
+}    
+    
+    
+.sec-station .value_con .value .left{
+    margin-bottom: 20px;
+}    
+.sec-station .value_con .value .right h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+    
+.sec-station .value_con .value .right p.text {
+    font-size: 1.8em;    
+    letter-spacing: 0.1em;
+}
+    
+.sec-station .value_con .chika {
+    padding: 20px;
+}    
+    
+.sec-station .value_con .chika h4 {
+    font-size: 14px;
+    margin-bottom: 10px;
+}    
+    
+    
+}
+
+
+
+/*sec-underpass */
+
+
+.sec-underpass{
+    padding: 160px 0 0;
+}
+
+
+.sec-underpass .underpass_con .underpass{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+
+.sec-underpass .underpass_con .underpass .right{
+    width: 50%;
+}
+
+.sec-underpass .underpass_con .underpass .right .photo{
+    position: relative;
+    margin: 0 0 60px 60px;
+}
+
+.sec-underpass .underpass_con .underpass .right .photo::after {
+    content: "";
+    position: absolute;
+    z-index: -10;
+    width: calc(100% - 60px);
+    height: 100%;
+    background-color: #EAF1F4;
+    bottom: -60px;
+    left:  -60px;
+}
+
+.sec-underpass .underpass_con .underpass .left{
+    width: 46%;
+}
+
+.sec-underpass .underpass_con .underpass .left h4{
+    color: #6CBFD7;
+    font-size: 3.6em;
+    margin-bottom: 30px;
+    letter-spacing: 0.1em;
+}
+.sec-underpass .underpass_con .underpass .left p.text{
+    font-size: 14px;
+    line-height: 1.8;
+    letter-spacing: 0.2em;
+}
+
+
+@media (max-width: 640px){
+.sec-underpass {
+    padding: 60px 0 0;
+}
+.sec-underpass .underpass_con .underpass {
+    flex-direction: column-reverse;
+    margin-bottom: 40px;
+}    
+.sec-underpass .underpass_con .underpass .left,
+.sec-underpass .underpass_con .underpass .right{
+    width: 100%;
+} 
+    
+.sec-underpass .underpass_con .underpass .right .photo {
+    position: relative;
+    margin: 0 0 30px 30px;
+}
+    
+.sec-underpass .underpass_con .underpass .right .photo::after {
+    width: calc(100% - 30px);
+    bottom: -30px;
+    left: -30px;
+}  
+    
+.sec-underpass .underpass_con .underpass .left h4 {
+    font-size: 20px;
+    margin: 10px 0;
+    text-align: center;
+}  
+    
+.sec-underpass .underpass_con .underpass .left p.text{
+    font-size: 1.8em;
+    letter-spacing: 0.1em;
+}    
+    
+
+}
+
+
+
+/*sec-possibility*/
+
+.sec-possibility {
+    margin-top: 160px;
+}
+
+
+.sec-possibility .possibility_bg{
+    background: linear-gradient(to bottom, #253339, #4E6D77);
+    color: #EFEFEF;
+    padding: 160px 0;
+}
+
+
+.sec-possibility .possibility_con{
+    margin-top: 80px;
+}
+
+.sec-possibility .possibility_con h4{
+    text-align: center;
+    color: #6CBFD7;
+    font-size: 3.6em;
+    margin-bottom: 40px;
+    letter-spacing: 0.1em;
+}
+
+.sec-possibility .possibility_con .possibility p.text{
+    font-size: 12px;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+
+.sec-possibility .possibility_con .possibility{
+    padding-bottom: 80px;
+    border-bottom: 1px solid #D6DCE5;
+}
+
+.sec-possibility .possibility_con .page_intro{
+    padding-bottom: 120px;
+}
+
+
+
+.sec-possibility .possibility_con .possibility01{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.sec-possibility .possibility_con .possibility01 .left,
+.sec-possibility .possibility_con .possibility01 .right{
+    width: 48%;
+}
+
+.sec-possibility .possibility_con .possibility .photo{
+    position: relative;
+}
+
+
+
+.sec-possibility .possibility_con .possibility p.passenger{
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+
+.sec-possibility .possibility_con .possibility01 p.passenger{
+    width: 100%;
+    text-align: center;
+}
+
+.sec-possibility .possibility_con .possibility01 p.caption{
+    font-size: 10px;
+    text-align: right;
+    margin-top: 10px;
+}
+
+
+
+.sec-possibility .possibility_con .possibility02{
+    display: flex;
+    justify-content: space-between;
+}
+
+.sec-possibility .possibility_con .possibility02 .left{
+    width: 38%;
+}
+
+.sec-possibility .possibility_con .possibility02 p.caption{
+    padding-top: 30px;
+    font-size: 10px;
+    margin-top: 10px;
+   border-top: 1px solid #333333;
+
+}
+
+.sec-possibility .possibility_con .possibility02 .right{
+    width: 58%;
+}
+
+.sec-possibility .possibility_con .possibility p.value{
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.sec-possibility .possibility_con .possibility02 .right table{
+    width: 100%;
+    border-top: 1px solid #D6DCE5;
+    border-left: 1px solid #D6DCE5;
+	border-collapse:collapse;
+}
+
+
+.sec-possibility .possibility_con .possibility02 .right th,
+.sec-possibility .possibility_con .possibility02 .right td{
+    border-bottom: 1px solid #D6DCE5;
+    border-right: 1px solid #D6DCE5;
+    text-align: center;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.0;
+    padding: 10px 5px;
+}
+
+
+.sec-possibility .possibility_con .possibility02 tr.gray th{
+    background-color: #EFEFEF;
+    font-size: 16px;
+    color: #3C7A8F;
+}
+
+.sec-possibility .possibility_con .possibility02 tr.red{
+    background-color: #397A90;
+    font-size: 16px;
+}
+
+
+.sec-possibility .possibility_con .possibility02 th{
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.0;
+}
+
+
+.sec-possibility .possibility_con .possibility02 th .number{
+    font-size: 20px;
+}
+
+.sec-possibility .possibility_con .possibility02 td.name{
+    font-size: 16px;
+}
+
+
+.sec-possibility .possibility_con .possibility02 td.value_td{
+    font-size: 16px;
+    color: #3C7A8F;
+}
+
+.sec-possibility .possibility_con .possibility02 tr.red th,
+.sec-possibility .possibility_con .possibility02 tr.red td,
+.sec-possibility .possibility_con .possibility02 tr.red td.value_td{
+    color: #ffffff;
+}
+
+
+.sec-possibility .possibility_con .possibility02 td.value_td span{
+        font-size: 20px;
+}
+
+
+.sec-possibility .possibility_con .possibility03 .inner{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.sec-possibility .possibility_con .possibility03 table{
+    width: 100%;
+    border-top: 1px solid #D6DCE5;
+    border-left: 1px solid #D6DCE5;
+	border-collapse:collapse;
+    margin-bottom: 10px;
+}
+
+
+.sec-possibility .possibility_con .possibility03 th,
+.sec-possibility .possibility_con .possibility03 td{
+    border-bottom: 1px solid #D6DCE5;
+    border-right: 1px solid #D6DCE5;
+    text-align: center;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.0;
+    padding: 10px 5px;
+}
+
+
+.sec-possibility .possibility_con .possibility03 tr.gray th{
+    background-color: #EFEFEF;
+    font-size: 16px;
+    color: #3C7A8F;
+    padding: 20px 0;
+}
+
+.sec-possibility .possibility_con .possibility03 tr.gray th .small{
+    font-size: 12px;
+}
+
+.sec-possibility .possibility_con .possibility03 th.rank{
+    width: 20%;
+}
+.sec-possibility .possibility_con .possibility03 th.year{
+    width: 80%;
+}
+
+.sec-possibility .possibility_con .possibility03 tr.first th,
+.sec-possibility .possibility_con .possibility03 tr.first td{
+    background-color: #397A90;
+    color: #fff;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+
+.sec-possibility .possibility_con .possibility03 th .number{
+    font-size: 32px;
+}
+.sec-possibility .possibility_con .possibility03 td .st_name{
+    font-size: 24px;
+}
+
+.sec-possibility .possibility_con .possibility03 tr.first th .number{
+    font-size: 42px;
+}
+
+.sec-possibility .possibility_con .possibility03 td .st_name{
+    font-size: 20px;
+}
+
+.sec-possibility .possibility_con .possibility03 tr.first td .st_name{
+    font-size: 32px;
+}
+
+.sec-possibility .possibility_con .possibility03 p.caption{
+    font-size: 10px;
+    margin-top: 10px;
+    text-align: right;
+}
+
+
+
+
+/*@media (max-width: 640px) {*/
+@media (max-width: 1000px) {
+
+}
+
+
+@media (max-width: 640px){
+.sec-possibility {
+    margin-top: 60px;
+}
+    
+.sec-possibility .possibility_bg {
+    padding: 40px 0;
+}
+    
+.sec-possibility .possibility_con {
+    margin-top: 60px;
+}    
+.sec-possibility .possibility_con h4 {
+    font-size: 2.8em;
+    margin-bottom: 20px;
+}
+    
+.sec-possibility .possibility_con .possibility01{
+    flex-direction: column;
+}  
+    
+.sec-possibility .possibility_con .possibility02{
+    flex-direction: column-reverse;
+}       
+    
+.sec-possibility .possibility_con .possibility01 .left,
+.sec-possibility .possibility_con .possibility01 .right,
+.sec-possibility .possibility_con .possibility02 .left,
+.sec-possibility .possibility_con .possibility02 .right {
+    width: 100%;
+}
+    
+.sec-possibility .possibility_con .possibility01 .left {
+    margin-bottom: 40px;
+}    
+    
+.sec-possibility .possibility_con .possibility p.passenger {
+    font-size: 12px;
+    margin-bottom: 10px;
+}    
+    
+.sec-possibility .possibility_con .possibility{
+    padding-bottom: 60px;
+}    
+    
+.sec-possibility .possibility_con .page_intro{
+    padding-bottom: 60px;
+}    
+    
+    
+.sec-possibility .possibility_con .possibility02 .right table {
+    margin-bottom: 10px;
+}    
+
+.sec-possibility .possibility_con .possibility02 tr.gray th {
+    font-size: 12px;
+}   
+    
+.sec-possibility .possibility_con .possibility02 tr.gray th.rank {
+    width: 16%;
+} 
+    
+.sec-possibility .possibility_con .possibility02 tr.gray th.name {
+    width: 28%;
+}     
+    
+.sec-possibility .possibility_con .possibility02 th .number {
+    font-size: 16px;
+}
+    
+.sec-possibility .possibility_con .possibility02 td.name {
+    font-size: 13px;
+}    
+    
+.sec-possibility .possibility_con .possibility02 .right th,
+.sec-possibility .possibility_con .possibility02 .right td {
+    font-size: 11px;
+    line-height: 1.0;
+    padding: 10px 3px;
+}    
+    
+.sec-possibility .possibility_con .possibility p.text {
+    margin-bottom: 10px;
+}  
+    
+.sec-possibility .possibility_con .possibility02 p.caption {
+    padding-top: 10px;
+}    
+    
+    
+.sec-possibility .possibility_con .possibility03 .inner {
+    width: 100%;
+}
+    
+    
+.sec-possibility .possibility_con .possibility03 th,
+.sec-possibility .possibility_con .possibility03 td {
+    font-size: 11px;
+    line-height: 1.3;
+}        
+    
+.sec-possibility .possibility_con .possibility03 td .st_name {
+    display: block;
+}    
+    
+.sec-possibility .possibility_con .possibility03 th.rank {
+    width: 16%;
+}
+    
+.sec-possibility .possibility_con .possibility03 th.year {
+    width: 42%;
+}    
+    
+.sec-possibility .possibility_con .possibility03 tr.first th,
+.sec-possibility .possibility_con .possibility03 tr.first td {
+    font-size: 12px;
+}    
+.sec-possibility .possibility_con .possibility03 tr.first th .number {
+    font-size: 24px;
+}
+    
+.sec-possibility .possibility_con .possibility03 tr.first td .st_name {
+    font-size: 24px;
+}
+    
+.sec-possibility .possibility_con .possibility03 th .number {
+    font-size: 18px;
+}    
+  
+.sec-possibility .possibility_con .possibility03 td .st_name {
+    font-size: 14px;
+}    
+    
+}
+
+/*---------------------------------------------------------------------------------------------*
+sec-value*/
+
+.sec-value{
+    position: relative;
+}
+
+
+.sec-value .landprice {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    border-bottom: 1px solid #D6DCE5;
+}
+
+
+.sec-value .landprice h3 {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 0.1em;
+}
+
+.sec-value .landprice p.caption{
+    font-size: 10px;
+}
+
+.sec-value .landprice_graph{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 10px;
+}
+
+.sec-value .landprice_graph .left{
+    width: 53%;
+}
+
+.sec-value .landprice_graph .right{
+    width: 43%;
+}
+
+.sec-value .landprice_graph .right p{
+    font-size: 14px;
+    margin-bottom: 20px;
+    letter-spacing: 0.1em;
+    line-height: 1.8;
+}
+
+.sec-value .train_graph{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+@media (max-width: 640px) {
+
+    .sec-value .landprice {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+        
+    .sec-value .landprice h3 {
+        font-size: 18px;
+    }    
+        
+    .sec-value .landprice_graph {
+        flex-direction: column;
+        justify-content: flex-start;
+    }        
+        
+      
+    .sec-value .landprice_graph .left,
+    .sec-value .landprice_graph .right {
+        width: 100%;
+    }   
+        
+    .sec-value .landprice_graph .left {
+        margin-bottom: 10px;
+    }       
+        
+    }
+
+
+
+
+
+
+
+

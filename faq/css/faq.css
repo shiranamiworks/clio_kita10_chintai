@@ -1,0 +1,267 @@
+@charset "UTF-8";
+
+.page .sec-faq{
+    padding: 160px 0 60px;
+}
+
+.page-title h2.h2jp {
+    font-size: 5.5rem;
+    letter-spacing: 0.1em;
+}
+
+
+@media (max-width: 1000px) {
+.page-title h2.h2jp {
+    font-size: 3.0rem;
+}
+}
+
+
+@media (max-width: 640px) {
+.page-title h2.h2jp {
+    font-size: 2.0rem;
+}
+    
+.page .sec-faq{
+    padding: 60px 0;
+}
+}
+
+
+
+
+/*==================================================================================
+faq
+==================================================================================*/
+
+.sec-faq dl {
+  padding-bottom: 80px;
+}
+.sec-faq dt {
+  background: #fff;
+  box-sizing: border-box;
+  position: relative;
+}
+.sec-faq dt .texts {
+  display: flex;
+    align-items:center;
+}
+.sec-faq dt .texts p {
+  vertical-align: top;
+  display: inline-block;
+}
+.sec-faq dt .num {
+  color: #2B2B2B;
+  font-size: 32px;
+  padding: 10px 20px;
+  margin-right: 35px;
+  box-sizing: border-box;
+  background: #D8EFF7
+}
+.sec-faq dt .text-q {
+  width: 80%;
+  font-size: 18px;
+  height: 40px;
+  line-height: 40px;
+  color: #000;
+}
+.sec-faq dt .buttons {
+  vertical-align: bottom;
+  display: block;
+  width: 200px;
+  margin: 20px auto 0;
+  color: #fff;
+}
+.sec-faq dt .buttons a {
+  display: block;
+  padding: 15px 0;
+  background: #2A538B;
+  width: 200px;
+  box-sizing: border-box;
+  text-align: center;
+  font-size: 18px;
+  display: none;
+  cursor: pointer;
+  color: #fff;
+  background: linear-gradient(to top, #4E6D77, #253339);
+  transition: all .3s;
+}
+.sec-faq dt .buttons a::before, .sec-faq dt .buttons span::before {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 30px;
+  left: 0;
+  width: calc(50% - 120px);
+  height: 1px;
+  border-top: 1px solid #2A538B;
+  box-sizing: border-box;
+  transition: all .3s;
+}
+.sec-faq dt .buttons a::after, .sec-faq dt .buttons span::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 30px;
+  right: 0;
+  width: calc(50% - 120px);
+  height: 1px;
+  border-top: 1px solid #2A538B;
+  box-sizing: border-box;
+  transition: all .3s;
+}
+.sec-faq dt .buttons span {
+  display: block;
+  padding: 15px 0;
+  background: #fff;
+  color: #2A538B;
+  border: 1px solid #2A538B;
+  width: 200px;
+  box-sizing: border-box;
+  text-align: center;
+  font-size: 18px;
+  display: none;
+  cursor: pointer;
+  transition: all .3s;
+}
+.sec-faq dt .buttons a.on,
+.sec-faq dt .buttons span.on {
+  display: block;
+  transition: all .3s;
+}
+.sec-faq dd {
+  padding: 20px 34px 34px;
+  box-sizing: border-box;
+  display: none;
+  background: #fff;
+}
+
+
+
+
+
+
+@media (max-width: 640px) {
+.sec-faq dd {padding: 20px 0 20px;}
+}
+
+.sec-faq dd .icon {
+    position: relative;
+    display: block;
+    color: #fff;
+    font-size: 24px;
+    padding: 10px 20px;
+    width: 80px;
+    margin: 0 auto -30px;
+    background-color: #4E6D77;
+    text-align: center;
+    z-index: 2;
+}
+
+.sec-faq dd .texts {
+  position: relative;
+  vertical-align: top;
+  display: block;
+  margin: 0 auto;
+  z-index: 1;
+  background-color: #EAF1F4;
+  padding: 60px 40px 40px;
+}
+.sec-faq dd .texts .text {
+  font-size: 14px;
+  line-height: 2.0;
+}
+.sec-faq dd .texts .cap {
+  font-size: 12px;
+  line-height: 2.0;
+  margin-top: 10px;
+}
+.sec-faq dd .texts .text::first-letter {
+  font-feature-settings: "palt";
+}
+.sec-faq dd .texts .button_answer {
+  vertical-align: bottom;
+  display:inline-block;
+  min-width: 200px;
+  margin: 20px auto;
+  color: #fff;
+}
+.sec-faq dd .texts .button_answer a {
+  display: block;
+  padding: 10px 20px;
+  background: #2A538B;
+    border: 1px solid #2A538B;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  color: #fff;
+  transition: all .3s;
+}
+
+.sec-faq dd .texts .button_answer a:hover {
+  background: #fff;
+    border: 1px solid #2A538B;
+  color: #2A538B;
+  transition: all .3s;
+}
+
+@media screen and (max-width: 640px) {
+  .sec-faq dl {
+    padding-bottom: 60px;
+  }
+  .sec-faq dt .num {
+    color: #2B2B2B;
+    font-size: 22px;
+    padding: 12px;
+    margin-right: 20px;
+  }
+  .sec-faq dt .text-q {
+    width: 75%;
+    font-size: 18px;
+    line-height: 1.5;
+    height: inherit;
+    color: #000;
+  }
+  .sec-faq dt .buttons {
+    width: 160px;
+  }
+  .sec-faq dt .buttons a {
+    padding: 15px 0;
+    width: 160px;
+    font-size: 14px;
+  }
+  .sec-faq dt .buttons a::before, .sec-faq dt .buttons span::before {
+    bottom: 25px;
+    width: calc(50% - 100px);
+  }
+  .sec-faq dt .buttons a::after, .sec-faq dt .buttons span::after {
+    bottom: 25px;
+    width: calc(50% - 100px);
+  }
+  .sec-faq dt .buttons span {
+    width: 160px;
+    font-size: 14px;
+    padding: 15px 0;
+  }
+  .sec-faq dt .buttons a.on, .sec-faq dt .buttons span.on {
+    display: block;
+    transition: all .3s;
+  }
+  .sec-faq dd .icon {
+    font-size: 22px;
+    padding: 12px;
+    width: 60px;
+    margin: 0 auto -30px;
+  }
+  .sec-faq dd .texts {
+    padding: 60px 20px 30px;
+  }
+
+  .sec-faq dd .texts .button_answer a {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+}
+

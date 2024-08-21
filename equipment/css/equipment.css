@@ -1,0 +1,1658 @@
+@charset "UTF-8";
+
+
+/*==================================================================================
+equipment
+==================================================================================*/
+
+/*共通*/
+
+.nav_lowerpage .navWrap li.equipment a::after,
+.footerarea .foot-navi .inner .foot-navi__in li.equipment a::after{
+  transform: translate(0, 0) !important;
+}
+
+
+@media (max-width: 1000px) {
+.nav_lowerpage .navWrap li.equipment a::after,
+.footerarea .foot-navi .inner .foot-navi__in li.equipment a::after{
+    display: none !important;
+  }
+}
+
+
+.page .page_intro{
+    text-align: center;
+    padding: 160px 0;
+}
+
+.page .page_intro h3{
+    color: #6CBFD7;
+    font-size: 3.6em;
+    margin-bottom: 40px;
+    letter-spacing: 0.1em;
+}
+
+.page .page_intro h3 sup{
+    font-size: 14px;
+}
+
+.page .page_intro p.intro_text{
+    font-size: 1.8em;
+    line-height: 2.0;
+    letter-spacing: 0.2em;
+}
+
+.contents_in p.eng {
+    width: 100%;
+    padding-left: 20px;
+    line-height: 1.0;
+    font-size: 8.0rem;
+    margin-bottom: 20px;
+    color: #B1CED8;
+}
+
+
+.imgBox {
+    position: relative;
+}
+
+.imgBox p.ttl {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 100%;
+      transform: translateY(-50%) translateX(-50%);
+  -webkit- transform: translateY(-50%) translateX(-50%);
+    font-size: 3.0em;
+    line-height: 2.0;
+    letter-spacing: 0.2em;
+    color: #fff;
+    text-align: center;
+}
+
+.imgBox p.scroll{
+    position: absolute;
+    display: inline-block;
+    left: 50%;
+    text-align: center;
+    bottom: 50px;
+    font-size: 10px;
+    color: #B1CED8;
+    line-height: 1.0;
+}
+
+
+/* 線の描写 */
+.imgBox p.scroll::after{
+  content: "";
+  position: absolute;
+  top: 10px;
+    left: 50%;
+  width: 1px;
+  height: 30px;
+    margin-top: 10px;
+  background: #B1CED8;
+    /*線の動き1.4秒かけて動く。永遠にループ*/
+  animation: pathmove2 2.0s ease-in-out infinite;
+  opacity:0;
+}
+
+/*高さ・位置・透過が変化して線が上から下に動く*/
+@keyframes pathmove2{
+  0%{
+    height:0;
+    top:0;
+    opacity: 0;
+  }
+  30%{
+    height:30px;
+    opacity: 1;
+  }
+  100%{
+    height:0;
+    top:50px;
+    opacity: 0;
+  }
+}
+
+
+
+
+
+@media (max-width: 1000px) {
+    
+.page .page_intro h3{
+    font-size: 2.8em;
+}
+
+.page .page_intro p.intro_text{
+    font-size: 1.8em;
+}
+
+.contents_in p.eng {
+    padding-left: 5%;
+    font-size: 5.0rem;
+    line-height: 1.0;
+}
+    
+.imgBox p.ttl {
+    font-size: 2.4em;
+}    
+    
+    
+.imgBox p.scroll{
+    left: 47%;
+    bottom: 35px;
+}    
+    
+/* 線の描写 */
+.imgBox p.scroll::after{
+  height: 30px;
+}   
+    
+    
+/*高さ・位置・透過が変化して線が上から下に動く*/
+@keyframes pathmove2{
+  0%{
+    height:0;
+    top:0;
+    opacity: 0;
+  }
+  30%{
+    height:15px;
+    opacity: 1;
+  }
+  100%{
+    height:0;
+    top:35px;
+    opacity: 0;
+  }
+}
+ 
+}
+
+
+@media (max-width: 1000px) {
+    
+
+.page .page_intro{
+    text-align: center;
+    padding: 60px 0;
+}    
+    
+.page .page_intro h3{
+    margin-bottom: 20px;
+}
+.contents_in p.eng {
+    font-size: 3.0rem;
+}
+   
+.ttlBox {
+    height: 30vh;
+}  
+    
+.ttlBox img {
+    height: auto;
+    width: 100%;
+    max-width: inherit;
+}  
+    
+    
+.imgBox p.scroll{
+    left: 45%;
+    bottom: 20px;
+}    
+    
+/* 線の描写 */
+.imgBox p.scroll::after{
+  height: 30px;
+}   
+    
+    
+/*高さ・位置・透過が変化して線が上から下に動く*/
+@keyframes pathmove2{
+  0%{
+    height:0;
+    top:0;
+    opacity: 0;
+  }
+  30%{
+    height:20px;
+    opacity: 1;
+  }
+  100%{
+    height:0;
+    top:40px;
+    opacity: 0;
+  }
+}    
+    
+}
+
+
+
+.sec1 {
+  padding-bottom: 100px;
+}
+.sec1 .logo {
+  width: 70%;
+  max-width: 300px;
+  margin: 0 auto 50px;
+}
+
+.sec1 .fw1 {
+    display: flex;
+    justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.sec1 .fw1 .box {
+  width: calc(96% /3);
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.sec1 .fw1 .box img {
+  margin-top: -1px;
+}
+
+.sec1 .fw2 {
+    display: flex;
+  margin: 50px auto 5px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.sec1 .fw2 .box_t {
+  width: 48%;
+  margin-bottom: 40px;
+}
+.sec1 .fw2 .box_b {
+  width: 100%;
+}
+
+.sec1 p.note {
+    font-size: 10px;
+    line-height: 1.8;
+  padding: 0 10px;
+}
+
+
+.page section.equipment-section {
+    margin-top: 80px;
+    padding-top: 40px;
+}
+
+.equipment-banner{
+    margin-bottom:100px;
+}
+
+
+.photo{
+    position: relative;
+}
+
+
+
+@media screen and (max-width: 1000px) {
+
+.page section.equipment-section {
+    margin-top: 20px;
+    padding-top: 40px;
+}
+
+}
+
+
+
+@media screen and (max-width: 640px) {
+    
+.sec1 .fw1,    
+.sec1 .fw2 {
+    display: flex;
+    flex-direction: column;
+}
+    
+.sec1 .fw1 .box {
+  width: 100%;
+}
+    
+
+.sec1 .fw2 .box_t {
+  width: 100%;
+  margin-bottom: 40px;
+}  
+    
+.equipment-banner{
+    margin-bottom:60px;
+}
+    
+
+.page section.equipment-section {
+    margin-top: 30px;
+    padding-top: 20px;
+}
+    
+    
+    
+}
+
+
+
+
+/*### メニュータブ start ###################################################*/
+
+#equipment .menu_con{
+    padding: 20px 0;
+    margin: 20px 0;
+}
+
+
+#equipment .page_menu{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+
+#equipment .page_menu li{
+    box-sizing: border-box;
+    width: calc(16.666% - 2px);
+    text-align: center;
+}
+
+
+#equipment .page_menu li:first-child{
+    margin-left: 0;
+}
+
+
+#equipment .page_menu li a {
+    display: block;
+    box-sizing: border-box;
+    margin: 0 auto;
+    color: #2B2B2B;
+    overflow: hidden;
+    text-align: center;
+    padding: 20px 0;
+    line-height: 1.0;
+    letter-spacing: 0.15rem;
+    font-size: 16px;
+    text-align: center;
+    background-color: #B1CED8;
+    transition: 0.5s;
+}
+
+#equipment .page_menu li a:hover {
+    opacity: 0.6;
+    transition: 0.5s;
+}
+
+#equipment #kitchen .page_menu li a[href="#kitchen"] {
+    color: #fff;
+    background: linear-gradient(to bottom, #253339, #4E6D77);
+}
+
+#equipment #bathroom .page_menu li a[href="#bathroom"] {
+    color: #fff;
+    background: linear-gradient(to bottom, #253339, #4E6D77);
+}
+
+#equipment #powder .page_menu li a[href="#powder"] {
+    color: #fff;
+    background: linear-gradient(to bottom, #253339, #4E6D77);
+}
+
+#equipment #toilet .page_menu li a[href="#toilet"] {
+    color: #fff;
+    background: linear-gradient(to bottom, #253339, #4E6D77);
+}
+
+#equipment #amenity .page_menu li a[href="#amenity"] {
+    color: #fff;
+    background: linear-gradient(to bottom, #253339, #4E6D77);
+}
+
+#equipment #security .page_menu li a[href="#security"] {
+    color: #fff;
+    background: linear-gradient(to bottom, #253339, #4E6D77);
+}
+
+@media screen and (max-width:640px) {
+    #equipment .page_menu {
+        flex-wrap: wrap;
+    }
+    #equipment .page_menu li {
+        width: calc(50% - 2px);
+        margin-bottom: 4px;
+    }
+}
+
+/*### メニュータブ end ###################################################*/
+
+/*### コンテンツタイトル start ###################################################*/
+
+#equipment .ttl_con{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+#equipment .ttl_con .left{
+    width: 45%;
+}
+
+#equipment .ttl_con .right{
+    width: 55%;
+}
+
+
+.equipment-section__ttl {
+    display: block;
+    width: 100%;
+    padding-left: 60px;
+    margin-bottom: 30px;
+    color: #B1CED8;
+    font-size: 80px;
+    letter-spacing: 0.06rem;
+    line-height: 1.0;
+    font-weight: 500;
+}
+
+
+.equipment-section__ttl-en {
+    margin-bottom: 4px;
+    margin-right: 0.3em;
+    letter-spacing: 0.1rem;
+    line-height: 1.0;
+}
+
+.equipment-section__ttl-jp {
+    display: block;
+    font-size: 24px;
+}
+
+
+#equipment .ttl_con .right p {
+    line-height: 1.5;
+    letter-spacing: 0.1rem;
+    padding: 30px 0 30px 60px;
+    font-size: 20px;
+    color: #fff;
+    background: linear-gradient(to bottom, #253339, #4E6D77);
+}
+
+@media screen and (max-width:640px) {
+    
+#equipment .ttl_con{
+    display: block;
+    position: relative;
+    height: 200px;
+    background-color: #fff;
+}
+    
+#equipment .ttl_con .left{
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    opacity: 0.5;
+}
+
+#equipment .ttl_con .right{
+    position: absolute;
+    width: 100%;
+    padding: 40px 0 40px 0;
+    z-index: 2;
+}
+    
+.equipment-section__ttl {
+    font-size: 36px;
+    color: #253339;
+    padding-left: 20px;
+}   
+    
+.equipment-section__ttl-jp {
+    display: block;
+    font-size: 16px;
+}    
+    
+#equipment .ttl_con .right p {
+    padding: 10px 20px;
+    font-size: 14px;
+}
+
+}
+
+
+
+
+/*### コンテンツタイトル end ###################################################*/
+
+
+
+
+/*### コンテンツ共通 start ###################################################*/
+
+#equipment .wrapper {
+    width: 94%;
+    max-width: 1000px;
+    margin: 0 auto;
+    height: 100%;
+    overflow: hidden;
+    margin-bottom: 4%
+}
+
+.equipment-section__container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0;
+    margin-top: 60px;
+}
+
+.equipment-section__caption {
+    margin-top: 5px;
+    line-height: 1.2rem;
+    font-size: 10px;
+    font-weight: 400;
+}
+
+.equipment-section__block {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.equipment-section__container-01 .equipment-section__block {
+    background-color: #F7F5F2;
+    padding: 40px 30px;
+}
+
+
+/*
+.equipment-section__container-01 .equipment-section__block:first-child {
+    width: 25%;
+}*/
+
+.equipment-section__container-01__mv {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.equipment-section__container-01__mv img {
+    width: auto;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*
+.equipment-section__container-01 .equipment-section__block:nth-child(2) {
+    width: 75%;
+    padding: 40px 30px;
+}*/
+
+.equipment-section__block__ttl {
+    width: 100%;
+    font-size: 20px;
+    letter-spacing: 0.06rem;
+    line-height: 32px;
+    text-align: center;
+    font-weight: 400;
+}
+
+.equipment-section__block ul {
+        display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: flex-start;
+}
+
+
+.equipment-section__item  {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.equipment-section__container-01 .equipment-section__item {
+    width: calc(100% / 3 - 16px);
+}
+
+.equipment-section__container-01 .equipment-section__item p.cap{
+    text-align: right;
+}
+
+
+.equipment-section__block ul.center {
+    width: 50%;
+    margin: 0 auto;
+}
+
+
+.equipment-section__item__ttl {
+    margin-bottom: 20px;
+    font-size: 16px;
+    letter-spacing: 0.00rem;
+    line-height: 26px;
+    font-weight: 500;
+}
+
+.equipment-section__item__ttl sup{
+    font-size: 10px;
+}
+
+.equipment-section__item__ttl-cap {
+    font-size: 10px;
+}
+
+
+
+/*20220323*/
+.equipment-section__item .photo .cap{
+    text-align: right;
+}
+
+.equipment-kitchen .equipment-section__item .flex_con{
+    display: flex;
+    justify-content: space-between;
+    /*align-items: flex-end;*/
+}
+
+
+.equipment-kitchen .equipment-section__item .flex_con.two .photo:first-child{
+    margin-right: 20px;
+}
+
+@media screen and (max-width:640px) {
+.equipment-kitchen .equipment-section__item .flex_con.two .photo:first-child{
+    margin-right: 0;
+    margin-bottom: 10px;
+}
+}
+
+
+/*--- レスポンシブ ---------------------------------------------------*/
+/*
+@media screen and (min-width:641px) {
+    .equipment-section__container-01__mv img {
+        width: auto;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .equipment-section__item  {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}*/
+
+@media screen and (max-width:640px) {
+    
+.equipment-section__container {
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+    
+   
+.equipment-section__container-01 .equipment-section__block {
+    background-color: #F7F5F2;
+    padding: 30px 10px;
+}
+    /*
+    .equipment-section__container-01 .equipment-section__block:nth-child(2) {
+        width: 100%;
+        margin: 0 auto;
+        padding: 30px 10px;
+    }
+    */
+
+    
+    .equipment-section__container-01__mv img {
+        width: 100%;
+        height: auto;
+    }
+    
+    .equipment-section__block__ttl {
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    .equipment-section__block ul {
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    }
+    
+    
+.equipment-section__block ul.center {
+    width: 100%;
+}
+
+    
+    .equipment-section__item {
+        margin-bottom: 30px;
+        align-self: stretch;
+    }
+    
+    .equipment-section__container-01 .equipment-section__item  {
+        width: calc(50% - 10px);
+    }
+    
+    .equipment-section__container-01 .equipment-section__item:nth-child(2) {
+        /*justify-content: flex-end;*/
+    }
+    
+    .equipment-section__item__ttl {
+        margin-bottom: 30px;
+        font-size: 14px;
+        line-height: 22px;
+    }
+}
+
+
+
+
+/*### コンテンツ共通 end ###################################################*/
+
+/*### kitchen start ###################################################*/
+
+.equipment-kitchen .equipment-section__container-02 .equipment-section__item,
+.equipment-kitchen .equipment-section__container-03 .equipment-section__item{
+    /*width: calc(50% - 10px);*/
+    padding: 30px 20px 15px;
+    border: 1px solid #B8A281;
+}
+
+
+.equipment-kitchen .equipment-section__container-02 .equipment-section__item:first-child,
+.equipment-kitchen .equipment-section__container-03 .equipment-section__item:last-child {
+    width: calc(65% - 10px);
+}
+
+.equipment-kitchen .equipment-section__container-02 .equipment-section__item:last-child,
+.equipment-kitchen .equipment-section__container-03 .equipment-section__item:first-child {
+    width: calc(35% - 10px);
+}
+
+
+.equipment-kitchen .equipment-section__container-02 .equipment-section__item:first-child{
+    width: 100%
+}
+
+/*
+.equipment-kitchen .equipment-section__container-03 .equipment-section__item:last-child {
+    width: calc(66.5% - 10px);
+}
+*/
+
+.equipment-kitchen .equipment-section__container-03 .equipment-section__item:first-child {
+    width: calc(33.5% - 10px);
+}
+
+.equipment-kitchen .equipment-section__container-02 .equipment-section__item:first-child .equipment-section__item__ttl {
+    display: flex;
+}
+
+.equipment-kitchen .equipment-section__container-02 p.ttl {
+    width: 130px;
+    margin-right: 12px;
+}
+
+.equipment-kitchen .equipment-section__container-02 .equipment-section__item__ttl-icon {
+    margin-right: 12px;
+}
+
+.equipment-kitchen .equipment-section__container-02 .equipment-section__item__ttl-icon span {
+    display: block;
+    width: 130px;
+    padding: 6px 0;
+    background-color: #B8A281;
+    font-size: 13px;
+    color: #fff;
+    text-align: center;
+}
+
+
+.equipment-kitchen .equipment-section__container-02 .equipment-section__item:first-child .equipment-section__item__ttl span.blk {
+    display: inline-block;
+    background: #054644;
+    color: #fff;
+    padding: 0 8px;
+    margin-right: 5px;
+}
+
+
+
+.equipment-kitchen .equipment-section__container-02 .equipment-section__item__ttl-icon small {
+    font-size: 10px;
+    letter-spacing: 0.02rem;
+}
+
+.equipment-kitchen .equipment-section__container-03 .equipment-section__item {
+    /*width: calc(25% - 18px);*/
+    width: calc(50% - 18px);
+}
+
+
+
+
+/*20220323*/
+.equipment-kitchen .equipment-section__item .flex_con{
+    display: flex;
+    justify-content: space-between;
+}
+
+.equipment-kitchen .equipment-section__item .flex_con.four .photo{
+    width: 23%;
+    padding-top: 22px;
+}
+
+.equipment-kitchen .equipment-section__item .flex_con .photo .type{
+    position: absolute;
+    font-size: 12px;
+    top: 0px;
+    left: 0;
+}
+
+.equipment-kitchen .equipment-section__item .flex_con .photo .type span{
+    padding: 5px 8px;
+    background-color: #054644;
+    color: #fff;
+}
+
+.equipment-kitchen .equipment-section__item .flex_con .photo .type span.blk{
+    border-right: 1px solid #fff;
+}
+
+
+.equipment-section__block ul.kitchen_list{
+    justify-content: space-between;
+}
+
+
+
+
+/*--- レスポンシブ ---------------------------------------------------*/
+
+@media screen and (max-width:640px) {
+    .equipment-kitchen .equipment-section__container-02 ul {
+        display: block;
+    }
+    .equipment-kitchen .equipment-section__container-02 .equipment-section__item {
+        width: 100%;
+        padding: 20px 10px 15px;
+    }
+    
+    .equipment-kitchen .equipment-section__container.equipment-section__container-03 {
+        margin-top: 0;
+    }
+    
+    .equipment-kitchen .equipment-section__container-03 .equipment-section__item {
+        width: calc(50% - 10px);
+    }
+    
+    
+    .equipment-kitchen .equipment-section__container-01 ul .equipment-section__item:nt-child(3),
+    .equipment-kitchen .equipment-section__container-01 ul .equipment-section__item:last-child {
+    margin-bottom: 0!important;
+}
+    
+    
+.equipment-kitchen .equipment-section__container-01 .equipment-section__block ul .equipment-section__item:nth-child(3),
+.equipment-kitchen .equipment-section__container-01 .equipment-section__block ul .equipment-section__item:last-child{
+    margin-bottom: 0;
+}
+    
+    
+.equipment-kitchen .equipment-section__container-02 .equipment-section__item:first-child,
+.equipment-kitchen .equipment-section__container-03 .equipment-section__item:last-child,
+.equipment-kitchen .equipment-section__container-02 .equipment-section__item:last-child,
+.equipment-kitchen .equipment-section__container-03 .equipment-section__item:first-child {
+    width:100%;
+}
+    
+
+.equipment-kitchen .equipment-section__item .flex_con{
+    flex-wrap: wrap;
+}
+    
+.equipment-kitchen .equipment-section__item .flex_con.four .photo {
+    width: 48%;
+    margin-bottom: 20px;
+    padding-bottom: 40px;
+}
+    
+    
+
+.equipment-kitchen .equipment-section__container-02 .equipment-section__item:first-child .equipment-section__item__ttl {
+    flex-direction: column;
+}
+
+.equipment-kitchen .equipment-section__container-02 p.ttl {
+    width: 100%;
+    margin-right: 0;
+}        
+    
+.equipment-kitchen .equipment-section__container-02 .equipment-section__item__ttl-icon span {
+    width: 100%;
+}
+.equipment-kitchen .equipment-section__container-02 .equipment-section__item__ttl-icon small {
+    display: block;
+    text-align: right;
+
+}    
+    
+}
+
+/*### kitchen end ###################################################*/
+
+/*### bathroom start ###################################################*/
+
+.equipment-bathroom .equipment-section__container-01 .equipment-section__item:nth-last-child(2) {
+    width: calc(33% - 12px);
+}
+.equipment-bathroom .equipment-section__container-01 .equipment-section__item:last-child {
+    width: calc(68% - 12px);
+}
+
+.equipment-bathroom .equipment-section__container-02 {
+    flex-wrap: wrap;
+}
+
+
+.equipment-bathroom .equipment-section__container-02 .equipment-section__block:nth-child(2){
+    width: calc(37% - 20px);
+    margin-bottom: 40px;
+}
+
+.equipment-bathroom .equipment-section__container-02 .equipment-section__block:nth-child(3){
+    width: calc(33% - 20px);
+    margin-bottom: 40px;
+}
+
+.equipment-bathroom .equipment-section__container-02 .equipment-section__block:first-child{
+    width: calc(63% - 20px);
+    margin-bottom: 40px;
+}
+
+.equipment-bathroom .equipment-section__container-02 .equipment-section__block:last-child{
+    width: calc(67% - 20px);
+    margin-bottom: 40px;
+}
+
+.equipment-section__container-01 .equipment-section__block .bathroom_list{
+    justify-content: space-between;
+}
+
+
+/*
+.equipment-bathroom .equipment-section__container-02 .equipment-section__block {
+    width: calc(50% - 10px);
+    margin: 0 0 30px;
+}*/
+
+.equipment-bathroom .equipment-section__container-02 .equipment-section__block:last-child .equipment-section__item:first-child {
+    /*width: 35%;
+    /*margin-right: 20px;*/
+}
+
+.equipment-bathroom .equipment-section__container-02 .equipment-section__block:last-child .equipment-section__item:nth-child(2) {
+    width: calc(65% - 20px);
+}
+
+.equipment-bathroom .equipment-section__container-02 .equipment-section__item {
+    width: 100%;
+}
+
+/*--- レスポンシブ ---------------------------------------------------*/
+
+@media screen and (max-width:640px) {
+    .equipment-bathroom .equipment-section__container-01 .equipment-section__item:nth-last-child(2) {
+        width: calc(50% - 10px);
+    }
+    .equipment-bathroom .equipment-section__container-01 .equipment-section__item:last-child {
+        width: 100%;
+    }
+    
+    .equipment-bathroom .equipment-section__container-02 .equipment-section__block {
+        width: 100%;
+    }
+    
+.equipment-bathroom .equipment-section__container-02 .equipment-section__block:first-child,
+.equipment-bathroom .equipment-section__container-02 .equipment-section__block:last-child{
+        width: 100%;
+    margin-bottom: 0;
+}
+    
+.equipment-bathroom .equipment-section__container-01 ul .equipment-section__item:last-child{
+    margin-bottom: 0;
+    }
+        
+
+.equipment-bathroom .equipment-section__container-02 .equipment-section__block:nth-child(2){
+    width: 100%;
+    margin-bottom: 0;
+}
+
+.equipment-bathroom .equipment-section__container-02 .equipment-section__block:nth-child(3){
+        width: 100%;
+    margin-bottom: 0px;
+}    
+    
+    
+}
+
+/*### bathroom end ###################################################*/
+
+/*### powderroom start ###################################################*/
+
+.equipment-powder .equipment-section__container-01 .equipment-section__item {
+    width: 100%;
+}
+
+.equipment-powder .equipment-section__container-01 .equipment-section__item .flex_con{
+    display: flex;
+}
+
+.equipment-powder .equipment-section__container-01 .equipment-section__item .flex_con .photo:nth-child(2){
+    margin: 0 40px;
+}
+
+
+.equipment-powder .equipment-section__container-02 .equipment-section__item {
+    width: 100%;
+}
+
+.equipment-powder .equipment-section__container-02 .photo {
+    position: relative;
+}
+
+.equipment-powder .equipment-section__container-02 .equipment-section__item__cap {
+    width: 17%;
+    line-height: 1.6rem;
+    font-size: 12px;
+    font-weight: 400;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+/*--- レスポンシブ ---------------------------------------------------*/
+
+@media screen and (max-width:640px) {
+    .equipment-powder .equipment-section__container-01__mv {
+        max-width: 319px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .equipment-powder .equipment-section__container-01__mv img {
+        object-fit: contain;
+    }
+    
+    .equipment-powder .equipment-section__container-02 .equipment-section__item__cap {
+        width: 100%;
+        margin-top: 5px;
+        position: static;
+    }
+    
+
+.equipment-powder .equipment-section__container-01 .equipment-section__item{
+    margin-bottom: 0;
+}    
+    
+.equipment-powder .equipment-section__container-01 .equipment-section__item .flex_con .photo:nth-child(2){
+    margin: 0 10px;
+}
+    
+    
+
+    
+}
+
+/*### powderroom end ###################################################*/
+
+/*### toilet start ###################################################*/
+
+.equipment-toilet .equipment-section__container-01 {
+    background-color: #F7F5F2;
+}
+
+.equipment-section__caption.mt60 {
+    margin-top: 60px;
+}
+
+.equipment-toilet .equipment-section__block ul.toilet_list{
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.equipment-toilet .equipment-section__container-01 .equipment-section__block:last-child {
+    padding: 30px 30px 40px;
+}
+
+.equipment-toilet .equipment-section__container-01 .equipment-section__block:last-child .equipment-section__item {
+    width: calc(33.333% - 19px);
+}
+
+
+
+
+.equipment-toilet .equipment-section__container-01 .equipment-section__block:last-child .equipment-section__item:nth-child(3),
+.equipment-toilet .equipment-section__container-01 .equipment-section__block:last-child .equipment-section__item:last-child {
+    margin-bottom: 0;
+}
+
+.equipment-toilet .equipment-section__container-01 .equipment-section__caption {
+    padding: 0 30px;
+}
+
+.equipment-toilet .equipment-section__container-02 .equipment-section__item:first-child {
+    width: calc(30% - 32px);
+}
+
+.equipment-toilet .equipment-section__container-02 .equipment-section__item:nth-child(2) {
+    width: calc(30%);
+}
+
+.equipment-toilet .equipment-section__container-02 .equipment-section__item:nth-child(3) {
+    width: calc(40% - 45px);
+}
+
+/*--- レスポンシブ ---------------------------------------------------*/
+
+@media screen and (max-width:640px) {
+    
+    .equipment-toilet .equipment-section__container-01__mv {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .equipment-toilet .equipment-section__container-01__mv img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+    
+    .equipment-toilet .equipment-section__container-01 .equipment-section__block:nth-child(2) {
+        padding-bottom: 0;
+    }
+    
+    .equipment-toilet .equipment-section__container-01 .equipment-section__block:last-child {
+       /* padding: 0px 10px 30px;*/
+       padding: 30px 10px;
+        
+    }
+
+    .equipment-toilet .equipment-section__container-01 .equipment-section__block:last-child .equipment-section__item {
+        width: calc(50% - 10px);
+    }
+    
+    
+.equipment-toilet .equipment-section__container-01 .equipment-section__block:last-child .equipment-section__item:nth-child(2){
+    justify-content:space-between;
+    padding-bottom: 82px;
+}
+    
+    .equipment-toilet .equipment-section__container-01 .equipment-section__item {
+        justify-content: flex-end;
+    }
+
+    .equipment-toilet .equipment-section__container-01 .equipment-section__caption {
+        padding: 0 ;
+    }
+    
+    .equipment-toilet .equipment-section__container-02 .equipment-section__item:first-child {
+        width: calc(50% - 10px);
+    }
+
+    .equipment-toilet .equipment-section__container-02 .equipment-section__item:nth-child(2) {
+        width: calc(50% - 10px);
+    }
+    .equipment-toilet .equipment-section__container-02 .equipment-section__item:nth-child(3) {
+        width: 100%;
+    }
+}
+
+
+/*### toilet end ###################################################*/
+
+/*### amenity start ###################################################*/
+
+.equipment-amenity {
+
+}
+
+.equipment-amenity .equipment-section__container-01 .equipment-section__block {
+    width: 100%;
+    background-color: inherit;
+}
+
+
+.equipment-amenity .equipment-section__block ul.amenity_list{
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+.equipment-amenity .equipment-section__container-01 .equipment-section__item {
+    width: calc((100% - 60px) / 3);
+}
+
+.equipment-amenity .equipment-section__container-01 .equipment-section__item .photo{
+    margin-bottom: 20px;
+}
+
+
+.equipment-amenity .equipment-section__container-01 .equipment-section__item .equipment-section__item__ttl{
+    margin-bottom: 10px;
+}
+
+
+
+.equipment-amenity .equipment-section__container.netservice{
+    margin-top: 0;
+}
+
+.equipment-amenity .equipment-section__container-01 .banner_wrap{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.equipment-amenity .equipment-section__container-01 .amenity_banner_con.harf{
+    width: 48%;
+    margin-bottom: 60px;
+}
+
+
+.equipment-amenity .equipment-section__container-01 .amenity_banner_con{
+    display: flex;
+    justify-content: space-between;
+}
+
+.equipment-amenity .equipment-section__container-01 .amenity_banner_con .left{
+    width: calc((100% - 60px) / 3 * 2 + 30px);
+}
+.equipment-amenity .equipment-section__container-01 .amenity_banner_con .right{
+    width: calc((100% - 60px) / 3 );
+}
+
+.equipment-amenity .equipment-section__container-01 .amenity_banner_con.harf .left{
+    width: 43%;
+    position: relative;
+}
+.equipment-amenity .equipment-section__container-01 .amenity_banner_con.harf .right{
+    width: 53%;
+}
+
+
+
+.equipment-amenity .equipment-section__container-01 p.text,
+.equipment-security .equipment-section__container-01 p.text{
+    font-size: 12px;
+    line-height: 1.5;
+    letter-spacing: 0.1em;
+}
+
+.equipment-amenity .equipment-section__container-01 p.text span,
+.equipment-security .equipment-section__container-01 p.text span{
+    display: block;
+    margin-top: 1em;
+    font-size: 10px;
+}
+
+
+/*--- レスポンシブ ---------------------------------------------------*/
+
+
+@media screen and (max-width:1000px) {
+    
+.equipment-amenity .equipment-section__container-01 .amenity_banner_con{
+    flex-direction: column;
+}
+    
+.equipment-amenity .equipment-section__container-01 .amenity_banner_con.harf{
+    flex-direction:row;
+}    
+    
+.equipment-amenity .equipment-section__container-01 .amenity_banner_con .left,
+.equipment-amenity .equipment-section__container-01 .amenity_banner_con .right{
+    width: 100%;
+    margin-bottom: 10px;
+}    
+    
+}
+
+
+
+
+@media screen and (max-width:640px) {
+    .equipment-amenity .equipment-section__container-01 .equipment-section__item {
+        justify-content: space-between;
+        width: calc(50% - 10px);
+        margin-bottom: 0;
+    }
+
+    
+    .equipment-amenity .equipment-section__container-01 .equipment-section__item:first-child {
+        margin-bottom: 30px;
+    }
+        
+    .equipment-amenity .equipment-section__container-02 {
+        margin-top: 30px;
+    }
+    
+
+.equipment-amenity .equipment-section__container-01 .amenity_banner_con.harf{
+    width: 100%;
+    margin-bottom: 30px;
+}    
+    
+    
+
+}
+
+/*### amenity end ###################################################*/
+
+
+/*### security start ###################################################*/
+
+.equipment-security {
+
+}
+
+
+
+.equipment-security .equipment-section__item__ttl.seculio_ttl{
+    margin-bottom: 20px;
+    font-size: 20px;
+    letter-spacing: 0.00rem;
+    line-height: 26px;
+    font-weight: 500;
+}
+
+
+.equipment-security .equipment-section__container.securitylevel{
+    margin-top: 0;
+}
+
+
+
+.equipment-security .equipment-section__container-01 .gray {
+        background-color: #f2f2f3;
+}
+
+.equipment-security .equipment-section__container-01 .gray ul {
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+
+
+.equipment-security .equipment-section__container-01 .equipment-section__block {
+    width: 100%;
+    background-color: inherit;
+}
+
+
+.equipment-security .equipment-section__container-01 .equipment-section__item {
+    width: calc((100% - 60px) / 3);
+    margin-bottom: 30px;
+    margin-left: 30px;
+}
+
+.equipment-security .equipment-section__container-01 .equipment-section__item:nth-child(3n+1) {
+    margin-left: 0;
+}
+
+.equipment-security .equipment-section__container-01 .equipment-section__item .photo{
+    margin-bottom: 20px;
+}
+
+.equipment-security .equipment-section__container-01 .equipment-section__item .equipment-section__item__ttl{
+    margin-bottom: 10px;
+}
+
+
+.equipment-security .equipment-section__container-01 .security_banner_con .photo{
+    margin-bottom: 10px;
+}
+
+.equipment-security .equipment-section__container-01 .security_banner_con .equipment-section__item__ttl{
+    margin-bottom: 10px;
+}
+
+.equipment-security .equipment-section__container-01 .seculio_banner_con{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    border: 1px solid #333;
+        background-color: #ffffff;
+}
+
+.equipment-security .equipment-section__container-01 .seculio_banner_con .left{
+    width: 38%;
+    padding: 20px;
+    background-color: #f2f2f3;
+}
+
+
+.equipment-security .equipment-section__container-01 .seculio_banner_con .left h5{
+    text-align: center;
+    padding: 0 15%;
+    margin-bottom: 10px;
+    line-height: 1.0;
+}
+
+.equipment-security .equipment-section__container-01 .seculio_banner_con .left p{
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1.8;
+    letter-spacing: 0.1em;
+}
+
+.equipment-security .equipment-section__container-01 .seculio_banner_con .right{
+    width: 58%;
+}
+
+.equipment-security .equipment-section__container-01 .seculio_banner_con .right p{
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+.equipment-security .equipment-section__container-01 .seculio_banner_con .right p span{
+    margin-top: 10px;
+    font-size: 10px;
+}
+
+
+.equipment-security .equipment-section__container-01 .seculio_banner_con .left h5{
+    text-align: center;
+    padding: 0 15%;
+    margin-bottom: 10px;
+    line-height: 1.0;
+}
+
+
+
+.equipment-security .equipment-section__container-01 .security_level_list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px 30px;
+}
+
+
+
+
+.equipment-security .equipment-section__container-01 .equipment-section__item__ttl.red{
+    color: #932e40;
+    border-bottom: 1px solid #004077;
+}
+
+.equipment-security .equipment-section__container-01 .equipment-section__item__ttl.blue{
+    color: #004077;
+    border-bottom: 1px solid #004077;
+}
+
+.equipment-security .equipment-section__container-01 .equipment-section__item__ttl.green{
+    color: #006428;
+    border-bottom: 1px solid #004077;
+}
+
+.equipment-security .equipment-section__container-01 .equipment-section__item__ttl.security_level span{
+    font-size: 13px;
+    margin-right: 1em;
+}
+
+
+.equipment-security .equipment-section__container-01 p.text span{
+    color: #666;
+    display: block;
+    margin-top: 1em;
+    font-size: 10px;
+}
+
+
+
+
+/*--- レスポンシブ ---------------------------------------------------*/
+
+@media screen and (max-width:640px) {
+    .equipment-amenity .equipment-section__container-01 .equipment-section__item {
+        justify-content: space-between;
+        width: calc(50% - 10px);
+    }
+
+    
+    .equipment-amenity .equipment-section__container-01 .equipment-section__item:first-child {
+        width: 100%;
+    }
+    
+    .equipment-amenity .equipment-section__container-02 {
+        margin-top: 30px;
+    }
+    
+    
+.equipment-security .equipment-section__container-01 .seculio_banner_con{
+    flex-direction: column;
+    padding: 20px;
+}    
+
+.equipment-security .equipment-section__container-01 .seculio_banner_con .left,
+.equipment-security .equipment-section__container-01 .seculio_banner_con .right{
+    width: 100%;
+}    
+    
+.equipment-security .equipment-section__container-01 .seculio_banner_con .left{
+    margin-bottom: 20px;
+}        
+
+.equipment-security .equipment-section__container-01 .seculio_banner_con .left p {
+    font-size: 12px;
+}   
+    
+.equipment-security .equipment-section__container-01 .seculio_banner_con .right p{
+    font-size: 10px;
+    text-align: left;
+}    
+    
+    
+.equipment-security .equipment-section__container-01 .equipment-section__item {
+    width: calc((100% - 20px) / 2);
+    margin-bottom: 30px;
+    margin-left: 20px;
+}  
+
+
+.equipment-security .equipment-section__container-01 .equipment-section__item:nth-child(3n+1){
+    margin-left: 10px;
+}    
+    
+.equipment-security .equipment-section__container-01 .equipment-section__item:nth-child(2n+1){
+    margin-left: 0;
+}    
+    
+    
+.equipment-security .equipment-section__container-01 .equipment-section__item:last-child{
+    margin-bottom: 0;
+}    
+        
+    
+
+.equipment-security .equipment-section__container-01 .equipment-section__item.security {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-left: 0;
+    
+}
+    
+.equipment-security .equipment-section__container-01 .equipment-section__item.security h5{
+        width: 100%;
+ }    
+    
+.equipment-security .equipment-section__container-01 .equipment-section__item.security .photo,
+.equipment-security .equipment-section__container-01 .equipment-section__item.security .text{
+        width: 48%;
+ }
+      
+    
+
+.equipment-security .equipment-section__container-01 .gray {
+    margin-top: 60px;
+}    
+    
+.equipment-security .equipment-section__container-01 .gray ul {
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 10px 10px 30px;
+}    
+    
+    
+}
+
+/*### security end ###################################################*/
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:800px) {
+
+}
+
+
+
+@media screen and (max-width:640px) {
+
+}
+
+
+@media screen and (max-width:414px) {
+ 
+}
+@media screen and (max-width:360px) {
+ 
+}
+
+
