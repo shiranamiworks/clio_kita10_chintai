@@ -1,0 +1,64 @@
+@charset "UTF-8";
+/* Loading背景画面設定　*/
+
+#splash {
+    /*fixedで全面に固定*/
+	position: fixed;
+	z-index: 9999;
+	width: 100%;
+	height: 100%;
+	background:#000;
+	text-align:center;
+	color:#333;
+}
+
+/* Loadingバー中央配置　*/
+#splash_text {
+	position: absolute;
+	top: 57%;
+	left: 50%;
+    z-index: 999;
+	width: 100%;
+	transform: translate(-50%, -50%);
+	color: #fff;
+}
+
+.splash_logo{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    z-index: 999;
+    transform: translate(-50%, -50%);
+    width:150px;
+    margin: 0 auto;
+animation-name: fadeInAnime;
+ animation-iteration-count: infinite;/*無限ループ*/
+animation-duration:5s;
+animation-fill-mode:forwards;
+opacity: 0;
+}
+
+@keyframes fadeInAnime{
+  0% {
+    opacity: 0;
+  }
+    
+    35% {
+    opacity: 1;
+  }
+    
+    65% {
+    opacity: 1;
+  }    
+
+  100% {
+    opacity: 0;
+  }
+}
+
+
+
+/*IE11対策用バーの線の高さ※対応しなければ削除してください*/
+#splash_text svg{
+    height: 2px;
+}

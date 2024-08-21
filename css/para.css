@@ -1,0 +1,450 @@
+@charset "UTF-8";
+
+.sec-vision2{
+        font-family: 'Shippori Mincho', Garamond , "Times New Roman" , "游明朝" , "Yu Mincho" , "游明朝体" , "YuMincho" , "ヒラギノ明朝 Pro W3" , "Hiragino Mincho Pro" , "HiraMinProN-W3" , "HGS明朝E" , "ＭＳ Ｐ明朝" , "MS PMincho" , serif;
+}
+
+.sec-vision_con{
+    position: relative;
+    height: 580vh;
+    scroll-snap-type: y mandatory;
+}
+
+
+.sec-vision2 .video{
+  position: sticky;
+  top: 0;
+  left: 0;
+  height: auto;
+  background: #fff;
+z-index: -1;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.sec-vision2 .video .video-musk{
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgb(0,0,0,0.5);
+    z-index: 1;
+}
+
+.sec-vision2 .video video{
+    height: 100vh;
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.sec-vision_con .vision-text{
+    min-height: 80vh;
+    margin-bottom: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+	scroll-snap-align: start;
+}
+
+
+.sec-vision_con .vision-text h3{
+    text-align: center;
+    color: #fff;
+    font-size: 2.4em;
+    letter-spacing: 0.1em;
+    margin: 20px 0;
+}
+
+
+.sec-vision_con .vision-text h3 img{
+    width: 50vw;
+    max-width: 600px;
+}    
+    
+
+.sec-vision_con .vision-text p.vision_read{
+    text-align: center;
+    color: #fff;
+    font-size: 1.3em;
+    font-size: clamp(14px, 1.5vw, 20px);
+    letter-spacing: 0.1em;
+    line-height: 2.0;
+    width: 90%;
+    margin: 20px auto;
+}
+
+
+.sec-vision_con .vision-photo p.caption{
+    color: #fff;
+    font-size: 10px;
+    letter-spacing: 0.1em;
+    margin: 20px 0;
+}
+
+
+@media (max-width: 1000px) {
+.sec-vision_con .vision-text h3{
+    font-size: 3.0em;
+    letter-spacing: 0.1em;
+}
+    
+.sec-vision_con .vision-text h3 img{
+    max-width: 90vw;
+        width: 300px;
+}    
+        
+    
+.sec-vision_con .vision-text{
+    margin-bottom: 0;
+}    
+
+    
+}
+
+@media (max-width: 640px) {
+    
+.sec-vision_con .vision-text h3{
+    font-size: 1.5em;
+    letter-spacing: 0.1em;
+    /*margin: 0 5%;*/
+}
+    
+        
+.sec-vision_con .vision-text.vision-end{
+    align-items:flex-start;
+}
+    
+    
+.sec-vision_con .vision-text p.caption{
+    color: #fff;
+    width: 90%;
+    margin: 0 auto;
+    font-size: 10px;
+}    
+    
+    
+}
+
+
+
+.vision-text h3 span.smoothText {
+  overflow: hidden;
+  display: block;
+}
+
+/* アニメーションで傾斜がついている文字列を水平に戻す*/
+.vision-text h3 span.smoothTextTrigger{
+  transition: 1.0s ease-in-out;
+  transform: translate3d(0,100%,0) skewY(12deg);
+  transform-origin: left;
+  display: block;
+}
+.vision-text h3 span.smoothTextTrigger.smoothTextAppear{
+    transform: translate3d(0,0,0) skewY(0);
+}
+
+.vision-text .vision_read span.smoothTextTrigger{
+  transition: 1.0s ease-in-out;
+  transform: translate3d(0,100%,0) skewY(0deg);
+  transform-origin: left;
+  display: block;
+}
+.vision-text .vision_read span.smoothTextTrigger.smoothTextAppear{
+    transform: translate3d(0,0,0) skewY(0);
+}
+
+
+.sec-vision_con .vision-photo{
+    min-height: 80vh;
+    margin-bottom: 20vh;
+    display: flex;
+    justify-content:center;
+}
+
+.vision-photo .photo_con{
+    min-height: 100vh;
+    max-width: 1280px;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+.vision-photo .photo_con .photo{
+    position: absolute;
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+}
+
+.vision-photo .photo_con .photo:nth-child(1){
+    top: 53%;
+    right: 0;
+    z-index: 1;
+    font-size: 1.0em;
+    line-height: 1.8;
+    color: #fff;    
+}
+
+.vision-photo .photo_con .photo:nth-child(2){
+    left: 25%;
+    top: 30%;
+    z-index: 3;
+}
+
+
+.vision-photo .photo_con .photo:nth-child(3){
+    top: 30%;
+    left: 0;
+    z-index: 2;
+}
+
+.vision-photo .photo_con .photo:nth-child(3) .cap{
+    right: inherit;
+    left: 0;
+}
+
+
+
+.vision-photo .photo_con .photo:nth-child(4){
+    left: 0;
+    top: 20%;
+    z-index: 4;
+}
+
+@media (max-width: 1280px) {
+    
+.sec-vision_con .vision-text p.vision_read{
+    /*font-size: 1.5em;*/
+}    
+    .vision-photo .photo_con .photo:nth-child(1){
+    top: 55%;
+    right: 10%;
+    width: 45vw;
+    }
+    
+.vision-photo .photo_con .photo:nth-child(2) {
+    left: 30%;
+    top: 30%;
+    z-index: 3;
+}
+    
+    .vision-photo .photo_con .photo:nth-child(3){
+    left: 5%;
+    width: 30vw;
+}
+
+.vision-photo .photo_con .photo:nth-child(4){
+    left: 5%;
+}  
+    
+    
+}
+
+
+@media (max-width: 1000px) {
+    
+.sec-vision_con {
+    max-height: 550vh;
+    margin-bottom: 80px;
+}       
+
+.vision-photo .photo_con .photo:nth-child(1){
+    top: 55%;
+    right: 5%;
+    width: 45vw;
+    }
+
+.vision-photo .photo_con .photo:nth-child(2){
+    top: 40%;
+    left: inherit;
+    right: 5%;
+    width: 50vw;
+}
+
+
+.vision-photo .photo_con .photo:nth-child(3){
+    left: 5%;
+    width: 40vw;
+}
+
+.vision-photo .photo_con .photo:nth-child(4){
+    top: 40%;
+    left: 5%;
+}  
+    
+}
+
+@media (max-width: 640px) {
+    
+
+.sec-vision_con {
+    height: inherit;
+    max-height: 580vh;
+    margin-bottom: 80px;
+}    
+    
+.sec-vision_con .vision-photo{
+    width: 100%;
+}    
+    
+.sec-vision_con .vision-text{
+    min-height: 80vh;
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    scroll-snap-align: start;
+    /* width: 100%; */ 
+    }    
+ 
+.sec-vision_con .vision-text.sp_harf{
+    min-height: 60vh;
+    }      
+    
+
+.vision-photo .photo_con{
+    min-height: 100vh;
+    width: 90vw;
+    box-sizing: border-box;
+    flex-direction: column;
+    align-items: unset;
+}
+
+.vision-photo .photo_con .photo{
+    position: relative;
+    display: inline-block;
+}
+    
+        
+    
+.vision-photo .photo_con .photo:nth-child(1){
+    top: inherit;
+    left: 0;
+    right: inherit;
+    min-width: inherit;
+    width: 100%;
+    text-align: center;
+}
+
+.vision-photo .photo_con .photo:nth-child(2){
+    top: 100px;
+    left: inherit;
+    right: -20%;
+    min-width: inherit;
+    width: 80%;
+}
+
+.vision-photo .photo_con .photo:nth-child(3){
+    top: 75px;
+    left: 0;
+    min-width: inherit;
+    width: 55%;
+    z-index: 4;
+}
+
+.vision-photo .photo_con .photo:nth-child(4){
+    top: 100px;
+    left: 0;
+    min-width: inherit;
+    width: 100%;
+} 
+
+.vision-photo .photo_con .photo:nth-child(4) img{
+    width: 100%;
+}    
+    
+    
+
+}
+
+
+
+
+
+/* フェードアニメーション */
+
+
+.fadein_bg {
+    opacity : 0.0;
+    transform : translate(0, 0);
+    transition : all 5000ms;
+    }
+
+.fadein {
+    opacity : 0.0;
+    transform : translate(0, 0);
+    transition : all 1000ms;
+    }
+
+.fadein_bg.scrollin,
+.fadein.scrollin {
+    opacity : 1;
+    transform : translate(0, 0);
+    }
+
+.order-effect > .fadein:nth-of-type(2) {
+    -moz-transition-delay:300ms;
+    -webkit-transition-delay:300ms;
+    -o-transition-delay:300ms;
+    -ms-transition-delay:300ms;
+    }
+
+.order-effect > .fadein:nth-of-type(3) {
+    -moz-transition-delay:600ms;
+    -webkit-transition-delay:600ms;
+    -o-transition-delay:600ms;
+    -ms-transition-delay:600ms;
+    }
+
+.order-effect > .fadein:nth-of-type(4) {
+    -moz-transition-delay:900ms;
+    -webkit-transition-delay:900ms;
+    -o-transition-delay:900ms;
+    -ms-transition-delay:900ms;
+    }
+
+.order-effect > .fadein:nth-of-type(5) {
+    -moz-transition-delay:1200ms;
+    -webkit-transition-delay:1200ms;
+    -o-transition-delay:1200ms;
+    -ms-transition-delay:1200ms;
+    }
+
+.order-effect > .fadein:nth-of-type(6) {
+    -moz-transition-delay:1500ms;
+    -webkit-transition-delay:1500ms;
+    -o-transition-delay:1500ms;
+    -ms-transition-delay:1500ms;
+    }
+
+
+.order-effect > .fadein:nth-of-type(7) {
+    -moz-transition-delay:1800ms;
+    -webkit-transition-delay:1800ms;
+    -o-transition-delay:1800ms;
+    -ms-transition-delay:1800ms;
+    }
+
+.order-effect > .fadein:nth-of-type(8) {
+    -moz-transition-delay:2100ms;
+    -webkit-transition-delay:2100ms;
+    -o-transition-delay:2100ms;
+    -ms-transition-delay:2100ms;
+    }
+
+.order-effect > .fadein:nth-of-type(9) {
+    -moz-transition-delay:2400ms;
+    -webkit-transition-delay:2400ms;
+    -o-transition-delay:2400ms;
+    -ms-transition-delay:2400ms;
+    }
+
+
+

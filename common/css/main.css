@@ -1,0 +1,762 @@
+@charset "utf-8";
+/**
+ * style 
+ * (c) FOURDIGIT Inc.
+ *
+ * 1. import
+ * 2. html, body
+ * 3. HTMLtag, siteCommonClass
+ * 4. Layout
+ * 5. EachPageStyle
+ *
+ */
+/**
+ * 1. import
+ */
+@import "import/reset.css";
+@import "import/util.css";
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+/* @import "../ext_{bukkenID}/{bukkenID}.css"; */
+
+@media only screen and (max-width:1000px){
+}
+
+@media only screen and (max-width:640px){
+}
+
+/**
+ * 2. html, body
+ */
+	body {
+		background-color: #fff;
+		background-image: url(../imgs/space.gif);
+		background-repeat: repeat-x;
+		background-position: center top;
+    overflow-x: hidden;
+	}
+	.page {
+		color: #333333;
+		font-size: 14px;
+		line-height: 1.5;
+		letter-spacing: 0.1em;
+		font-family: "Helvetica Neue" , Helvetica , Arial , Verdana , Roboto , "游ゴシック" , "Yu Gothic" , "游ゴシック体" , "YuGothic" , "ヒラギノ角ゴ Pro W3" , "Hiragino Kaku Gothic Pro" , "Meiryo UI" , "メイリオ" , Meiryo , "ＭＳ Ｐゴシック" , "MS PGothic" , sans-serif;
+	}
+
+/* @media only screen and (max-width:1000px){
+	.page {
+		padding-top: 172px;
+	}
+}
+@media only screen and (max-width:640px){
+	.page {
+		padding-top: 152px;
+	}
+} */
+	
+.serif, #gHeader, .nav_lowerpage, #contentsWrap, .top-cv-btn, .footerarea {
+  font-family: 'Shippori Mincho', Garamond , "Times New Roman" , "游明朝" , "Yu Mincho" , "游明朝体" , "YuMincho" , "ヒラギノ明朝 Pro W3" , "Hiragino Mincho Pro" , "HiraMinProN-W3" , "HGS明朝E" , "ＭＳ Ｐ明朝" , "MS PMincho" , serif;
+}
+.EBgaramond {
+  font-family: 'EB Garamond',"游明朝" , "Yu Mincho" , "游明朝体" , "YuMincho" , serif;
+}
+
+.CormorantGaramond {
+  font-family: 'Cormorant Garamond',"游明朝" , "Yu Mincho" , "游明朝体" , "YuMincho" , serif;
+}
+
+#gHeader, .nav_lowerpage, #contentsWrap, .footerarea {
+  font-weight: 400;
+  width: 100%;
+  font-size: 62.5%;
+  font-smoothing: antialiased;
+  font-variant-numeric: tabular-nums;
+  -webkit-font-smoothing: antialiased;
+  -webkit-font-feature-settings: "palt";
+  font-feature-settings: "palt";
+  overflow: translateX(-50%);
+}
+#contentsWrap {
+  overflow: hidden;
+}
+
+@media screen and (max-width: 640px) {
+  #gHeader, #contentsWrap, .footerarea, .nav_lowerpage { font-size: calc(100vw / 50);}
+}
+
+.inner {
+  width: 96%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 768px) {
+  .inner {
+    width: 90%;
+  }  
+}
+
+a, a:visited{ color: #333333; text-decoration:none; outline:none;}
+a{
+  box-sizing: border-box;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all  0.3s ease;
+}
+
+/**
+ * 3. HTMLtag, siteCommonClass
+ */
+/* anchor */
+	/* a {
+		background-color: transparent;
+		background-image: none;
+		background-repeat: no-repeat;
+		background-position: top left;
+		color: #0000ff;
+		text-decoration: none;
+	}
+	a:visited {}
+	a:hover {
+		color: #ff0000;
+		background-position: bottom right;
+		text-decoration: underline;
+	}
+	a:active {} */
+
+/* cap */
+	/* .cap,
+	.caption {
+		background: none;
+		color: #666666;
+		font-size: 10px;
+		line-height: 15px;
+	}
+	.cap {
+		padding-top: 5px;
+	} */
+	
+  .pc {display: block;}
+  .tb{ display: none !important;}
+  .sp {display: none !important;}
+  .pctb {display: block !important;}
+  .tbsp {display: none !important;}
+  @media screen and (max-width: 1000px) {
+    .pc {display: none !important;}
+    .tb{ display: block !important;}
+    .sp {display: none !important;}
+    .pctb {display: block !important;}
+    .tbsp {display: block !important;}  
+  }
+  @media screen and (max-width: 640px) {
+    .pc {display: none !important;}
+    .tb{ display: none !important;}
+    .sp {display: block !important;}
+    .pctb {display: none !important;}
+    .tbsp {display: block !important;}  
+  }
+
+/*--- PCで電話リンク無効 ---*/
+/* @media(min-width: 640px){
+  a[href^="tel:"]{
+    pointer-events: none;
+  }
+} */
+
+/*-------------------------------------------------------------------------------
+   color
+-------------------------------------------------------------------------------*/
+.primary {color: #92214D}
+.secondary{color: #808075;}
+.tertiary{color: #3E381F;}
+.bg-color{background: #CCC6C2;}
+
+	
+/**
+ * ------------------------------ header footer ---------------------------------------------------------*/
+ 
+#gHeader {
+	width: 100%;
+	/* height: 95px; */
+	box-sizing: border-box;
+}
+ 
+#gHeader .gHeaderBody {
+	position: relative; 
+}
+
+#gHeader .siteTitle2 {
+	display: none;
+}
+ 
+#gHeader .siteTitle {
+	padding: 45px 0 0 60px;
+}
+#gHeader .siteTitle img {
+	margin-right: 10px;
+}
+/* #gHeader .shldrTxt {
+	position: absolute;
+	top: 15px;
+	right: 60px;
+	font-size: 10px;
+	line-height: 1.2;
+}
+ 
+#gHeader #pNav {
+	position: absolute;
+	right: 60px;
+	top: 40px;
+}
+#gHeader #pNav li a span {
+	display: none; 
+}
+#gHeader #FD_SP_MENU {
+	display: none; 
+}
+
+#gHeader #pNav li {
+	float: left;
+	margin-left: 1px;
+}
+
+#gHeader #pNav li.pNavGrp {
+	text-align: right;
+	padding-right: 9px;
+}
+
+#gHeader #pNav li.pNavGrp a {
+	display: block;
+	height: 15px;
+	padding-top: 5px;
+}
+
+#gHeader #pNav li.pNavGrp img.topBtn {
+	display: none;	
+} */
+
+/*------------------ header cv area ボタンオーバーで半透明を使用しない場合は削除 ---------------*/
+/* #gHeader #pNav li.pNavReq a img,
+#gHeader #pNav li.pNavRes a img {
+	transition: all 0.3s;
+}
+
+#gHeader #pNav li.pNavReq a:hover img,
+#gHeader #pNav li.pNavRes a:hover img {
+	opacity: 0.7;
+} */
+/*-------------------------------------------------------------------------------*/
+ 
+/* @media only screen and (max-width:1000px){
+	#gHeader {
+		height: 172px;
+		overflow: hidden;
+		transition: all 0.3s;
+		position: fixed;
+		top: 0;
+		left: 0;
+	} */
+
+	/* #gHeader.fd_fixed {
+		top: -90px;
+		left: 0;
+	}
+	#gHeader .siteTitle {
+		padding: 20px 10px 0 10px;
+	}
+	#gHeader .siteTitle img {
+		display: block;
+		margin: 0 auto 10px auto;
+		max-width: 100%;
+		height: auto;
+	}
+	#gHeader .shldrTxt {
+		display: none;
+	}
+	#gHeader #pNav {
+		position: static;
+	}
+	#gHeader #pNav li img {
+		display: none;
+	}
+	#gHeader #pNav li a span {
+		display: inline-block;
+		text-indent: -9999px; */
+		/* -------------- TB時のアイコンサイズ1（2もアリ） ----------------*/
+		/* height: 60px;
+	}
+	#gHeader #FD_SP_MENU {
+		display: block;
+	}
+	#gHeader #pNav li {
+		width: 20%;
+		box-sizing: border-box;
+		text-align: center;
+		margin: 0; */
+		/* sp menu border color ------------------*/
+		/* border: 1px solid #CBCBCB;
+		border-width: 1px 0 1px 1px;
+	}
+	#gHeader #pNav li.pNavGrp {
+		padding-right: 0;
+		text-align: center;	
+	}
+	#gHeader #pNav li:first-child {
+		border-left: none;	
+	}
+	#gHeader #pNav li div.outline {
+		display: none;
+	}
+	#gHeader #pNav li a {
+		display: block;
+		height: auto !important;
+		padding: 10px 0 !important;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: 60px 60px; */
+		/* sp menu bg color ------------------*/
+		/* background-color: #FFF;
+		transition: all 0.3s;
+	}
+	#gHeader #pNav li a:hover,
+	#gHeader #pNav li.pNavMenu.on a { */
+		/* sp menu bg hover color ------------------*/
+		/* background-color: #18519C;
+	} */
+	
+
+	
+	/* sp menu image --------------------------------*/
+	/* #gHeader #pNav li.pNavGrp a {
+		background-image: url(../imgs/hdr-sp-map.png);
+	}
+	#gHeader #pNav li.pNavGrp a:hover {
+		background-image: url(../imgs/hdr-sp-map_ov.png);
+	}
+	#gHeader #pNav li.pNavReq a {
+		background-image: url(../imgs/hdr-sp-request.png);
+	}
+	#gHeader #pNav li.pNavReq a:hover {
+		background-image: url(../imgs/hdr-sp-request_ov.png);
+	}
+	#gHeader #pNav li.pNavRes a {
+		background-image: url(../imgs/hdr-sp-reserve.png);
+	}
+	#gHeader #pNav li.pNavRes a:hover {
+		background-image: url(../imgs/hdr-sp-reserve_ov.png);
+	}
+	#gHeader #pNav li.pNavTel a {
+		background-image: url(../imgs/hdr-sp-tell.png);
+	}
+	#gHeader #pNav li.pNavTel a:hover {
+		background-image: url(../imgs/hdr-sp-tell_ov.png);
+	}
+	#gHeader #pNav li.pNavMenu a {
+		background-image: url(../imgs/hdr-sp-menu.png);
+	}
+	#gHeader #pNav li.pNavMenu a:hover {
+		background-image: url(../imgs/hdr-sp-menu_ov.png);
+	}
+	#gHeader #pNav li.pNavMenu.on a {
+		background-image: url(../imgs/hdr-sp-close_ov.png);
+	}
+} */
+
+/* @media only screen and (max-width:640px){
+	#gHeader {
+		height: 152px;
+	} */
+	
+	/* #gHeader #pNav li a span {
+		display: inline-block;
+		text-indent: -9999px; */
+		/* -------------- SP時のアイコンサイズ1（2もアリ） ----------------*/
+		/* height: 40px;
+	}
+	#gHeader #pNav li a { */
+		/* -------------- SP時のアイコンサイズ2 ----------------*/
+		/* background-size: 40px 40px;
+	}
+	
+	#gHeader #pNav li a:hover {
+		background-color: #FFF;
+	}
+	
+	#gHeader #pNav li.pNavGrp a,
+	#gHeader #pNav li.pNavGrp a:hover {
+		background-image: url(../imgs/hdr-sp-map.png);
+	}
+	#gHeader #pNav li.pNavReq a,
+	#gHeader #pNav li.pNavReq a:hover {
+		background-image: url(../imgs/hdr-sp-request.png);
+	}
+	#gHeader #pNav li.pNavRes a,
+	#gHeader #pNav li.pNavRes a:hover {
+		background-image: url(../imgs/hdr-sp-reserve.png);
+	}
+	#gHeader #pNav li.pNavTel a,
+	#gHeader #pNav li.pNavTel a:hover {
+		background-image: url(../imgs/hdr-sp-tell.png);
+	}
+	#gHeader #pNav li.pNavMenu a,
+	#gHeader #pNav li.pNavMenu a:hover {
+		background-image: url(../imgs/hdr-sp-menu.png);
+	}
+	#gHeader #pNav li.pNavMenu.on a {
+		background-image: url(../imgs/hdr-sp-close_ov.png);
+	}
+} */
+
+/*-------------- footer ---------------*/
+
+#gFooter {
+	background-color: #FFF;
+}
+#gFooter img{
+    width: inherit;
+}
+
+
+#gFooter .gFooterBody {
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+/*メニュー用マージン*/
+#gFooter .gFooterBody {
+	margin: 0 auto 0px;
+}
+
+
+#gFooter .meiwaLink {
+	margin-top: 20px;
+	margin-bottom: 35px;
+	font-size: 11px;
+	text-align: center;
+}
+
+#gFooter .meiwaLink li {
+	box-sizing: border-box;
+	border-left: 1px solid #E1E1E1;
+	display: inline-block;
+	width: 33.333333%;
+}
+#gFooter .meiwaLink li:first-child {
+	border-left: none;
+}
+
+#gFooter .meiwaLink a {
+	display: block;
+	color: #333;
+	text-decoration: none;
+	padding: 14px 10px;
+}
+#gFooter .meiwaLink a:hover span {
+	text-decoration: underline;
+}
+
+#gFooter .meiwaLink a span {
+	background-image: url(../imgs/ftr-link-arr.png);
+	background-repeat: no-repeat;
+	background-position: left center;
+	padding-left: 20px;
+}
+
+#gFooter .ftrCompanyLink {
+	position: relative;
+	margin: 0 auto 15px auto;
+	padding: 15px 0;
+}
+#gFooter .ftrCompanyLink .companyLink {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+#gFooter .ftrCompanyLink .companyLink li {
+	float: left;
+	margin-left: 20px;
+}
+
+#gFooter .ftrCopy {
+	margin: 0 auto;
+	padding: 20px 0;
+	text-align: right;
+}
+
+@media only screen and (max-width:1000px){
+	
+	#gFooter img {
+		max-width: 100%;
+	}
+	
+	#gFooter .meiwaLink {
+		margin-top: 0;
+		border-top: 1px solid #E1E1E1;
+		margin-bottom: 0;
+	}
+	#gFooter .meiwaLink li {
+		border: 1px solid #E1E1E1;
+		border-width: 0 0 1px 0;
+		width: 100%;
+	}
+	#gFooter .ftrCompanyLink {
+		text-align: center;
+		padding: 20px 10px 0 10px;
+		border-bottom: 1px solid #E1E1E1;
+		margin-bottom: 0;
+	}
+	#gFooter .ftrCompanyLink .companyLink {
+		position: static;
+		margin-top: 20px;
+	}
+	#gFooter .ftrCompanyLink .companyLink li {
+		float: none;
+		margin: 10px 0;
+	}
+	
+	#gFooter .ftrCopy {
+		text-align: center;
+	}
+}
+
+ 
+ /*------------------------------------------ header　ここまで ----------------------------------------------*/	
+
+
+
+
+
+/**
+ * ------------------------------ gNav ---------------------------------------------------------*/
+
+#gNav {
+	background-color: #CCC;
+}
+
+#gNavSP {
+	display: none;
+}
+
+@media only screen and (max-width:1000px){
+	#gNav {
+		display: none;
+		position: fixed;
+		top: 172px;
+		z-index: 8000;
+		width: 100%;
+	}
+	#gNav.fd_fixed {
+		top: 80px;
+	}
+
+	#gNavSP {
+		display: block;
+		box-sizing: border-box;
+		padding: 20px;
+		text-align: center;
+	}
+	
+	#gNavSP a {
+		display: block;
+		padding: 16px 10px;
+	}
+	#gNavSP .gNavSPcv a span {
+		display: inline-block;
+		line-height: 50px;
+		background-repeat: no-repeat;
+		background-position: left;
+		padding-left: 80px;
+		font-size: 24px;
+		color: #FFF;
+	}
+	
+	#gNavSP .gNavSPcv li {
+		margin-bottom: 20px;
+	}
+	
+	#gNavSP .gNavSPcv li a {
+		transition: all 0.3s;
+	}
+	
+	#gNavSP .gNavSPcv li a:hover {
+		opacity: 0.7;
+	}
+	
+	#gNavSP .gNavSPcv li.request a {
+		background-color: #18519C; /* SP時 gNav内 CV資料請求ボタンカラー */
+	}
+
+	#gNavSP .gNavSPcv li.reserve a {
+		background-color: #1D9B94; /* SP時 gNav内 CV来場予約ボタンカラー */
+	}
+	
+	#gNavSP .gNavSPcv li.request a span {
+		background-image: url(../imgs/gNav-sp-request-icn.png);	
+	}
+
+	#gNavSP .gNavSPcv li.reserve a span {
+		background-image: url(../imgs/gNav-sp-reserve-icn.png);	
+	}
+	
+	#gNavSP #gNavClose a {
+		display: block;
+		box-sizing: border-box;
+		border: 1px solid #333;
+		background-color: #FFF;
+	}
+
+	#gNavSP #gNavClose a span {
+		display: inline-block;
+		line-height: 50px;
+		background-repeat: no-repeat;
+		background-position: left;
+		padding-left: 30px;
+		font-size: 24px;
+		color: #333;
+		background-image: url(../imgs/gNav-close-icn.png);
+	}
+
+}
+
+@media only screen and (max-width:640px){
+	#gNav {
+		top: 152px;
+	}
+	#gNav.fd_fixed {
+		top: 60px;
+	}
+	#gNavSP {
+		padding: 20px 10px;
+	}
+	
+	#gNavSP .gNavSPcv a span {
+		line-height: 25px;
+		padding-left: 40px;
+		font-size: 14px;
+		background-size: auto 25px;
+	}
+	#gNavSP #gNavClose a span {
+		line-height: 25px;
+		padding-left: 30px;
+		font-size: 14px;
+		color: #333;
+		background-size: 15px auto;
+	}
+
+}
+
+
+ /*------------------------------------------ gNav　ここまで ----------------------------------------------*/	
+
+
+/**
+ * 4. Layout
+ */
+	body #container {
+		width: 100%;
+		box-sizing: border-box;
+		margin-right: auto;
+		margin-left: auto;
+		background-color: transparent;
+		background-image: url(../imgs/space.gif);
+		background-repeat: repeat-y;
+		background-position: center top;
+		text-align: left;
+	}
+	body #containerInner01 {
+		background-color: transparent;
+		background-image: url(../imgs/space.gif);
+		background-repeat: no-repeat;
+		background-position: center top;
+	}
+	body #containerInner02 {
+		background-color: transparent;
+		background-image: url(../imgs/space.gif);
+		background-repeat: no-repeat;
+		background-position: center bottom;
+	}
+
+
+/* fNav */
+	#fNav {
+		color: #666666;
+		font-size: 12px;
+		line-height: 18px;
+	}
+	#fNav li {
+		float: left;
+		letter-spacing: 1px;
+	}
+	#fNav a {
+		/*color: #003593;*/
+	}
+	#fNav a:hover {
+		/*color: #f60;*/
+	}
+	#fNav strong {
+		/*color: #003593;*/
+		font-weight: bold;
+	}
+	#fNav span {
+		/*color: #cccccc;*/
+	}
+	
+/* alt text to span */
+	img.toText {
+		
+	}
+	
+	span.altText {
+		display: none;	
+	}
+	
+	@media only screen and (max-width:640px){
+		
+		img.toText {
+			display: none;
+		}
+		
+		span.altText {
+			display: inline;
+		}
+	}
+
+/*-------------------------------------------------------------------------------
+   pageTop 
+-------------------------------------------------------------------------------*/
+  .pageTop {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 40px;
+    z-index: 100;
+}
+
+/*-------------------------------------------------------------------------------
+   caption 
+-------------------------------------------------------------------------------*/
+
+.cap{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+	z-index: 2;
+    background-color: rgba(0,0,0,0.80);
+    color: #fff;
+    letter-spacing: 0;
+    font-size: 10px;
+    text-align: center;
+    padding: 0.2em 0.5em 0.5em;
+    line-height: 1.2;
+}
+
+
+.cap02{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color: #000;
+    letter-spacing: 0;
+    font-size: 10px;
+    text-align: center;
+    line-height: 1.2;
+}
