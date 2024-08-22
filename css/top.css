@@ -367,17 +367,19 @@ overflow: hidden;
 .sec-information .txt-open {
   font-size: 2.8em;
   margin: 20px auto;
+  line-height: 2.0;
 }
 
 @media (max-width: 640px) {
   .sec-information .txt-open {
-  font-size: 2.0em;
+  font-size: 2.5em;
     margin: 30px auto 20px;
   }
 }
 .sec-information .entend-time {
   font-size: 3em;
-  margin: 40px auto;
+  line-height: 2.0;
+  margin: 10px auto 40px;
 }
 .sec-information .request-detail {
   margin: 40px auto;
@@ -463,6 +465,9 @@ overflow: hidden;
   border: 1px solid #253339;
   padding: 14px;
   width: 30%;
+}
+.sec-information .btn a .mini{
+  font-size: 65%;
 }
 .sec-information .btn a:hover {
   border: 1px solid #253339;

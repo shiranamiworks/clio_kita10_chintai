@@ -135,31 +135,29 @@ $("#ls_bnr a").attr("href", ls_url)
     <div class="fade-in fade-in-up">
       <p class="lead"></p>
       <h2 class="ttl CormorantGaramond">INFORMATION</h2>
-      <p class="link"><a href="https://www.youtube.com/watch?v=0m9-vNEI0fs" target="_blank" class="gtm_click_trg" id="view_movie_kengaku"><span>[安心見学動画公開]</span><br>
-        <span>ご案内時の感染予防対策について</span></a></p>
+      <!-- <p class="link"><a href="https://www.youtube.com/watch?v=0m9-vNEI0fs" target="_blank" class="gtm_click_trg" id="view_movie_kengaku"><span>[安心見学動画公開]</span><br>
+        <span>ご案内時の感染予防対策について</span></a></p> -->
       <div class="open"> 
-        <!--<p class="open-time">2023年<span class="num">1</span>月<span class="num">7</span>日(土)より</p>-->
-        <p class="txt-open"><span class="d-inline-block">「クリオ ライフスタイルサロン札幌」<br class="sp">
-          公開中</span></p>
-        <!--<p class="entend-time">来場予約受付中！</p>-->
-        <p class="reserve-time mt15"><span class="note d-block"><span class="num">事前案内会開催中</span>〈完全予約制〉</span><br>
-          ①10:00～&nbsp;②13：00～&nbsp;③16：00～&nbsp;④19：00～</p>
+        <p class="txt-open"><span class="d-inline-block">明和地所の分譲仕様賃貸レジデンス</span><br>------------For RENT------------</p>
+        <p class="entend-time">2024年11月竣工<br>入居申込受付中</p>
+        <!-- <p class="reserve-time mt15"><span class="note d-block"><span class="num">事前案内会開催中</span>〈完全予約制〉</span><br>
+          ①10:00～&nbsp;②13：00～&nbsp;③16：00～&nbsp;④19：00～</p> -->
       </div>
-      <div class="yokoku mt40">
+      <!-- <div class="yokoku mt40">
         <p class="yokoku_ttl">｜予告広告｜</p>
         <p>本広告を行い取引を開始するまでは、契約又は予約のお申し込みに応じることができません。<br>
           また、お申し込みの順位の確保に関する措置も講じることができません。予めご了承ください。<br>
           （販売予定時期／2023年3月下旬）</p>
-      </div>
+      </div> -->
       <!-- /yokoku -->
-        <div class="yokoku henkou mt40">
+        <!-- <div class="yokoku henkou mt40">
         <p class="yokoku_ttl">【変更のお知らせ】</p>
         <p>第1期1次の販売予定時期につきまして、2023年2月下旬としておりましたが、<br class="pctb">
           2023年3月下旬に変更となりました。</p>
-      </div>
+      </div> -->
       <!-- /yokoku -->
       
-      <p class="btn"><a href="https://www.meiwajisyo.co.jp/form/coming/?bunjo_number=2000233M2220050" target="_blank" class="gtm_cv_reserve_trg" id="cv_reserve" target="_blank">来場予約</a></p>
+      <p class="btn"><a href="https://www.meiwajisyo.co.jp/form/coming/?bunjo_number=2000233M2220050" target="_blank" class="gtm_cv_reserve_trg" id="cv_reserve" target="_blank"><span class="mini">空室状況・入居申込予約など</span><br>お問い合わせはこちら</a></p>
       <p class="text-nextday mb50" style="font-size: 1.6em;">次回更新予定⽇：<span id="nextDay"></span></p>
       <p class="caution mt40 mb40">※本物件に資料請求をいただくと、郵送ではなくスマートフォンやパソコンを利用しインターネット回線を介して閲覧いただく形になります。予めご了承ください。また、インターネット通信回線費はお客様ご負担となります。</p>
     </div>
