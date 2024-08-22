@@ -1,0 +1,1285 @@
+@charset "UTF-8";
+
+.nav_lowerpage .navWrap li.access a::after,
+.footerarea .foot-navi .inner .foot-navi__in li.access a::after{
+  transform: translate(0, 0) !important;
+}
+
+
+@media (max-width: 1000px) {
+.nav_lowerpage .navWrap li.access a::after,
+.footerarea .foot-navi .inner .foot-navi__in li.access a::after{
+    display: none !important;
+  }
+}
+
+/*共通*/
+
+.page .page_intro{
+    text-align: center;
+}
+
+.page .page_intro h3{
+    color: #6CBFD7;
+    font-size: 3.6em;
+    margin-bottom: 40px;
+    letter-spacing: 0.1em;
+}
+
+.page .page_intro h3 sup{
+    font-size: 14px;
+}
+
+.page .page_intro p.intro_text{
+    font-size: 1.8em;
+    line-height: 2.0;
+    letter-spacing: 0.2em;
+}
+
+.contents_in p.eng {
+    width: 100%;
+    padding-left: 20px;
+    line-height: 1.0;
+    font-size: 8.0rem;
+    margin-bottom: 20px;
+    color: #B1CED8;
+}
+
+
+.imgBox {
+    position: relative;
+}
+
+.imgBox p.ttl {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 100%;
+      transform: translateY(-50%) translateX(-50%);
+  -webkit- transform: translateY(-50%) translateX(-50%);
+    font-size: 3.0em;
+    line-height: 2.0;
+    letter-spacing: 0.2em;
+    color: #fff;
+    text-align: center;
+}
+
+.imgBox p.scroll{
+    position: absolute;
+    display: inline-block;
+    left: 50%;
+    text-align: center;
+    bottom: 50px;
+    font-size: 10px;
+    color: #B1CED8;
+    line-height: 1.0;
+}
+
+
+/* 線の描写 */
+.imgBox p.scroll::after{
+  content: "";
+  position: absolute;
+  top: 10px;
+    left: 50%;
+  width: 1px;
+  height: 30px;
+    margin-top: 10px;
+  background: #B1CED8;
+    /*線の動き1.4秒かけて動く。永遠にループ*/
+  animation: pathmove2 2.0s ease-in-out infinite;
+  opacity:0;
+}
+
+/*高さ・位置・透過が変化して線が上から下に動く*/
+@keyframes pathmove2{
+  0%{
+    height:0;
+    top:0;
+    opacity: 0;
+  }
+  30%{
+    height:30px;
+    opacity: 1;
+  }
+  100%{
+    height:0;
+    top:50px;
+    opacity: 0;
+  }
+}
+
+
+
+@media (max-width: 1000px) {
+    
+.page .page_intro h3{
+    font-size: 2.8em;
+}
+
+.page .page_intro p.intro_text{
+    font-size: 1.8em;
+}
+
+.contents_in p.eng {
+    padding-left: 5%;
+    font-size: 5.0rem;
+    line-height: 1.0;
+}
+    
+.imgBox p.ttl {
+    font-size: 2.4em;
+}    
+    
+    
+.imgBox p.scroll{
+    left: 47%;
+    bottom: 35px;
+}    
+    
+/* 線の描写 */
+.imgBox p.scroll::after{
+  height: 30px;
+}   
+    
+    
+/*高さ・位置・透過が変化して線が上から下に動く*/
+@keyframes pathmove2{
+  0%{
+    height:0;
+    top:0;
+    opacity: 0;
+  }
+  30%{
+    height:15px;
+    opacity: 1;
+  }
+  100%{
+    height:0;
+    top:35px;
+    opacity: 0;
+  }
+}
+ 
+}
+
+
+@media (max-width: 1000px) {
+    
+.page .page_intro h3{
+    margin-bottom: 20px;
+}
+.contents_in p.eng {
+    font-size: 3.0rem;
+}
+   
+.ttlBox {
+    height: 30vh;
+}  
+    
+.ttlBox img {
+    height: auto;
+    width: 100%;
+    max-width: inherit;
+}  
+    
+    
+.imgBox p.scroll{
+    left: 45%;
+    bottom: 20px;
+}    
+    
+/* 線の描写 */
+.imgBox p.scroll::after{
+  height: 30px;
+}   
+    
+    
+/*高さ・位置・透過が変化して線が上から下に動く*/
+@keyframes pathmove2{
+  0%{
+    height:0;
+    top:0;
+    opacity: 0;
+  }
+  30%{
+    height:20px;
+    opacity: 1;
+  }
+  100%{
+    height:0;
+    top:40px;
+    opacity: 0;
+  }
+}    
+    
+}
+
+
+
+/*sec-intro*/
+.page .sec-intro{
+    padding: 160px 0;
+}
+
+@media (max-width: 1000px) {
+.page .sec-intro{
+    padding: 60px 0;
+}
+    
+}
+
+@media (max-width: 640px){
+.page .page_intro p.intro_text {
+    text-align: left;
+}
+}
+
+
+/*contents_in*/
+.page .contents_in .imgBox{
+    position: relative;
+    overflow: hidden;
+} 
+
+
+.page .contents_in .station{
+background: linear-gradient(to bottom, #253339, #4E6D77);
+}
+
+.page .contents_in .station .page_intro{
+    padding: 160px 0;
+}
+
+.page .station .page_intro p.intro_text{
+    color: #fff;
+}
+
+.page .contents_in .station_map{
+    position: relative;
+}
+
+.page .contents_in .station_map img{
+    width: 100%;
+    max-width: inherit;
+    height: auto;
+}
+    
+
+.page .sec-toshin .imgBox img{
+    width: 100%;
+    max-width: inherit;
+    height: auto;
+}    
+
+
+@media (max-width: 1000px) {
+.page .contents_in .station {
+    padding-bottom: 0;
+}    
+.page .contents_in .station .page_intro{
+    padding: 60px 0;
+}
+   
+}
+
+
+@media (max-width: 640px) {
+    
+.page .contents_in .station_map .photo.sp_slide{
+    overflow-x: scroll;
+    position: relative;
+    }    
+    
+.page .contents_in .station_map .photo.sp_slide img.map{
+    position: relative;
+    width: 200%;
+    height: auto;
+    z-index: 1;
+}    
+    
+.page .contents_in .station_map .photo.sp_slide img.swipe_icon{
+    width: 60px;
+    height: auto;
+    position: fixed;
+    z-index: 10;
+    top: 10px;
+    left: 10px;
+    background-color:rgba(0,0,0,0.10);
+    padding: 10px;
+    border-radius: 10px;
+}   
+    
+    
+.page .contents_in .imgBox img {
+    width: auto;
+    max-width: inherit;
+    height: 100%;
+}
+      
+.page .sec-toshin.contents_in .imgBox img{
+    width: 100%;
+    max-width: inherit;
+    height: auto;
+}    
+    
+    
+}
+
+
+
+
+
+/*sec-train*/
+
+.sec-train {
+    margin: 160px 0;
+}
+
+.page .sec-train .train{
+    background-image: url("../img/access_train_bg.png");
+    background-size: cover;
+    background-position: top;
+    padding-bottom: 160px;
+}
+
+
+.page .sec-train .page_intro {
+    padding: 160px 0;
+}
+
+.page .sec-train .train .rosen_map{
+    position: relative;
+    padding: 60px 80px;
+    background-color: #fff;
+}
+
+.page .sec-train .train .rosen_map .cap{
+    bottom: 50px;
+    right: 80px;
+    background-color:rgba(0,0,0,0.00);
+    color: #000;
+
+}
+
+
+.page .sec-train .distance {
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.page .sec-train .distance .left,
+.page .sec-train .distance .right{
+    width: 48%;
+    display: block;
+}
+
+.page .sec-train.contents_in .inner_card .imgBox img{
+    width: 100%;
+    max-width: inherit;
+    height: auto;
+}    
+
+
+.distance .left .distance_single{
+    margin-bottom: 20px;
+}
+
+
+.distance .left .distance_single .name{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding-bottom:  5px;
+    margin-bottom:  2px;
+    border-bottom: 1px solid #AAAAAA;
+    font-size: 1.5em;
+}
+
+.distance_single p.time{
+    font-size: 1.0em;
+    line-height: 1.0;
+}
+
+
+.distance_single .ttl span.big{
+    display: inline-block;
+    font-size: 1.5em;
+}
+
+
+.distance_single .time span.number{
+    display: inline-block;
+    margin: 0 5px;
+    font-size: 2.0em;
+    color: #3C7A8F;
+}
+
+
+
+.distance_single .time span.number .blk{
+    font-size: 0.8em;
+    color: #333333;
+}
+
+.distance_single .about{
+    text-align: right;
+    font-size: 1.3em;
+}
+
+.distance_single .about span{
+    font-size: 1.5em;
+}
+
+
+
+.distance .right{
+    overflow: hidden;
+}
+
+
+.distance .right .inner_card{
+    position: relative;
+}
+
+.distance .right .inner_card p.time{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+      transform: translateY(-50%) translateX(-50%);
+  -webkit- transform: translateY(-50%) translateX(-50%);
+    color: #fff;
+    font-size: 3.0em;
+    text-align: center;
+    line-height: 1.0;
+}
+
+.distance .right .inner_card p.time .number{ 
+    font-family:'Shippori Mincho', Garamond , "Times New Roman" , "游明朝" , "Yu Mincho" , "游明朝体" , "YuMincho" , "ヒラギノ明朝 Pro W3" , "Hiragino Mincho Pro" , "HiraMinProN-W3" , "HGS明朝E" , "ＭＳ Ｐ明朝" , "MS PMincho" , serif;
+    font-size: 2.0em;
+}
+
+
+
+
+.distance .right .swiper-button-prev {
+    color: #fff;
+    background-image: url("../../common/imgs/arrow_r.svg");
+    background-color: rgba(0,0,0,0.80);
+    background-size: 10px auto;
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+    left: 0;
+}
+
+.distance .right .swiper-button-prev::after {
+    content: "PREV";
+    position: absolute;
+    left: 40px;
+    top: 30%;
+}
+
+
+.distance .right .swiper-button-next {
+    color: #fff;
+    background-image: url("../../common/imgs/arrow_f.svg");
+    background-color: rgba(0,0,0,0.80);
+    background-size: 10px auto;
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+    right: 0;
+}
+
+.distance .right .swiper-button-next::after {
+    content: "NEXT";
+    position: absolute;
+    right: 40px;
+    top: 30%;
+}
+
+
+
+
+
+@media (max-width: 1000px) {
+
+.sec-train {
+    margin-top: 80px;
+}
+    
+.page .sec-train .train {
+    padding-bottom: 60px;
+}    
+    
+
+.page .sec-train .page_intro {
+    padding: 60px 0;
+}
+    
+.page .sec-train .train .rosen_map {
+    padding: 30px 40px;
+}    
+.page .sec-train .train .rosen_map .cap {
+    bottom: 20px;
+    right: 20px;
+}
+
+
+.distance .left .distance_single .name{
+    letter-spacing: 0.1em;
+    line-height: 1.2;
+}
+
+.distance_single .ttl span.big{
+    font-size: 1.6em;
+}
+
+.distance_single .time span.number{
+    font-size: 1.8em;
+}
+
+.distance_single .about {
+    font-size: 1.1em;
+}    
+    
+.distance .right .inner_card p.time{ 
+    font-size: 2.3em;
+}
+    
+    
+}  
+
+
+
+@media (max-width: 640px) {
+
+.page .sec-train .distance {
+    margin-top: 40px;
+    flex-direction: column-reverse;
+}
+    
+.page .sec-train .distance .left, .page .sec-train .distance .right {
+    width: 100%;
+    margin-bottom: 20px;
+} 
+     
+.page .sec-train .train {
+    padding-bottom: 20px;
+}  
+    
+
+.page .sec-train .train .rosen_map{
+    position: relative;
+    padding: 10px;
+}    
+    
+    
+    
+}
+
+
+
+/*sec-bus*/
+
+.page .sec-bus .bus {
+    background: linear-gradient(to bottom, #253339, #4E6D77);
+    color: #EFEFEF;
+    padding: 160px 0;
+}
+
+.page .sec-bus .page_intro {
+    padding: 0 0 160px ;
+    max-width: 860px;
+    margin: 0 auto;
+}
+
+
+.page .sec-bus .page_intro ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.page .sec-bus .page_intro ul li{
+    width: 48%;
+    padding: 20px;
+    border: 1px solid #B7B7B7;
+    font-size: 2.4em;
+    letter-spacing: 0.2em;
+    color: #EFEFEF;
+}
+.page .sec-bus .page_intro ul li span.number{
+    font-size: 1.8em;
+    line-height: 1.0;
+    color: #6CBFD7;
+}
+
+
+.page .sec-bus .hispeed_bus{
+    display: flex;
+    justify-content: space-between;
+    align-items:flex-end;
+}
+
+.page .sec-bus .hispeed_bus .left{
+    width: 42%;
+}
+
+.page .sec-bus .hispeed_bus .left h3{
+    font-size: 3.6em;
+    color: #6CBFD7;
+    margin-bottom: 40px;
+    white-space: nowrap;
+}
+
+.page .sec-bus .hispeed_bus .left p.read{
+    font-size: 1.5em;
+    line-height: 2.0;
+    margin-bottom: 40px;
+}
+
+.page .sec-bus .hispeed_bus .left .photo{
+    position: relative;
+}
+
+.page .sec-bus .hispeed_bus .right{
+    width: 54%;
+}
+
+
+
+@media (max-width: 1000px) {
+
+.page .sec-bus{
+    margin-top: 80px;
+}
+    
+.page .sec-bus .bus {
+    padding: 40px 0;
+}
+    
+.page .sec-bus .page_intro {
+    padding: 60px 0;
+}   
+    
+.page .sec-bus .page_intro ul li {
+    font-size: 2.0em;
+    letter-spacing: 0.1em;
+}    
+    
+.page .sec-bus .hispeed_bus .left h3 {
+    font-size: 2.8em;
+    margin-bottom: 20px;
+    text-align: center;
+}    
+    
+    
+}
+
+@media (max-width: 640px) {
+
+.page .sec-bus .page_intro ul{
+flex-direction: column;
+}
+    
+.page .sec-bus .page_intro ul li {
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 20px;
+}  
+    
+    
+.page .sec-bus .hispeed_bus{
+    flex-direction: column;
+}
+.page .sec-bus .hispeed_bus .left {
+    width: 100%;
+    margin-bottom: 20px;
+}
+    
+.page .sec-bus .hispeed_bus .right {
+    width: 100%;
+}    
+    
+}
+
+
+/*sec-bullet*/
+
+.sec-bullet {
+    margin-top: 160px;
+    background: linear-gradient(to bottom, #253339, #4E6D77);
+    color: #EFEFEF;
+    padding: 160px 0;
+}
+
+.page .sec-bullet .page_intro {
+    padding: 160px 0 40px;
+}
+
+
+
+.page .sec-bullet .bullet .page_intro h3 span.number{
+    color: #ffffff;
+}
+
+.page .sec-bullet .bullet .page_intro h3 sup{
+    font-size: 15px;
+}
+
+
+.page .sec-bullet .bullet_map{
+    display: flex;
+    justify-content: space-between;
+    align-items:flex-start;
+}
+
+.page .sec-bullet .bullet_map .left{
+    width: 46%;
+}
+
+.page .sec-bullet .bullet_map .left h4{
+    font-size: 2.6em;
+    margin-bottom: 40px;
+    text-align: center;
+    letter-spacing: 0.2em;
+}
+
+.page .sec-bullet .bullet_map .left h4 span.time{
+    font-size: 1.3em;
+}
+
+.page .sec-bullet .bullet_map .left h4 span.number{
+    font-size: 1.5em;
+    color: #6CBFD7;
+}
+
+.page .sec-bullet .bullet_map .left p.read{
+    font-size: 1.5em;
+    line-height: 2.0;
+    margin-bottom: 40px;
+}
+
+
+.page .sec-bullet .bullet_map .left .photo{
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.page .sec-bullet .bullet_map .right{
+    width: 52%;
+}
+
+
+
+@media (max-width: 1000px) {
+
+    
+    
+.page .sec-bullet .bullet {
+    padding-bottom: 60px;
+}
+    
+.page .sec-bullet .page_intro {
+    padding: 60px 0 20px;
+}
+    
+.page .sec-bullet .page_intro h3{
+    color: #ffffff;
+}    
+    
+.page .sec-bullet .bullet_map .left h4 {
+    font-size: 2.0em;
+    margin-bottom: 20px;
+}    
+    
+}
+
+
+@media (max-width: 640px) {
+
+.sec-bullet {
+    margin-top: 60px;
+    padding: 60px 0 0;
+}
+
+.page .sec-bullet .bullet_map{
+    flex-direction: column;
+}    
+
+.page .sec-bullet .bullet_map .left {
+    width: 100%;
+}    
+.page .sec-bullet .bullet_map .right {
+    width: 100%;
+}    
+    
+    
+}
+
+
+
+/*sec-airplane*/
+
+.sec-airplane {
+    margin-top: 160px;
+}
+
+.page .sec-airplane .page_intro {
+    padding: 160px 0;
+}
+
+.page .sec-airplane .location_con{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 160px;
+}
+
+
+.page .sec-airplane .location_con .left,
+.page .sec-airplane .location_con .right{
+    position: relative;
+    width: 40%;
+}
+
+
+.page .sec-airplane .location_con .right{
+    position: relative;
+    width: 55%;
+    padding: 0 0 50px 50px;
+    z-index: 1;
+}
+
+.page .sec-airplane .location_con .left{
+    position: relative;
+    width: 42%;
+    padding-left: 10vw;
+    background-color: #FFFFFF;
+    z-index: 2;
+}
+
+.location_con .airport_con{
+    margin-bottom: 40px;
+}
+
+.location_con .airport_con h3{
+    position: relative;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    letter-spacing: 0.1em;
+}
+
+
+.location_con .airport_con h3::after{
+    content: "";
+    position: absolute;
+    right: 0;
+    top:50%;
+    height: 1px;
+    width: calc(100% - 8em);
+    background-color: #DDDDDD;
+}
+
+
+.location_con .airport_con p{
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    letter-spacing: 0.1em;
+}
+
+.location_con .airport_con p span.big{
+    font-size: 1.5em;
+}
+.location_con .airport_con p span.number{
+    font-size: 1.5em;
+    color: #3C7A8F;
+}
+
+
+
+
+.page .sec-airplane .location_con .photo{
+position: relative;
+z-index: 3;
+    overflow: hidden;
+}
+
+.page .sec-airplane .location_con .bg_green {
+    position: absolute;
+    left: 400px;
+    bottom: 0;
+    width: 400px;
+    height: 400px;
+    background-color: #D6DCE5;
+    z-index: 1;
+}
+
+.page .sec-airplane .location_con .bg_white {
+    display: none;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    width: 100%;
+    height: 100%;
+    background:linear-gradient(to left, rgba(255,255,255,1.00) 10%, rgba(255,255,255,0.00));
+    z-index: 2;
+}
+
+
+
+
+/*route_con*/
+
+.page .sec-airplane .route_con,
+.page .sec-airplane .route_con2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items:flex-start;
+}
+
+
+.page .sec-airplane .route_con{
+    background-image: url("../img/access_ap03.png");
+    background-position: 5vw bottom;
+    background-size: 45% auto;
+    background-repeat: no-repeat;
+    padding-bottom: 10%;
+}
+
+
+
+.page .sec-airplane .route_con2{
+    background-image: url("../img/access_ap06.png");
+    background-position: left bottom;
+    background-size: 65% auto;
+    background-repeat: no-repeat;
+    margin-top: -5%;
+    padding-bottom: 15%;
+}
+
+.page .sec-airplane .route_con2 .cap.pc{
+    right: 35%;
+}
+
+
+.page .sec-airplane .route_con .right,
+.page .sec-airplane .route_con2 .right{
+    position: relative;
+    width: 30%;
+    margin-right: 15vw;
+    padding: 0 0 50px 50px;
+    z-index: 1;
+}
+
+
+.page .sec-airplane .route_con .left{
+    position: relative;
+    /*width: 55%;*/
+    padding-left: 10vw;
+    background-color: #FFFFFF;
+    z-index: 2;
+}
+
+
+
+.page .sec-airplane .route_con2 .left{
+    position: relative;
+    /*width: 55%;*/
+    z-index: 1;
+    margin-top: 240px;
+}
+
+.page .sec-airplane .route_con2 .right .okadama_list{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.page .sec-airplane .route_con2 .right .okadama_list ul{
+    width: 48%;
+}
+
+.page .sec-airplane .route_con2 .right .caption{
+    font-size: 1.5em;
+}
+
+
+
+.page .sec-airplane .route_con .photo,
+.page .sec-airplane .route_con2 .photo{
+position: relative;
+z-index: 3;
+overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.page .sec-airplane .route_con .photo img,
+.page .sec-airplane .route_con2 .photo img{
+    width: 100%;
+    height: auto;
+
+}
+
+.page .sec-airplane .route_con .text,
+.page .sec-airplane .route_con2 .text{
+position: relative;
+z-index: 3;
+}
+
+.page .sec-airplane .route_con .text h3,
+.page .sec-airplane .route_con2 .text h3{
+    font-size: 2.4em;
+    line-height: 1.2;
+    margin-bottom: 10px;
+}
+
+
+.page .sec-airplane .route_con .text h3 span.number,
+.page .sec-airplane .route_con2 .text h3 span.number{
+    font-size: 1.8em;
+}
+
+.page .sec-airplane .route_con .text .ttl,
+.page .sec-airplane .route_con2 .text .ttl{
+    font-size: 1.5em;
+    border-bottom: 1px solid #333333;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+
+.page .sec-airplane .route_con .text dl,
+.page .sec-airplane .route_con2 .text dl{
+    font-size: 1.5em;
+    margin-bottom: 5px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+
+
+.page .sec-airplane .route_con .text dl dt{
+    min-width: 8em;
+}
+
+.page .sec-airplane .route_con .text dl dd{
+    width: calc(100% - 10em);
+}
+
+.page .sec-airplane .route_con2 .text dl dt{
+    min-width: 5em;
+}
+.page .sec-airplane .route_con2 .text dl dd{
+    width: calc(100% - 5em);
+}
+
+.page .sec-airplane .route_con .bg_green,
+.page .sec-airplane .route_con2 .bg_green{
+    position: absolute;
+    left: 400px;
+    top: 20%;
+    width: 50vw;
+    height: 80%;
+    background-color: #D7EFF7;
+    z-index: 1;
+}
+
+@media (max-width: 1200px) {
+.page .sec-airplane .route_con .text dl,
+.page .sec-airplane .route_con2 .text dl{
+    font-size: 1.2em;
+}    
+}
+
+
+@media (max-width: 1000px) {
+
+.sec-airplane {
+    margin-top: 60px;
+}
+    
+.page .sec-airplane .page_intro {
+    padding: 60px 0;
+}    
+ 
+
+.page .sec-airplane .location_con {
+    flex-direction: column-reverse;
+    margin-bottom: 60px;
+}  
+.page .sec-airplane .location_con .right {
+    position: relative;
+    width: 90%;
+    padding: 0 0 40px 0;
+    margin: 0 auto;
+    z-index: 1;
+}    
+    
+.page .sec-airplane .location_con .bg_green {
+    position: absolute;
+    left: 690px;
+    bottom: 0;
+    width: 400px;
+    height: 400px;
+    background-color: #D6DCE5;
+    z-index: 1;
+}    
+    
+.page .sec-airplane .location_con .left {
+    width: 90%;
+    margin: 20px auto 0;
+    padding-left: 0;
+}    
+    
+    
+    
+    
+.page .sec-airplane .route_con{
+    background:none;
+    padding-bottom: 0;
+}
+
+.page .sec-airplane .route_con2{
+    background:none;
+    padding-bottom: 0;
+    margin-top: 0;
+}
+    
+    
+    
+.page .sec-airplane .route_con,
+.page .sec-airplane .route_con2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}    
+    
+    
+.page .sec-airplane .route_con2 {
+    flex-direction: column-reverse;
+}    
+        
+
+    
+.page .sec-airplane .route_con .left {
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+    padding-left: 0;
+    background-color: #FFFFFF;
+    z-index: 2;
+}
+    
+.page .sec-airplane .route_con .right, .page .sec-airplane .route_con2 .right {
+    position: relative;
+    width: 90%;
+    margin: 40px auto 0;
+    padding: 0 0 20px;
+    z-index: 1;
+}   
+    
+.page .sec-airplane .route_con .bg_green, .page .sec-airplane .route_con2 .bg_green {
+    left: 100%;
+    width: 124vw;
+}    
+    
+.page .sec-airplane .route_con2 .left {
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 40px;
+}    
+    
+    
+
+}
+
+@media (max-width: 640px) {
+
+.page .sec-airplane .location_con .bg_green {
+    position: absolute;
+    left: 105%;
+    bottom: 0;
+    width: 200px;
+    height: 200px;
+}
+    
+.page .sec-airplane .location_con .right {
+    padding: 0 0 20px 0;
+}       
+    
+
+.page .sec-airplane .route_con .text dl,
+.page .sec-airplane .route_con2 .text dl{
+    font-size: 12px;
+}
+    
+.page .sec-airplane .route_con .text dl dt,
+.page .sec-airplane .route_con .text dl dd,
+.page .sec-airplane .route_con2 .text dl dt,
+.page .sec-airplane .route_con2 .text dl dd{
+    margin-bottom: 5px;
+}    
+    
+.page .sec-airplane .route_con2 .right .okadama_list {
+    flex-direction: column;
+
+}    
+    
+.page .sec-airplane .route_con .text dl,
+.page .sec-airplane .route_con2 .text dl{
+    font-size: 12px;
+    margin-bottom: 0;
+} 
+    
+    
+}
+
+
+
+
+
+/* フェードアニメーション */
+
+.bg_green.slidein {
+    opacity : 0.0;
+    transform : translate(0, 0);
+    transition : all 2000ms;
+    }
+
+.bg_green.slidein.scrollin {
+    opacity : 1;
+    transform: translateX(-400px);
+    }
+
+.bg_green.slidein_r.scrollin {
+    opacity : 1;
+    transform: translateX(400px);
+    }
+    
+/*@media (max-width: 640px) {*/
+@media (max-width: 1000px) {
+    
+.bg_green.slidein {
+    opacity : 0.0;
+    transform : translate(0, 0);
+    transition : all 2000ms;
+    }
+
+.bg_green.slidein.scrollin {
+    opacity : 1;
+    transform: translateX(-100vw);
+    }
+
+.bg_green.slidein_r.scrollin {
+    opacity : 1;
+    transform: translateX(100vw);
+    }
+}

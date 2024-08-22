@@ -1,0 +1,894 @@
+@charset "UTF-8";
+
+.nav_lowerpage .navWrap li.location a::after,
+.footerarea .foot-navi .inner .foot-navi__in li.location a::after{
+  transform: translate(0, 0) !important;
+}
+
+
+@media (max-width: 1000px) {
+.nav_lowerpage .navWrap li.location a::after,
+.footerarea .foot-navi .inner .foot-navi__in li.location a::after{
+    display: none !important;
+  }
+}
+
+/*共通*/
+
+.page .page_intro{
+    text-align: center;
+}
+
+.page .page_intro h3{
+    color: #6CBFD7;
+    font-size: 3.6em;
+    margin-bottom: 40px;
+    letter-spacing: 0.1em;
+}
+
+.page .page_intro h3 sup{
+    font-size: 14px;
+}
+
+.page .page_intro p.intro_text{
+    font-size: 1.8em;
+    line-height: 2.0;
+    letter-spacing: 0.2em;
+}
+
+.contents_in p.eng {
+    width: 100%;
+    padding-left: 20px;
+    line-height: 1.0;
+    font-size: 8.0rem;
+    margin-bottom: 20px;
+    color: #B1CED8;
+}
+
+
+.imgBox {
+    position: relative;
+}
+
+.imgBox p.ttl {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 100%;
+      transform: translateY(-50%) translateX(-50%);
+  -webkit- transform: translateY(-50%) translateX(-50%);
+    font-size: 3.0em;
+    line-height: 2.0;
+    letter-spacing: 0.2em;
+    color: #fff;
+    text-align: center;
+}
+
+.imgBox p.scroll{
+    position: absolute;
+    display: inline-block;
+    left: 50%;
+    text-align: center;
+    bottom: 50px;
+    font-size: 10px;
+    color: #B1CED8;
+    line-height: 1.0;
+}
+
+
+/* 線の描写 */
+.imgBox p.scroll::after{
+  content: "";
+  position: absolute;
+  top: 10px;
+    left: 50%;
+  width: 1px;
+  height: 30px;
+    margin-top: 10px;
+  background: #B1CED8;
+    /*線の動き1.4秒かけて動く。永遠にループ*/
+  animation: pathmove2 2.0s ease-in-out infinite;
+  opacity:0;
+}
+
+/*高さ・位置・透過が変化して線が上から下に動く*/
+@keyframes pathmove2{
+  0%{
+    height:0;
+    top:0;
+    opacity: 0;
+  }
+  30%{
+    height:30px;
+    opacity: 1;
+  }
+  100%{
+    height:0;
+    top:50px;
+    opacity: 0;
+  }
+}
+
+
+
+@media (max-width: 1000px) {
+    
+.page .page_intro h3{
+    font-size: 2.8em;
+}
+
+.page .page_intro p.intro_text{
+    font-size: 1.8em;
+}
+
+.contents_in p.eng {
+    padding-left: 5%;
+    font-size: 5.0rem;
+    line-height: 1.0;
+}
+    
+.imgBox p.ttl {
+    font-size: 2.4em;
+}    
+    
+    
+.imgBox p.scroll{
+    left: 47%;
+    bottom: 35px;
+}    
+    
+/* 線の描写 */
+.imgBox p.scroll::after{
+  height: 30px;
+}   
+    
+    
+/*高さ・位置・透過が変化して線が上から下に動く*/
+@keyframes pathmove2{
+  0%{
+    height:0;
+    top:0;
+    opacity: 0;
+  }
+  30%{
+    height:15px;
+    opacity: 1;
+  }
+  100%{
+    height:0;
+    top:35px;
+    opacity: 0;
+  }
+}
+ 
+}
+
+
+@media (max-width: 1000px) {
+    
+.page .page_intro h3{
+    margin-bottom: 20px;
+}
+.contents_in p.eng {
+    font-size: 3.0rem;
+}
+   
+.ttlBox {
+    height: 30vh;
+}  
+    
+.ttlBox img {
+    height: auto;
+    width: 100%;
+    max-width: inherit;
+}  
+    
+    
+.imgBox p.scroll{
+    left: 45%;
+    bottom: 20px;
+}    
+    
+/* 線の描写 */
+.imgBox p.scroll::after{
+  height: 30px;
+}   
+    
+    
+/*高さ・位置・透過が変化して線が上から下に動く*/
+@keyframes pathmove2{
+  0%{
+    height:0;
+    top:0;
+    opacity: 0;
+  }
+  30%{
+    height:20px;
+    opacity: 1;
+  }
+  100%{
+    height:0;
+    top:40px;
+    opacity: 0;
+  }
+}    
+    
+}
+
+
+
+/*sec-intro*/
+.page .sec-intro{
+    padding: 160px 0;
+}
+
+@media (max-width: 1000px) {
+.page .sec-intro{
+    padding: 60px 0;
+}
+    
+}
+
+@media (max-width: 640px){
+.page .page_intro p.intro_text {
+    text-align: left;
+}
+}
+
+
+/*contents_in*/
+.page .contents_in .imgBox{
+    position: relative;
+} 
+
+
+.page .contents_in .station{
+background: linear-gradient(to bottom, #253339, #4E6D77);
+}
+
+.page .contents_in .station .page_intro{
+    padding: 160px 0;
+}
+
+.page .station .page_intro p.intro_text{
+    color: #fff;
+}
+
+.page .contents_in .station_map{
+    position: relative;
+}
+
+.page .contents_in .station_map img {
+    width: 100%;
+    max-width: inherit;
+    height: auto;
+}
+    
+@media (max-width: 1000px) {
+.page .contents_in .station {
+    padding-bottom: 0;
+}    
+.page .contents_in .station .page_intro{
+    padding: 60px 0;
+}
+   
+}
+
+
+@media (max-width: 640px) {
+    
+.ttlBox {
+    height: 30vh;
+}    
+    
+.page .contents_in .imgBox.ttlBox img {
+    width: auto;
+    max-width: inherit;
+    height: 100%;
+}  
+    
+}
+
+
+
+
+/*sec-shopping*/
+
+.sec-shopping {
+    background: linear-gradient(to bottom, #253339, #4E6D77);
+    color: #EFEFEF;
+}
+
+.page .sec-shopping .main_img {
+    margin-bottom: 80px;
+    overflow: hidden;
+}
+
+.page .sec-shopping .page_intro {
+    padding: 80px 0;
+}
+
+.page .sec-shopping .page_intro p.intro_text {
+    color: #fff;
+}
+
+
+
+.page .sec-shopping .shopping_slide,
+.page .sec-education .education_slide{
+    position: relative;
+    margin-left: 10vw;
+    overflow: hidden;
+}
+
+.page .sec-shopping .shopping_slide .swiper-shopping,
+.page .sec-education .education_slide .swiper-shopping{
+    padding-bottom: 80px;
+    overflow: visible;
+}
+
+.page .sec-shopping .shopping_slide .swiper-slide,
+.page .sec-education .education_slide .swiper-slide{
+    padding-left: 30px;
+}
+
+
+/* ページネーション */
+.page .sec-shopping .shopping_slide .swiper-pagination,
+.page .sec-education .education_slide .swiper-pagination{
+  color: #fff;
+    font-size: 1.8em;
+}
+
+/* 現在のスライド番号 */
+.page .sec-shopping .shopping_slide .swiper-pagination-current,
+.page .sec-education .education_slide .swiper-pagination-current{
+}
+
+/* スライド総数 */
+.page .sec-shopping .shopping_slide .swiper-pagination-total::before,
+.page .sec-education .education_slide .swiper-pagination-total::before {
+    content: "0";
+    left: 0;
+}
+
+
+.page .sec-shopping .shopping_slide .swiper-button-next,
+.page .sec-education .education_slide .swiper-button-next{
+    color: #fff;
+    background-image: url(../../common/imgs/arrow_r.svg);
+    background-color: rgba(0,0,0,0.80);
+    background-size: 10px auto;
+    width: 60px;
+    height: 60px;
+    padding: 10px;
+    top: 40%;
+    left: 0;
+}
+
+.page .sec-shopping .shopping_slide .swiper-button-prev,
+.page .sec-education .education_slide .swiper-button-prev{
+    color: #fff;
+    background-image: url(../../common/imgs/arrow_f.svg);
+    background-color: rgba(0,0,0,0.80);
+    background-size: 10px auto;
+    width: 60px;
+    height: 60px;
+    padding: 10px;
+    top: 40%;
+    left: inherit;
+    right: 0;
+}
+
+.page .sec-shopping .shopping_slide .swiper-button-next.next2,
+.page .sec-education .education_slide .swiper-button-next.next2{
+    color: #fff;
+    background-image: url(../../common/imgs/arrow_r_blue.svg);
+    background-color: inherit;
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+    top: inherit;
+    bottom: 7px;
+    left: calc( 50% - 10em);
+    z-index: 50;
+}
+.page .sec-shopping .shopping_slide .swiper-button-prev.prev2,
+.page .sec-education .education_slide .swiper-button-prev.prev2{
+    color: #fff;
+    background-image: url("../../common/imgs/arrow_f_blue.svg");
+    background-color: inherit;
+    background-size: 10px auto;
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+    top: inherit;
+    bottom: 7px;
+    left: inherit;
+    right: calc( 50% - 10em);
+    z-index: 50;
+}
+
+
+
+.page .sec-shopping .shopping_slide .txtarea,
+.page .sec-education .education_slide .txtarea{
+    margin-top: 10px;
+
+}
+
+.page .sec-shopping .shopping_slide .txtarea .ttl,
+.page .sec-education .education_slide .txtarea .ttl{
+    color: #6CBFD7;
+    font-size: 2.0em;
+}
+
+.page .sec-shopping .shopping_slide .txtarea .toho,
+.page .sec-education .education_slide .txtarea .toho{
+    font-size: 1.5em;
+}
+
+
+.page .sec-shopping .location_con{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin: 160px 0;
+    padding-bottom: 160px;
+}
+
+
+.page .sec-shopping .location_con .right{
+    position: relative;
+    width: 42%;
+    height: 100%;
+    z-index: 1;
+    margin-bottom: 20px;
+    background-image: url("../img/location_shopping15.png");
+    background-size:  auto 100%;
+    padding: 55% 0 0;
+
+}
+
+
+
+.page .sec-shopping .location_con .right img{
+    height: 100%;
+    width: auto;
+}
+
+.page .sec-shopping .location_con .left{
+    position: relative;
+    width: 55%;
+    padding-left: 10vw;
+    z-index: 2;
+}
+
+.page .sec-shopping .location_con .left h3 {
+    color: #6CBFD7;
+    font-size: 3.6em;
+    margin-bottom: 40px;
+    letter-spacing: 0.1em;
+}
+
+.page .sec-shopping .location_con .left p.left_text {
+    font-size: 1.8em;
+    line-height: 2.0;
+    letter-spacing: 0.2em;
+    margin-bottom: 40px;
+}
+
+.page .sec-shopping .location_con .left .left_cell{
+    margin-top: 20px;
+}
+
+.page .sec-shopping .location_con .left .left_cell ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.page .sec-shopping .location_con .left .left_cell ul li{
+    width: 48%;
+    margin-bottom: 20px;
+}
+
+.page .sec-shopping .left_cell li p.caption{
+    margin-top: 5px;
+    text-align: right;
+    font-size: 12px;
+}
+
+
+
+
+
+
+@media (max-width: 1000px) {
+
+
+.page .sec-shopping .shopping_slide,
+.page .sec-education .education_slide{
+    margin-left: 0;
+}
+
+.page .sec-shopping .shopping_slide .swiper-slide,
+.page .sec-education .education_slide .swiper-slide{
+    padding-left: 0;
+    }    
+    
+.page .sec-shopping .shopping_slide .swiper-button-next,
+.page .sec-education .education_slide .swiper-button-next {
+    width: 40px;
+    height: 40px;
+    top: 35%;
+}   
+    
+.page .sec-shopping .shopping_slide .swiper-button-prev,
+.page .sec-education .education_slide .swiper-button-prev {
+    width: 40px;
+    height: 40px;
+    top: 35%;
+}    
+    
+.page .sec-shopping .location_con {
+    display: flex;
+    width: 96%;
+    margin: 60px auto;
+    padding-bottom: 60px;
+}
+
+    
+.page .sec-shopping .location_con .left,
+.page .sec-shopping .location_con .right{
+    width: 100%;
+    padding-left: 0;
+}    
+    
+.page .sec-shopping .location_con .right{
+    display: none;
+}  
+   
+.page .sec-shopping .location_con .left .left_cell{
+    display: flex;
+    justify-content: space-between;
+}     
+    
+.page .sec-shopping .location_con .left .left_cell .text_con{
+    width: 48%;
+}     
+    
+.page .sec-shopping .location_con .left .left_cell .photo{
+    width: 48%;
+}      
+    
+.page .sec-shopping .location_con .left h3 {
+    font-size: 2.8em;
+    margin-bottom: 20px;
+}    
+    
+}
+
+
+@media (max-width: 640px) {
+ 
+.page .sec-shopping .main_img {
+    margin-bottom: 40px;
+}
+    
+.page .sec-shopping .page_intro {
+    padding: 20px 0;
+    width: 90%;
+    margin: 0 auto;
+}
+    
+.page .sec-shopping .shopping_slide .swiper-button-next,
+.page .sec-education .education_slide .swiper-button-next,
+.page .sec-shopping .shopping_slide .swiper-button-prev,
+.page .sec-education .education_slide .swiper-button-prev {
+    top: 30%;
+}    
+    
+.page .sec-shopping .location_con .left .left_cell {
+    display: block;
+}   
+.page .sec-shopping .location_con .left .left_cell .text_con,
+.page .sec-shopping .location_con .left .left_cell .photo {
+    width: 100%;
+    margin-bottom: 20px;
+}    
+    
+    
+.page .sec-shopping .location_con .left h3 {
+    text-align: center;
+}
+.page .sec-shopping .location_con .left p.left_text {
+    font-size: 1.8em;
+    margin-bottom: 0;
+}    
+    
+}
+
+
+
+
+
+/*sec-education*/
+
+.sec-education {
+    background: linear-gradient(to bottom, #253339, #4E6D77);
+    color: #EFEFEF;
+    padding: 240px 0;
+}
+
+.page .sec-education .main_img {
+    margin-bottom: 80px;
+}
+
+.page .sec-education .page_intro {
+    padding: 80px 0;
+}
+
+.page .sec-education .page_intro p.intro_text {
+    color: #fff;
+}
+
+@media (max-width: 1000px) {
+.sec-education {
+    padding: 60px 0;
+}
+}
+
+
+@media (max-width: 640px) {
+
+.page .sec-education .page_intro {
+    padding: 20px 0;
+    width: 90%;
+    margin: 0 auto;
+}
+}
+
+
+/*sec-gourmet*/
+
+.page .sec-gourmet.contents_in p.eng{
+    text-align: right;
+        padding-right: 80px;
+}
+
+.page .sec-gourmet h3 {
+    color: #6CBFD7;
+    font-size: 3.6em;
+    margin-bottom: 40px;
+    letter-spacing: 0.1em;
+}
+
+.page .sec-gourmet .gourmet_con{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 160px;
+}
+
+
+.page .sec-gourmet .gourmet_con .left{
+    position: relative;
+    width: 42%;
+    height: 100%;
+    z-index: 1;
+    margin-bottom: 20px;
+    background-image: url("../img/location_gourmet01.png");
+    background-size:  auto 100%;
+    padding: 55% 0 0;
+
+}
+
+.page .sec-gourmet .gourmet_con .left img{
+    height: 100%;
+    width: auto;
+}
+
+.page .sec-gourmet .gourmet_con .right{
+    position: relative;
+    width: 55%;
+    padding-right: 10vw;
+    z-index: 2;
+}
+
+.page .sec-gourmet .gourmet_con .right h3 {
+    color: #6CBFD7;
+    font-size: 3.6em;
+    margin-bottom: 40px;
+    letter-spacing: 0.1em;
+}
+
+.page .sec-gourmet .gourmet_con .right p.right_text {
+    font-size: 1.8em;
+    line-height: 2.0;
+    letter-spacing: 0.2em;
+    margin-bottom: 40px;
+}
+
+.page .sec-gourmet .gourmet_con .right .right_cell{
+    margin-top: 20px;
+}
+
+.page .sec-gourmet .gourmet_con .right .right_cell ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.page .sec-gourmet .gourmet_con .right .right_cell ul li{
+    width: 48%;
+    margin-bottom: 20px;
+}
+
+.page .sec-gourmet .right_cell li p.caption{
+    margin-top: 5px;
+    text-align: right;
+    font-size: 12px;
+}
+
+@media (max-width: 1000px) {
+
+.page .sec-gourmet.contents_in p.eng {
+    text-align: left;
+}    
+    
+.page .sec-gourmet .gourmet_con {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 96%;
+    margin: 20px auto 0;
+    padding-bottom: 60px;
+}
+    
+.page .sec-gourmet .gourmet_con .left{
+display: none;
+}
+.page .sec-gourmet .gourmet_con .right{
+    width: 100%;
+    padding-right: 0;
+}  
+    
+    
+.page .sec-gourmet .gourmet_con .right .right_cell.read{
+    display: flex;
+    justify-content: space-between;
+}  
+
+        
+.page .sec-gourmet .gourmet_con .right .right_cell .text_con,
+.page .sec-gourmet .gourmet_con .right .right_cell .photo{
+    width: 48%;
+
+}  
+    
+    
+.page .sec-gourmet .gourmet_con .left h3 {
+    font-size: 2.8em;
+    margin-bottom: 20px;
+}    
+    
+
+}
+
+@media (max-width: 1000px) {
+
+.page .sec-gourmet .gourmet_con .right .right_cell.read {
+    display: block;
+}
+    
+.page .sec-gourmet .gourmet_con .right .right_cell .text_con,
+.page .sec-gourmet .gourmet_con .right .right_cell .photo {
+    width: 100%;
+}    
+    
+.page .sec-gourmet .gourmet_con .right h3 {
+    font-size: 2.8em;
+    text-align: center;
+    margin-bottom: 20px;
+}    
+    
+.page .sec-gourmet .gourmet_con .right p.right_text {
+    margin-bottom: 20px;
+}    
+    
+    
+}
+
+
+
+
+/*sec-information*/
+
+.sec-information {
+    margin-top: 160px;
+}
+
+.sec-information .map_con{
+    margin-top: 80px;
+}
+.sec-information .maplist_con{
+        margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sec-information .maplist_con .left_con,
+.sec-information .maplist_con .right_con{
+    width: 48%;
+}
+
+.sec-information .maplist_con .placelist{
+     margin-bottom: 40px;
+}
+
+.sec-information .maplist_con h4{
+    font-size: 2.0em;
+    color: #3C7A8F;
+     margin-bottom: 10px;
+}
+
+.sec-information .maplist_con ol{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-size: 1.5em;
+}
+
+.sec-information .maplist_con ol dt{
+    width: 60%;
+    margin-bottom: 10px;
+}
+.sec-information .maplist_con ol dd{
+    width: 40%;
+    text-align: right;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 1000px) {
+.sec-information {
+    margin-top: 60px;
+}
+.sec-information .map_con {
+    margin-top: 20px;
+}    
+.sec-information .maplist_con {
+    margin-top: 20px;
+}    
+    
+.sec-information .maplist_con .placelist {
+    margin-bottom: 20px;
+}    
+    
+    
+}
+
+
+@media (max-width: 640px) {
+
+.sec-information .maplist_con {
+    display: block;
+}
+.sec-information .maplist_con .left_con,
+.sec-information .maplist_con .right_con {
+    width: 100%;
+}    
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+/* フェードアニメーション */

@@ -163,7 +163,7 @@ $("#ls_bnr a").attr("href", ls_url)
       <p class="text-nextday mb50" style="font-size: 1.6em;">次回更新予定⽇：<span id="nextDay"></span></p>
       <p class="caution mt40 mb40">※本物件に資料請求をいただくと、郵送ではなくスマートフォンやパソコンを利用しインターネット回線を介して閲覧いただく形になります。予めご了承ください。また、インターネット通信回線費はお客様ご負担となります。</p>
     </div>
-    <div class="infotokyo_con fade-in fade-in-up">
+    <!-- <div class="infotokyo_con fade-in fade-in-up">
       <h2 class="tokyo_ttl">首都圏にお住まいの方へ</h2>
       <div class="open">
         <p class="txt-open"><span class="d-inline-block">クリオ ライフスタイルサロン銀座にて<br class="sp">
@@ -193,19 +193,19 @@ $("#ls_bnr a").attr("href", ls_url)
             お考えの方</p>
         </li>
       </ul>
-    </div>
-    <div class="top-banner">
+    </div> -->
+    <!-- <div class="top-banner">
       <div class="bnrs cs15_bnr"> <a href="https://www.meiwajisyo.co.jp/sapporoclass/" target="_blank"><img src="img/bnr_bukken-01.jpg" alt="札幌でクリオに住まう"></a> </div>
-    </div>
+    </div> -->
     <!-- /top-banner -->
     
-    <div class="top-banner">
+    <!-- <div class="top-banner">
       <div id="ls_bnr" class="bnrs cs15_bnr"><a href="" target="_blank"><img src="img/ls_banner.jpg"></a> </div>
       <ul class="banner_list banner_list2">
         <li><a href="https://www.youtube.com/watch?v=2pyIMIqAILk" title="リモートクリオ動画紹介" target="_blank"><img src="img/bnr_info01.jpg" alt="リモートクリオ紹介動画"></a></li>
         <li><a href="https://www.meiwajisyo.co.jp/clio/remoteclio/sgc.html?link=rcoteclio/sgc.html?link=rc" title="リモートクリオ動画紹介" target="_blank"><img src="img/bnr_info02.jpg" alt="リモートクリオ　詳しくはこちら"></a></li>
       </ul>
-    </div>
+    </div> -->
     <!-- /top-banner --> 
     
   </section>
@@ -357,7 +357,7 @@ $(window).scroll(function () {
     </section>
     
     <!-- sec-menu -->
-    <section id="sec-menu" class="sec-menu fade-in fade-in-up">
+    <!-- <section id="sec-menu" class="sec-menu fade-in fade-in-up">
       <div class="menu_con">
         <ul>
           <li class="link_box">
@@ -382,10 +382,10 @@ $(window).scroll(function () {
             <a href="faq/index.html" class="faq gtm_click_trg" id="sec-menu_faq">よくある質問</a> </li>
         </ul>
       </div>
-    </section>
+    </section> -->
     
     <!-- sec-pickup -->
-    <section class="sec-pickup">
+    <!-- <section class="sec-pickup">
       <div class="inner">
         <h4 class="CormorantGaramond fade-in fade-in-up">Pick Up</h4>
         <div class="swiper-pickup fade-in fade-in-up">
@@ -418,10 +418,9 @@ $(window).scroll(function () {
               </div>
               </a> </div>
           </div>
-          <!-- <div class="swiper-scrollbar"></div> --> 
         </div>
       </div>
-    </section>
+    </section> -->
     <section class="foot-caption inner">
       <p>※1.地下鉄東豊線・南北線「さっぽろ」駅「新設出入口」より徒歩6分（約430m）2023年12月完成予定／出典 北8西1地区第一種市街地再開発事業ホームページ。新設出入口を利用しない場合は地下鉄東豊線・南北線「さっぽろ」駅16番出入口まで徒歩7分（約560m）。<br>
         ※2.無償セレクトプランには申し込み期限がございますので、詳しくは係員にお尋ねください。<br>
