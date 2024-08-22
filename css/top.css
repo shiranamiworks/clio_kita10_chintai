@@ -245,7 +245,12 @@ overflow: hidden;
 }
 .uspWrap .bg-color {
     background:linear-gradient(to bottom, #253339, #4E6D77);
-    padding: 10px 0;
+    padding: 20px 0;
+}
+.uspWrap .bg-color .obi{
+  max-width: 1000px;
+  width: 90%;
+  margin: auto;
 }
 
 
@@ -294,6 +299,11 @@ overflow: hidden;
 }
 
 @media (max-width: 640px) {
+.uspWrap .bg-color .obi{
+    width: 70%;
+    margin: auto;
+}
+
 .uspWrap .bg-color ul {
     flex-direction: column;
     min-height: inherit;
@@ -334,7 +344,7 @@ overflow: hidden;
 
 
 .sec-information {
-  padding: 160px 0;
+  padding: 100px 0 160px;
 }
     
     

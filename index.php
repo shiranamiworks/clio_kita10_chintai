@@ -122,11 +122,12 @@ $("#ls_bnr a").attr("href", ls_url)
   <!-- usp -->
   <section class="uspWrap">
     <div class="bg-color">
-      <ul class="inner fade">
+      <div class="obi"><img src="img/merit-obi-pc.svg" alt="地下鉄東豊線・南北線 新設出入口「札幌」駅徒歩6分 快適な札幌都心ポジション5駅3路線利用可能 ライフスタイルに合わせた全6タイプ1LDK〜3LDK" class="pctb"><img src="img/merit-obi-sp.svg" alt="地下鉄東豊線・南北線 新設出入口「札幌」駅徒歩6分 快適な札幌都心ポジション5駅3路線利用可能 ライフスタイルに合わせた全6タイプ1LDK〜3LDK" class="sp"></div>
+      <!-- <ul class="inner fade">
         <li><img src="img/main_obi01_pc.png" alt="全６タイプ対象無償セレクトプラン1LDK〜3LDK"></li>
         <li><img src="img/main_obi02_pc.png" alt="快適な都心ポジション5駅3路線利用可能"></li>
         <li><img src="img/main_obi03_pc.png" alt="住宅設備のアフターサービス　業界最長の15年保証"></li>
-      </ul>
+      </ul> -->
     </div>
   </section>
   
