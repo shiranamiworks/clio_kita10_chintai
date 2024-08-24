@@ -125,7 +125,7 @@ margin-top: -15px;
   position: fixed;
   top: 20vh;
   right: 0;
-  width: 50px;
+  width: 70px;
   z-index: 201;
   transition: all ease-in-out 0.5s;
 }
@@ -159,12 +159,12 @@ vertical-align: middle;
   -ms-writing-mode: vertical-rl;
   writing-mode: vertical-rl;
 color: #fff;
-  width: 50px;
-    height: 140px;
+  width: 70px;
+    height: 220px;
   font-size: 14px;
   text-align: center;
-  line-height: 50px;
-  padding: 0;
+  line-height: 25px;
+  padding-right: 10px;
   letter-spacing: 0.1em;
   transition: 0.5s;
     background-color: rgba(0,0,0,0.50);
@@ -418,6 +418,7 @@ border: 1px solid #81A0CE;
 
 .sec-pickup {
   padding: 80px 0;
+  display: none;
 }
 
 @media (max-width: 1000px) {
@@ -497,6 +498,8 @@ border: 1px solid #81A0CE;
 -------------------------------------------------------------------------------*/
 
 .foot-caption {
+    padding-top: 80px;
     margin-bottom: 80px;
+    font-size: 11px;
 }
 

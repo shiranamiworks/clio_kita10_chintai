@@ -23,15 +23,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <meta http-equiv="Content-Style-Type" content="text/css" />
 <meta property="og:url" content="https://www.meiwajisyo.co.jp/clio/905_Sapporo/">
 <meta property="og:type" content="website">
-<meta property="og:title" content="クリオ札幌グランクラス【公式HP】｜札幌市東区の新築・分譲マンション">
-<meta property="og:description" content="クリオ札幌グランクラス【公式HP】トップページ。札幌市東区の新築・分譲マンション。">
-<meta property="og:site_name" content="クリオ札幌グランクラス【公式HP】｜札幌市東区の新築・分譲マンション">
-<meta name="Keywords" content="クリオ札幌グランクラス,札幌市東区,マンション,新築マンション,分譲マンション,札幌市,東区,明和地所">
-<meta name="Description" content="クリオ札幌グランクラス【公式HP】トップページ。札幌市東区の新築・分譲マンション。">
+<meta property="og:title" content="クリオ札幌グランクラス【公式HP】｜札幌市東区の賃貸マンション">
+<meta property="og:description" content="クリオ札幌グランクラス【公式HP】トップページ。札幌市東区の賃貸マンション。">
+<meta property="og:site_name" content="クリオ札幌グランクラス【公式HP】｜札幌市東区の賃貸マンション">
+<meta name="Keywords" content="クリオ札幌グランクラス,札幌市東区,マンション,賃貸マンション,札幌市,東区,明和地所">
+<meta name="Description" content="クリオ札幌グランクラス【公式HP】トップページ。札幌市東区の賃貸マンション。">
 <link rel="canonical" href="https://www.meiwajisyo.co.jp/clio/905_Sapporo/">
 
 <!-- title -->
-<title>クリオ札幌グランクラス 【公式HP】｜札幌市東区の新築・分譲マンション</title>
+<title>クリオ札幌グランクラス 【公式HP】｜札幌市東区の賃貸マンション</title>
 
 <!-- preload -->
 <link rel="preload" href="img/main_movie.mp4" as="video" media="(min-width: 601px)">
@@ -102,9 +102,9 @@ $("#ls_bnr a").attr("href", ls_url)
 <div class="_top-cv-btn_fadein pc">
   <div class="top-cv-btn pc">
     <ul>
-      <li> <a href="https://www.meiwajisyo.co.jp/form/request/?bunjo_number=2000233M2220050" class="gtm_cv_request_trg" id="cv_top_request" target="_blank">資料請求</a> </li>
-      <li> <a href="https://www.meiwajisyo.co.jp/form/coming/?bunjo_number=2000233M2220050" class="gtm_cv_reserve_trg" id="cv_top_reserve" target="_blank">来場予約</a> </li>
-      <li> <a href="https://www.meiwajisyo.co.jp/form/remotecoming/?bunjo_number=2000233M2220050" class="gtm_cv_remote_trg" id="cv_top_remote" target="_blank">WEB接客予約</a> </li>
+      <li> <a href="" class="gtm_cv_request_trg" id="cv_top_request" target="_blank">空室状況・入居申込予約など<br>お問い合わせはこちら</a> </li>
+      <!-- <li> <a href="" class="gtm_cv_reserve_trg" id="cv_top_reserve" target="_blank">来場予約</a> </li>
+      <li> <a href="" class="gtm_cv_remote_trg" id="cv_top_remote" target="_blank">WEB接客予約</a> </li> -->
     </ul>
   </div>
 </div>
@@ -158,9 +158,9 @@ $("#ls_bnr a").attr("href", ls_url)
       </div> -->
       <!-- /yokoku -->
       
-      <p class="btn"><a href="https://www.meiwajisyo.co.jp/form/coming/?bunjo_number=2000233M2220050" target="_blank" class="gtm_cv_reserve_trg" id="cv_reserve" target="_blank"><span class="mini">空室状況・入居申込予約など</span><br>お問い合わせはこちら</a></p>
+      <p class="btn"><a href="" target="_blank" class="gtm_cv_reserve_trg" id="cv_reserve" target="_blank"><span class="mini">空室状況・入居申込予約など</span><br>お問い合わせはこちら</a></p>
       <p class="text-nextday mb50" style="font-size: 1.6em;">次回更新予定⽇：<span id="nextDay"></span></p>
-      <p class="caution mt40 mb40">※本物件に資料請求をいただくと、郵送ではなくスマートフォンやパソコンを利用しインターネット回線を介して閲覧いただく形になります。予めご了承ください。また、インターネット通信回線費はお客様ご負担となります。</p>
+      <!-- <p class="caution mt40 mb40">※本物件に資料請求をいただくと、郵送ではなくスマートフォンやパソコンを利用しインターネット回線を介して閲覧いただく形になります。予めご了承ください。また、インターネット通信回線費はお客様ご負担となります。</p> -->
     </div>
     <!-- <div class="infotokyo_con fade-in fade-in-up">
       <h2 class="tokyo_ttl">首都圏にお住まいの方へ</h2>
@@ -296,7 +296,7 @@ $(window).scroll(function () {
           <h2>アクセス</h2>
           <p>北海道最大のターミナル駅<br />
             「札幌」駅を最寄り駅に<br>
-            5駅4路線<sup>※3</sup>のアクセスが可能。</p>
+            5駅4路線<sup>※2</sup>のアクセスが可能。</p>
           <p class="btn pc"><a href="access/" class="gtm_cv_reserve_trg" id="cv_access">VIEW DETAIL</a></p>
           <p class="colorbar"><img src="img/colorbar.svg"></p>
         </div>
@@ -422,18 +422,14 @@ $(window).scroll(function () {
     </section> -->
     <section class="foot-caption inner">
       <p>※1.地下鉄東豊線・南北線「さっぽろ」駅「新設出入口」より徒歩6分（約430m）2023年12月完成予定／出典 北8西1地区第一種市街地再開発事業ホームページ。新設出入口を利用しない場合は地下鉄東豊線・南北線「さっぽろ」駅16番出入口まで徒歩7分（約560m）。<br>
-        ※2.無償セレクトプランには申し込み期限がございますので、詳しくは係員にお尋ねください。<br>
-        ※3. 5駅4路線とは、JR函館本線および千歳線「札幌」駅徒歩10分、地下鉄東豊線「さっぽろ」駅徒歩6分、地下鉄南北線「さっぽろ」駅徒歩6分、地下鉄東豊線「北13条東」駅徒歩6分、地下鉄南北線「北12条」駅徒歩8分となります。<br>
-        ※4. 2023年1月末時点 株式会社日本経済広告社調べ。<br>
-        ※5.サービス対象期間は鍵の引き渡しから 15 年間、当社アフターサービス期間を含みます。<br>
-        <br>
-        ※掲載の借景外観完成予想図は現地 10 階相当の眺望写真（ 2022年8月撮影）に設計段階の図面を基に描き起こした外観完成予想図をＣＧ合成したもので、形状・色等は実際とは異なる場合があります。形状の細部、設備機器等は表現していません。
+        ※2.5駅4路線とは、JR函館本線および千歳線「札幌」駅徒歩10分、地下鉄東豊線「さっぽろ」駅徒歩6分、地下鉄南北線「さっぽろ」駅徒歩6分、地下鉄東豊線「北13条東」駅徒歩6分、地下鉄南北線「北12条」駅徒歩8分となります。<br>
+        ※掲載の借景外観完成予想図は現地10階相当の眺望写真（2022年8月撮影）に設計段階の図面を基に描き起こした外観完成予想図をCG合成したもので、形状・色等は実際とは異なる場合があります。形状の細部、設備機器等は表現していません。
         周辺の建物の位置、高さ等については実際のものと異なる場合があります。眺望は将来に渡って保証するものでは有りません。<br>
         ※北海道新幹線延伸・北海道新幹線札幌駅（2030年度開業予定）出典：新幹線札幌駅の概要について-JR北海道<br>
         ※北5西1・西2地区市街地再開発事業（2028年度竣工予定）出典：札幌駅交流拠点北5西1・西2地区市街地再開発準備組合<br>
         ※札幌駅南口北4西3地区第一種市街地再開発事業（2028年度竣工予定）出典：（仮称）札幌駅南口北4西3地区第一種市街地再開発事業<br>
-        ※掲載の航空写真は現地周辺を撮影（2021年10月）した写真を CG 加工したもので実際とは異なります。また現地の位置を表現した光は、建物の規模や高さを示すものではございません。周辺環境は将来にわたり保証されるものではございません。<br>
-        ※表示の徒歩分数は1分＝80mで計算した概算であり、端数は切り上げています。 <br>
+        ※掲載の航空写真は現地周辺を撮影（2021年10月）した写真をCG加工したもので実際とは異なります。また現地の位置を表現した光は、建物の規模や高さを示すものではございません。周辺環境は将来にわたり保証されるものではございません。<br>
+        ※表示の徒歩分数は1分＝80mで計算した概算であり、端数は切り上げています。<br>
         ※掲載のリビング・ダイニング・キッチン完成予想図（Aタイプ12階／有償設計変更プラン）は、設計段階の図面を基に描き起こしたものに現地12階相当の眺望写真（2022年7月撮影）をCG合成したもので、形状・色等は実際とは異なる場合があります。また、家具・調度品・有償オプション等は販売価格に含まれません。眺望については将来に渡って保証するものではありません。予めご了承ください。
       </p>
     </section>

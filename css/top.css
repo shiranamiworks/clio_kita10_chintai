@@ -19,7 +19,7 @@
   position: fixed;
   top: 20vh;
   right: 0;
-  width: 50px;
+  width: 70px;
   z-index: 201;
   transition: all ease-in-out 0.5s;
 }
@@ -53,13 +53,13 @@ vertical-align: middle;
   -ms-writing-mode: tb-rl;
   -ms-writing-mode: vertical-rl;
   writing-mode: vertical-rl;
-color: #fff;
-  width: 50px;
-    height: 140px;
+  color: #fff;
+  width: 70px;
+  height: 220px;
   font-size: 14px;
   text-align: center;
-  line-height: 50px;
-  padding: 0;
+  line-height: 25px;
+  padding-right: 10px;
   letter-spacing: 0.1em;
   transition: 0.5s;
     background-color: rgba(0,0,0,0.50);
@@ -848,7 +848,7 @@ margin-bottom: 80px;
 
 
 @media (max-width: 640px) {
-.sec-into .swiper-slide{;
+.sec-into .swiper-slide {
     transform:scale(1.0,1.0);
     padding: 10px;
     margin-left: 0;
