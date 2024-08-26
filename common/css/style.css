@@ -83,6 +83,7 @@
 }
 .tb-menu-wrap .tb-menu-nav_wrap {
   width: 100%;
+  margin-top: -70px;
 }
 .tb-menu-wrap .tb-menu-nav_wrap.fixed {
   position: fixed;
@@ -252,7 +253,7 @@
   display: block;
 background-color: #ccc;
   opacity: 1;
-  min-height: calc(var(--vh, 1vh) * 45);
+  min-height: calc(var(--vh, 1vh) * 55);
   overflow-y: scroll;
   -webkit-animation-name: "fade-in";
           animation-name: "fade-in";
