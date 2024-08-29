@@ -1,0 +1,175 @@
+@charset "UTF-8";
+
+
+.page .sec-map{
+    padding: 160px 0;
+}
+
+@media (max-width: 640px) {
+.page .sec-map{
+    padding: 60px 0;
+}
+}
+
+ .wrap{
+  max-width: 1000px;
+  margin: auto;
+}
+.maincontents{
+  margin: 160px auto;
+  font-family: "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", "sans-serif";
+  color: #000;
+}
+ .content.all {
+  padding-bottom: 20px;
+}
+ .content.notice {
+  padding-top: 0;
+}
+ .content .text{
+  font-size: 16px;
+  text-align: left;
+  padding-bottom: 5px;
+}
+ .content .text02{
+  padding-bottom: 0px;
+}
+ .content .text02.notice{
+  padding: 20px 0 0px;
+}
+ .content .tarm{
+  font-size: 16px;
+  text-align: left;
+  padding: 30px 0 10px;
+}
+ dl {
+  /* margin-bottom: 1px; */
+  border-top: 1px solid #e5e7ec;
+  border-right: 1px solid #e5e7ec;;
+  overflow: hidden;
+  zoom: 1;
+  font-size: 14px;
+}
+ dl:last-child {
+  border-bottom: 1px solid #cccccc;
+}
+ dt,  dd {
+  padding: 12px 16px 10px;
+  line-height: 20px;
+  letter-spacing: 0;
+  box-sizing: border-box;
+}
+ dl {
+  display: table;
+  border-left: 1px solid #cccccc;
+  border-right: 1px solid #cccccc;
+  border-top: 1px solid #cccccc;
+}
+ dd {
+  display: table-cell;
+  width: 715px;
+}
+ dt {
+  display: table-cell;
+  width: 225px;
+  color: #000;
+  background: #F0F0F0;
+  border-right: 1px solid #cccccc;
+}
+ .pageAnnotationArea {
+  padding-top: 30px;
+}
+ .notice{
+  margin: 30px auto 0;
+}
+ .notice .title{
+  width: 10%;
+  float: left;
+}
+ .notice .box-title{
+  border: 1px solid #cccccc;
+  padding: 10px 14px;
+  display: inline-block;
+  text-align: center;
+  background-color: #fff;
+  font-size: 13px;
+  background-color: #fff;
+}
+ .notice .notice-text{
+  width: 89%;
+  display: inline-block;
+}
+ .notice .notice-text .text{
+  font-size: 11px;
+  text-align: left;
+  line-height: 1.5;
+  padding-bottom: 20px;
+  padding-left: 10px;
+}
+ .time{
+  font-size: 11px;
+  text-align: left;
+  line-height: 1.5;
+  padding: 30px 0;
+}
+ .time.ud{
+  padding-top: 0px;
+  font-size: 13px;
+}
+
+@media screen and (max-width: 1024px) {
+  .maincontents{
+    width: 94%;
+  }
+   dl {
+    display: block;
+  }
+   
+   dd {
+    display: block;
+    width: auto;
+    color: #000;
+  }
+   dt {
+    display: block;
+    width: auto;
+    border-right: none;
+    border-bottom: 1px solid #cccccc;
+  }
+   .pageAnnotationArea {
+    color: #000;
+}
+   .notice{
+    color: #000;
+}
+  .notice .notice-text{
+    width: 80%;
+    display: inline-block;
+    color: #000;
+}
+  .time{
+    color: #000;
+}
+}
+@media screen and (max-width: 768px) {
+  .notice .title{
+  width: 88%;
+  padding-left: 15px;
+  margin-bottom: 10px;
+}
+  .notice .notice-text{
+  width: 88%;
+  padding-left: 5px;
+}
+ .notice .sp{
+  display: block;
+}
+ .content .text02{
+  padding-bottom: 20px;
+  color: #000;
+}
+ .content .tarm{
+  padding: 30px 0 10px;
+  color: #000;
+}
+}
