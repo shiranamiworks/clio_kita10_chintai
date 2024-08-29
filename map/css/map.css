@@ -16,10 +16,17 @@
     max-width: 880px;
 }
 
+.page .sec-map .tit{
+  text-align: center;
+  font-size: 24px;
+  padding-bottom: 30px;
+}
+
 .page .sec-map.salon{
     background-image:url("../img/salon_bg.png");
     background-size: cover;
     background-position: top;
+    margin-bottom: 50px;
 }
 
 
@@ -53,6 +60,10 @@
 }
 
 @media (max-width: 640px) {
+.page .sec-map .tit{
+    font-size: 20px;
+    padding-bottom: 30px;
+}
 .sec-map .btn {
     margin: 40px auto;
 }
