@@ -205,9 +205,15 @@ overflow: hidden;
     
     
 }
-#contentsWrap main .cap{
-  right: auto;
-  left: 63.5%;
+
+#contentsWrap .mv-wrap .cap{
+  right: 33%;
+}
+
+@media (max-width: 1200px) {
+  #contentsWrap .mv-wrap .cap{
+  right: 33%;
+  }
 }
 
 
