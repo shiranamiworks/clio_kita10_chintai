@@ -17,7 +17,7 @@
 
 .top-cv-btn {
   position: fixed;
-  top: 20vh;
+  bottom: 15vh;
   right: 0;
   width: 70px;
   z-index: 201;
@@ -179,9 +179,9 @@ overflow: hidden;
 }
 
 @media (max-width: 1000px) {
-#contentsWrap main {height: 60vh;}  
-#contentsWrap .mv-wrap .mv-bg {height: 60vh;}    
-#contentsWrap .mv-wrap video {height: 60vh;}      
+#contentsWrap main {height: 80vh;}  
+#contentsWrap .mv-wrap .mv-bg {height: 80vh;}    
+#contentsWrap .mv-wrap video {height: 80vh;}      
 }
 
 @media (max-width: 640px) {
@@ -205,7 +205,10 @@ overflow: hidden;
     
     
 }
-
+#contentsWrap main .cap{
+  right: auto;
+  left: 63.5%;
+}
 
 
 
