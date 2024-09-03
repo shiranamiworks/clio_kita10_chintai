@@ -116,7 +116,7 @@ $("#ls_bnr a").attr("href", ls_url)
   <main class="mv-wrap fade">
     <div class="mv-bg"></div>
     <div id="video"></div>
-    <p class="cap">外観完成予想図</p>
+    <!-- <p class="cap">外観完成予想図</p> -->
   </main>
   
   <!-- usp -->
