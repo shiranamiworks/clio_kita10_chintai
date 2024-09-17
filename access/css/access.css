@@ -586,6 +586,10 @@ background: linear-gradient(to bottom, #253339, #4E6D77);
 
 /*sec-bus*/
 
+.sec-bus {
+    display: none;
+}
+
 .page .sec-bus .bus {
     background: linear-gradient(to bottom, #253339, #4E6D77);
     color: #EFEFEF;
@@ -729,7 +733,7 @@ flex-direction: column;
 }
 
 .page .sec-bullet .bullet .page_intro h3 sup{
-    font-size: 15px;
+    font-size: 12px;
 }
 
 
@@ -748,6 +752,9 @@ flex-direction: column;
     margin-bottom: 40px;
     text-align: center;
     letter-spacing: 0.2em;
+}
+.page .sec-bullet .bullet_map .left h4 sup{
+    font-size: 12px;
 }
 
 .page .sec-bullet .bullet_map .left h4 span.time{
@@ -835,7 +842,8 @@ flex-direction: column;
 }
 
 .page .sec-airplane .location_con{
-    display: flex;
+    display: none;
+    /* display: flex; */
     flex-wrap: wrap;
     justify-content: space-between;
     margin-bottom: 160px;
@@ -972,7 +980,7 @@ z-index: 3;
 .page .sec-airplane .route_con .right,
 .page .sec-airplane .route_con2 .right{
     position: relative;
-    width: 30%;
+    width: 35%;
     margin-right: 15vw;
     padding: 0 0 50px 50px;
     z-index: 1;
@@ -1079,6 +1087,9 @@ z-index: 3;
 }
 .page .sec-airplane .route_con2 .text dl dd{
     width: calc(100% - 5em);
+}
+.page .sec-airplane .route_con2 .text dl dd .mini{
+    font-size: 11px;
 }
 
 .page .sec-airplane .route_con .bg_green,
