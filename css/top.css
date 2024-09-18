@@ -185,10 +185,10 @@ overflow: hidden;
 }
 
 @media (max-width: 640px) {
-#contentsWrap main {height: 50vh;}  
-#contentsWrap .mv-wrap .mv-bg {height: 50vh;}    
+#contentsWrap main {height: 150vw;}  
+#contentsWrap .mv-wrap .mv-bg {height: 150vw;}    
 #contentsWrap .mv-wrap #video {
-    height: 50vh;
+    height: 150vw;
     position: relative;
 }
 
