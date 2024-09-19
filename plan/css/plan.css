@@ -650,7 +650,7 @@ padding-top: 10px;
     margin: auto;
 }
 .plan-detail__img .imgBox.dtype{
-    max-width: 370px;
+    max-width: 359px;
     margin: auto;
 }
 .plan-detail__img .imgBox.etype{
@@ -742,27 +742,11 @@ border-left: 40px rgba(137, 156, 123, .2) solid;
 .plan-detail__img {
     margin-top: 60px;
 }
+    
+.plan-detail__img .imgBox{
+    width: 90%;
+}
 
-.plan-detail__img .imgBox.btype{
-    max-width: 370px;
-    margin: auto;
-}
-.plan-detail__img .imgBox.ctype{
-    max-width: 470px;
-    margin: auto;
-}
-.plan-detail__img .imgBox.dtype{
-    max-width: 370px;
-    margin: auto;
-}
-.plan-detail__img .imgBox.etype{
-    max-width: 540px;
-    margin: auto;
-}
-.plan-detail__img .imgBox.ftype{
-    max-width: 550px;
-    margin: auto;
-}
     
 .planDetail .sec-planlist {
     margin-top: 80px;
