@@ -296,7 +296,7 @@ $(window).scroll(function () {
           <h2>アクセス</h2>
           <p>北海道最大のターミナル駅<br />
             「札幌」駅を最寄り駅に<br>
-            5駅4路線<sup>※2</sup>のアクセスが可能。</p>
+            5駅4路線<sup>※1</sup>のアクセスが可能。</p>
           <p class="btn pc"><a href="access/" class="gtm_cv_reserve_trg" id="cv_access">VIEW DETAIL</a></p>
           <p class="colorbar"><img src="img/colorbar.svg"></p>
         </div>
