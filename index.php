@@ -23,15 +23,16 @@ require "../cookie.php";
 <meta http-equiv="Content-Style-Type" content="text/css" />
 <meta property="og:url" content="https://www.meiwajisyo.co.jp/chukai/chintai/SapporoGrandClass/">
 <meta property="og:type" content="website">
-<meta property="og:title" content="クリオ札幌グランクラス【公式HP】｜札幌市東区の賃貸マンション">
-<meta property="og:description" content="クリオ札幌グランクラス【公式HP】トップページ。札幌市東区の賃貸マンション。">
-<meta property="og:site_name" content="クリオ札幌グランクラス【公式HP】｜札幌市東区の賃貸マンション">
-<meta name="Keywords" content="クリオ札幌グランクラス,札幌市東区,マンション,賃貸マンション,札幌市,東区,明和地所">
-<meta name="Description" content="クリオ札幌グランクラス【公式HP】トップページ。札幌市東区の賃貸マンション。">
+<meta property="og:image" content="https://www.meiwajisyo.co.jp/chukai/chintai/SapporoGrandClass/common/imgs/ogimage.jpg" />
+<meta property="og:title" content="クリオ札幌グランクラス 【公式HP】｜札幌市東区の新築・賃貸マンション ">
+<meta property="og:description" content="クリオ札幌グランクラス【公式HP】トップページ。札幌市東区の新築・賃貸マンション。地下鉄東豊線・南北線「札幌」駅徒歩6分。5駅4路線利用可能。">
+<meta property="og:site_name" content="クリオ札幌グランクラス 【公式HP】｜札幌市東区の新築・賃貸マンション">
+<meta name="Keywords" content="クリオ札幌グランクラス,札幌市東区,マンション,賃貸マンション,新築マンション,札幌市,東区,明和地所">
+<meta name="Description" content="クリオ札幌グランクラス【公式HP】トップページ。札幌市東区の新築・賃貸マンション。地下鉄東豊線・南北線「札幌」駅徒歩6分。5駅4路線利用可能。">
 <link rel="canonical" href="https://www.meiwajisyo.co.jp/chukai/chintai/SapporoGrandClass/">
 
 <!-- title -->
-<title>クリオ札幌グランクラス 【公式HP】｜札幌市東区の賃貸マンション</title>
+<title>クリオ札幌グランクラス 【公式HP】｜札幌市東区の新築・賃貸マンション</title>
 
 <!-- preload -->
 <link rel="preload" href="img/main_movie.mp4" as="video" media="(min-width: 601px)">
@@ -115,12 +116,7 @@ $("#ls_bnr a").attr("href", ls_url)
   <!-- usp -->
   <section class="uspWrap">
     <div class="bg-color">
-      <div class="obi"><img src="img/merit-obi-pc.svg" alt="地下鉄東豊線・南北線 新設出入口「札幌」駅徒歩6分 快適な札幌都心ポジション5駅3路線利用可能 ライフスタイルに合わせた全6タイプ1LDK〜3LDK" class="pctb"><img src="img/merit-obi-sp.svg" alt="地下鉄東豊線・南北線 新設出入口「札幌」駅徒歩6分 快適な札幌都心ポジション5駅3路線利用可能 ライフスタイルに合わせた全6タイプ1LDK〜3LDK" class="sp"></div>
-      <!-- <ul class="inner fade">
-        <li><img src="img/main_obi01_pc.png" alt="全６タイプ対象無償セレクトプラン1LDK〜3LDK"></li>
-        <li><img src="img/main_obi02_pc.png" alt="快適な都心ポジション5駅3路線利用可能"></li>
-        <li><img src="img/main_obi03_pc.png" alt="住宅設備のアフターサービス　業界最長の15年保証"></li>
-      </ul> -->
+      <div class="obi"><img src="img/merit-obi-pc.svg" alt="地下鉄東豊線・南北線「札幌」駅徒歩6分 快適な札幌都心ポジション5駅4路線利用可能 ライフスタイルに合わせた全6タイプ1LDK〜3LDK" class="pctb"><img src="img/merit-obi-sp.svg" alt="地下鉄東豊線・南北線「札幌」駅徒歩6分 快適な札幌都心ポジション5駅4路線利用可能 ライフスタイルに合わせた全6タイプ1LDK〜3LDK" class="sp"></div>
     </div>
   </section>
   
@@ -134,71 +130,12 @@ $("#ls_bnr a").attr("href", ls_url)
       <div class="open"> 
         <p class="txt-open"><span class="d-inline-block">明和地所の分譲仕様賃貸レジデンス</span><br>------------For RENT------------</p>
         <p class="entend-time">2024年11月竣工<br>入居申込受付中</p>
-        <!-- <p class="reserve-time mt15"><span class="note d-block"><span class="num">事前案内会開催中</span>〈完全予約制〉</span><br>
-          ①10:00～&nbsp;②13：00～&nbsp;③16：00～&nbsp;④19：00～</p> -->
       </div>
-      <!-- <div class="yokoku mt40">
-        <p class="yokoku_ttl">｜予告広告｜</p>
-        <p>本広告を行い取引を開始するまでは、契約又は予約のお申し込みに応じることができません。<br>
-          また、お申し込みの順位の確保に関する措置も講じることができません。予めご了承ください。<br>
-          （販売予定時期／2023年3月下旬）</p>
-      </div> -->
-      <!-- /yokoku -->
-        <!-- <div class="yokoku henkou mt40">
-        <p class="yokoku_ttl">【変更のお知らせ】</p>
-        <p>第1期1次の販売予定時期につきまして、2023年2月下旬としておりましたが、<br class="pctb">
-          2023年3月下旬に変更となりました。</p>
-      </div> -->
-      <!-- /yokoku -->
       
-      <p class="btn"><a href="" target="_blank" class="gtm_cv_request_trg" id="cv_top_request" target="_blank"><span class="mini">空室状況・入居申込予約など</span><br>お問い合わせはこちら</a></p>
+      <p class="btn"><a href="https://www.meiwajisyo.co.jp/form/chukai-chintai/?estate_name=札幌グランクラス" target="_blank" class="gtm_cv_request_trg" id="cv_info_request" target="_blank"><span class="mini">空室状況・入居申込予約など</span><br>お問い合わせはこちら</a></p>
       <p class="text-nextday mb50" style="font-size: 1.6em;">次回更新予定⽇：<span id="nextDay"></span></p>
       <!-- <p class="caution mt40 mb40">※本物件に資料請求をいただくと、郵送ではなくスマートフォンやパソコンを利用しインターネット回線を介して閲覧いただく形になります。予めご了承ください。また、インターネット通信回線費はお客様ご負担となります。</p> -->
     </div>
-    <!-- <div class="infotokyo_con fade-in fade-in-up">
-      <h2 class="tokyo_ttl">首都圏にお住まいの方へ</h2>
-      <div class="open">
-        <p class="txt-open"><span class="d-inline-block">クリオ ライフスタイルサロン銀座にて<br class="sp">
-          案内開始</span></p>
-        <p class="reserve-time mt15"><span class="note d-block">〈ご案内時間〉</span><br>
-          ①10:00～&nbsp;②13：00～&nbsp;③16：00～<br />
-          <span class="note d-block">［完全予約制］</span></p>
-        <p class="reserve-time mt30"><span class="note d-block">〈ご案内場所〉</span><br>
-          <span class="note d-block">クリオ ライフスタイルサロン銀座</span></p>
-      </div>
-      <p class="btn tokyo_btn"> <a href="https://www.meiwajisyo.co.jp/form/coming/?bunjo_number=2000233M2220050" target="_blank" class="gtm_cv_reserve_trg" id="cv_reserve" target="_blank"> 銀座案内会の<br class="sp">
-        ご予約はこちら <span>※銀座での案内をご希望の方は、来場予約の自由記入欄に「銀座希望」とご記入ください。</span> </a> </p>
-      <ul class="tokyo_list">
-        <li>
-          <h3 class="ttl"><span class="CormorantGaramond">case</span> 1</h3>
-          <p>移住先をご検討中の<br class="pctb">
-            首都圏在住の方</p>
-        </li>
-        <li>
-          <h3 class="ttl"><span class="CormorantGaramond">case</span> 2</h3>
-          <p>ビジネス等で<br class="pctb">
-            マルチ拠点をお探しの方</p>
-        </li>
-        <li>
-          <h3 class="ttl"><span class="CormorantGaramond">case</span> 3</h3>
-          <p>投資対象として<br class="pctb">
-            お考えの方</p>
-        </li>
-      </ul>
-    </div> -->
-    <!-- <div class="top-banner">
-      <div class="bnrs cs15_bnr"> <a href="https://www.meiwajisyo.co.jp/sapporoclass/" target="_blank"><img src="img/bnr_bukken-01.jpg" alt="札幌でクリオに住まう"></a> </div>
-    </div> -->
-    <!-- /top-banner -->
-    
-    <!-- <div class="top-banner">
-      <div id="ls_bnr" class="bnrs cs15_bnr"><a href="" target="_blank"><img src="img/ls_banner.jpg"></a> </div>
-      <ul class="banner_list banner_list2">
-        <li><a href="https://www.youtube.com/watch?v=2pyIMIqAILk" title="リモートクリオ動画紹介" target="_blank"><img src="img/bnr_info01.jpg" alt="リモートクリオ紹介動画"></a></li>
-        <li><a href="https://www.meiwajisyo.co.jp/clio/remoteclio/sgc.html?link=rcoteclio/sgc.html?link=rc" title="リモートクリオ動画紹介" target="_blank"><img src="img/bnr_info02.jpg" alt="リモートクリオ　詳しくはこちら"></a></li>
-      </ul>
-    </div> -->
-    <!-- /top-banner --> 
     
   </section>
 </section>
@@ -348,71 +285,6 @@ $(window).scroll(function () {
       </div>
     </section>
     
-    <!-- sec-menu -->
-    <!-- <section id="sec-menu" class="sec-menu fade-in fade-in-up">
-      <div class="menu_con">
-        <ul>
-          <li class="link_box">
-            <p class="menu_title">セレクトシステム</p>
-            <p class="menu_eng CormorantGaramond">SELECT SYSTEM</p>
-            <p class="cap">クリオ ライフスタイルサロン札幌 展示スペース（2020年7月撮影）</p>
-            <a href="select/">詳細</a> </li>
-          <li class="link_box">
-            <p class="menu_title">分譲実績</p>
-            <p class="menu_eng CormorantGaramond">RESULT</p>
-            <p class="cap">クリオ レジダンス南郷緑邸（2019年6月撮影）</p>
-            <a href="result/">詳細</a></li>
-          <li class="link_box">
-            <p class="menu_title">住宅設備15年保証</p>
-            <p class="menu_eng"><span class="CormorantGaramond">CLIO SUPPORT</span> 15</p>
-            <p class="cap">Image photo</p>
-            <a href="support/index.html" class="support gtm_click_trg" id="sec-menu_15year">住宅設備15年保証</a> </li>
-          <li class="link_box">
-            <p class="menu_title">よくある質問</p>
-            <p class="menu_eng CormorantGaramond">FAQ</p>
-            <p class="cap">Image photo</p>
-            <a href="faq/index.html" class="faq gtm_click_trg" id="sec-menu_faq">よくある質問</a> </li>
-        </ul>
-      </div>
-    </section> -->
-    
-    <!-- sec-pickup -->
-    <!-- <section class="sec-pickup">
-      <div class="inner">
-        <h4 class="CormorantGaramond fade-in fade-in-up">Pick Up</h4>
-        <div class="swiper-pickup fade-in fade-in-up">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide"> <a href="https://www.meiwajisyo.co.jp/app/" target="_blank" class="gtm_click_trg" id="view_clioapp">
-              <div class="inner_card">
-                <div class="imgBox"> <img src="imgs/bnr_pickup01.jpg" alt="CLIO APP"> </div>
-                <div class="txtarea">
-                  <p class="ttl EBgaramond">CLIO APP</p>
-                  <p class="more EBgaramond">view more</p>
-                </div>
-              </div>
-              </a> </div>
-            <div class="swiper-slide"> <a href="https://www.meiwajisyo.co.jp/club/" target="_blank" class="gtm_click_trg" id="view_lifestyleclub">
-              <div class="inner_card">
-                <div class="imgBox"> <img src="imgs/bnr_pickup02.jpg" alt="LIFESTYLE CLUB"> </div>
-                <div class="txtarea">
-                  <p class="ttl EBgaramond">LIFESTYLE CLUB</p>
-                  <p class="more EBgaramond">view more</p>
-                </div>
-              </div>
-              </a> </div>
-            <div class="swiper-slide"> <a href="https://www.meiwa-kanri.co.jp/pdf/suumoaward2022.pdf" target="_blank" class="gtm_click_trg" id="view_suumoaward2022">
-              <div class="inner_card">
-                <div class="imgBox"> <img src="imgs/bnr_pickup03.jpg" alt="AWARD 2022"> </div>
-                <div class="txtarea">
-                  <p class="ttl EBgaramond">AWARD 2022</p>
-                  <p class="more EBgaramond">view more</p>
-                </div>
-              </div>
-              </a> </div>
-          </div>
-        </div>
-      </div>
-    </section> -->
     <section class="foot-caption inner">
       <p>
         ※1.5駅4路線とは、JR函館本線および千歳線「札幌」駅徒歩10分、地下鉄東豊線「さっぽろ」駅徒歩6分、地下鉄南北線「さっぽろ」駅徒歩6分、地下鉄東豊線「北13条東」駅徒歩6分、地下鉄南北線「北12条」駅徒歩8分となります。<br>
