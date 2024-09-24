@@ -158,6 +158,7 @@ vertical-align: middle;
   -ms-writing-mode: tb-rl;
   -ms-writing-mode: vertical-rl;
   writing-mode: vertical-rl;
+  font-feature-settings: initial;
 color: #fff;
   width: 70px;
     height: 220px;
