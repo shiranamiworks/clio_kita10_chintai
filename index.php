@@ -7,12 +7,12 @@ require "../cookie.php";
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" dir="ltr">
 <head profile="http://purl.org/net/ns/metaprof">
 
-<!-- Google Tag Manager --> 
+<!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-KR9NHLL');</script> 
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-KR9NHLL');</script>
 <!-- End Google Tag Manager --> 
 
 <!-- meta -->
@@ -21,14 +21,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <meta http-equiv="Content-Script-Type" content="text/javascript" />
 <meta http-equiv="Content-Style-Type" content="text/css" />
-<meta property="og:url" content="https://www.meiwajisyo.co.jp/clio/905_Sapporo/">
+<meta property="og:url" content="https://www.meiwajisyo.co.jp/chukai/chintai/SapporoGrandClass/">
 <meta property="og:type" content="website">
 <meta property="og:title" content="クリオ札幌グランクラス【公式HP】｜札幌市東区の賃貸マンション">
 <meta property="og:description" content="クリオ札幌グランクラス【公式HP】トップページ。札幌市東区の賃貸マンション。">
 <meta property="og:site_name" content="クリオ札幌グランクラス【公式HP】｜札幌市東区の賃貸マンション">
 <meta name="Keywords" content="クリオ札幌グランクラス,札幌市東区,マンション,賃貸マンション,札幌市,東区,明和地所">
 <meta name="Description" content="クリオ札幌グランクラス【公式HP】トップページ。札幌市東区の賃貸マンション。">
-<link rel="canonical" href="https://www.meiwajisyo.co.jp/clio/905_Sapporo/">
+<link rel="canonical" href="https://www.meiwajisyo.co.jp/chukai/chintai/SapporoGrandClass/">
 
 <!-- title -->
 <title>クリオ札幌グランクラス 【公式HP】｜札幌市東区の賃貸マンション</title>
@@ -78,6 +78,11 @@ $("#ls_bnr a").attr("href", ls_url)
 </head>
 
 <body class="base">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KR9NHLL"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
 <noscript>
 <div class="noscript" id="noscript">
   <div class="content"> 当サイトを最適な状態で閲覧していただくにはブラウザの<span>JavaScriptを有効</span>にしてご利用下さい。<br />
@@ -99,15 +104,13 @@ $("#ls_bnr a").attr("href", ls_url)
 </script> 
 
 <!-- top-cv-btn -->
-<div class="_top-cv-btn_fadein pc">
+<!-- <div class="_top-cv-btn_fadein pc">
   <div class="top-cv-btn pc">
     <ul>
       <li> <a href="" class="gtm_cv_request_trg" id="cv_top_request" target="_blank">空室状況・入居申込予約など<br>お問い合わせはこちら</a> </li>
-      <!-- <li> <a href="" class="gtm_cv_reserve_trg" id="cv_top_reserve" target="_blank">来場予約</a> </li>
-      <li> <a href="" class="gtm_cv_remote_trg" id="cv_top_remote" target="_blank">WEB接客予約</a> </li> -->
     </ul>
   </div>
-</div>
+</div> -->
 <!-- top-cv-btn -->
 
 <section id="contentsWrap"> 
@@ -158,7 +161,7 @@ $("#ls_bnr a").attr("href", ls_url)
       </div> -->
       <!-- /yokoku -->
       
-      <p class="btn"><a href="" target="_blank" class="gtm_cv_reserve_trg" id="cv_reserve" target="_blank"><span class="mini">空室状況・入居申込予約など</span><br>お問い合わせはこちら</a></p>
+      <p class="btn"><a href="" target="_blank" class="gtm_cv_request_trg" id="cv_top_request" target="_blank"><span class="mini">空室状況・入居申込予約など</span><br>お問い合わせはこちら</a></p>
       <p class="text-nextday mb50" style="font-size: 1.6em;">次回更新予定⽇：<span id="nextDay"></span></p>
       <!-- <p class="caution mt40 mb40">※本物件に資料請求をいただくと、郵送ではなくスマートフォンやパソコンを利用しインターネット回線を介して閲覧いただく形になります。予めご了承ください。また、インターネット通信回線費はお客様ご負担となります。</p> -->
     </div>
@@ -232,7 +235,7 @@ $("#ls_bnr a").attr("href", ls_url)
         刻一刻と進化する風景と、<br class="sp">
         住まう人々の人生が響き合う<br class="tbsp">
         新たな都心邸宅の誕生です。</span></span>
-        </h3>
+      </p>
     </div>
     <div class="vision-text fadein">
       <h3 class="ttl"><span class="smoothText"><span class="smoothTextTrigger">進化する都心、<br class="tbsp">
@@ -510,21 +513,7 @@ new simpleParallax(image, {
   <img width="1" height="1" alt="" src="//tr.webantenna.info/_webantenna.png?ga=WAYtKo-1&amp;jse=0">
   </noscript>
   <!-- end WebAntenna --> 
-  
-  <!-- YTM --> 
-  <script type="text/javascript">
-        (function () {
-            var tagjs = document.createElement("script");
-            var s = document.getElementsByTagName("script")[0];
-            tagjs.async = true;
-            tagjs.src = "//s.yjtag.jp/tag.js#site=TVExpVn";
-            s.parentNode.insertBefore(tagjs, s);
-        }());
-    </script>
-  <noscript>
-  <iframe src="//b.yjtag.jp/iframe?c=TVExpVn" width="1" height="1" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
-  </noscript>
-  <!-- end YTM --> 
+   
   
 </div>
 </body>
