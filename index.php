@@ -24,9 +24,9 @@ require "../cookie.php";
 <meta property="og:url" content="https://www.meiwajisyo.co.jp/chukai/chintai/SapporoGrandClass/">
 <meta property="og:type" content="website">
 <meta property="og:image" content="https://www.meiwajisyo.co.jp/chukai/chintai/SapporoGrandClass/common/imgs/ogimage.jpg" />
-<meta property="og:title" content="クリオ札幌グランクラス 【公式HP】｜札幌市東区の新築・賃貸マンション ">
+<meta property="og:title" content="クリオ札幌グランクラス【公式HP】｜札幌市東区の新築・賃貸マンション">
 <meta property="og:description" content="クリオ札幌グランクラス【公式HP】トップページ。札幌市東区の新築・賃貸マンション。地下鉄東豊線・南北線「札幌」駅徒歩6分。5駅4路線利用可能。">
-<meta property="og:site_name" content="クリオ札幌グランクラス 【公式HP】｜札幌市東区の新築・賃貸マンション">
+<meta property="og:site_name" content="クリオ札幌グランクラス【公式HP】｜札幌市東区の新築・賃貸マンション">
 <meta name="Keywords" content="クリオ札幌グランクラス,札幌市東区,マンション,賃貸マンション,新築マンション,札幌市,東区,明和地所">
 <meta name="Description" content="クリオ札幌グランクラス【公式HP】トップページ。札幌市東区の新築・賃貸マンション。地下鉄東豊線・南北線「札幌」駅徒歩6分。5駅4路線利用可能。">
 <link rel="canonical" href="https://www.meiwajisyo.co.jp/chukai/chintai/SapporoGrandClass/">
