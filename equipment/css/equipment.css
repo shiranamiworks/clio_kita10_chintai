@@ -462,6 +462,15 @@ equipment
     font-weight: 500;
 }
 
+.equipment-section__ttl.toilet {
+    text-align: center;
+    padding-left: 0%;
+    margin-right: 0%;
+}
+.equipment-section__ttl.toilet .equipment-section__ttl-en {
+    margin-right: auto;
+}
+
 
 .equipment-section__ttl-en {
     margin-bottom: 4px;
@@ -490,7 +499,7 @@ equipment
 #equipment .ttl_con{
     display: block;
     position: relative;
-    height: 200px;
+    height: 230px;
     background-color: #fff;
 }
     
@@ -537,7 +546,7 @@ equipment
 /*### コンテンツ共通 start ###################################################*/
 
 #equipment .wrapper {
-    width: 94%;
+    width: 90%;
     max-width: 1000px;
     margin: 0 auto;
     height: 100%;
@@ -566,10 +575,10 @@ equipment
     box-sizing: border-box;
 }
 
-.equipment-section__container-01 .equipment-section__block {
+/* .equipment-section__container-01 .equipment-section__block {
     background-color: #F7F5F2;
     padding: 40px 30px;
-}
+} */
 
 
 /*
@@ -621,7 +630,14 @@ equipment
 }
 
 .equipment-section__container-01 .equipment-section__item {
-    width: calc(100% / 3 - 16px);
+    /* width: calc(100% / 3 - 16px); */
+    width: 35%;
+    margin-bottom: 30px;
+}
+
+.equipment-section__container-01 .equipment-section__item.double{
+    
+    width: 64%;
 }
 
 .equipment-section__container-01 .equipment-section__item p.cap{
@@ -658,11 +674,11 @@ equipment
     text-align: right;
 }
 
-.equipment-kitchen .equipment-section__item .flex_con{
+/* .equipment-kitchen .equipment-section__item .flex_con{
     display: flex;
     justify-content: space-between;
-    /*align-items: flex-end;*/
-}
+    align-items: flex-end;
+} */
 
 
 .equipment-kitchen .equipment-section__item .flex_con.two .photo:first-child{
@@ -701,10 +717,10 @@ equipment
 }
     
    
-.equipment-section__container-01 .equipment-section__block {
+/* .equipment-section__container-01 .equipment-section__block {
     background-color: #F7F5F2;
     padding: 30px 10px;
-}
+} */
     /*
     .equipment-section__container-01 .equipment-section__block:nth-child(2) {
         width: 100%;
@@ -742,7 +758,11 @@ equipment
     }
     
     .equipment-section__container-01 .equipment-section__item  {
-        width: calc(50% - 10px);
+        /* width: calc(50% - 10px); */
+        width: 100%;
+    }
+    .equipment-section__container-01 .equipment-section__item.double  {
+        width: 100%;
     }
     
     .equipment-section__container-01 .equipment-section__item:nth-child(2) {
@@ -750,7 +770,7 @@ equipment
     }
     
     .equipment-section__item__ttl {
-        margin-bottom: 30px;
+        margin-bottom: 20px;
         font-size: 14px;
         line-height: 22px;
     }
@@ -766,8 +786,8 @@ equipment
 .equipment-kitchen .equipment-section__container-02 .equipment-section__item,
 .equipment-kitchen .equipment-section__container-03 .equipment-section__item{
     /*width: calc(50% - 10px);*/
-    padding: 30px 20px 15px;
-    border: 1px solid #B8A281;
+    /* padding: 30px 20px 15px;
+    border: 1px solid #B8A281; */
 }
 
 
@@ -846,11 +866,12 @@ equipment
 /*20220323*/
 .equipment-kitchen .equipment-section__item .flex_con{
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
 }
 
 .equipment-kitchen .equipment-section__item .flex_con.four .photo{
-    width: 23%;
+    width: 48%;
+    margin-left: 10px;
     padding-top: 22px;
 }
 
@@ -920,7 +941,7 @@ equipment
     
 
 .equipment-kitchen .equipment-section__item .flex_con{
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
 }
     
 .equipment-kitchen .equipment-section__item .flex_con.four .photo {
@@ -955,15 +976,34 @@ equipment
 
 /*### bathroom start ###################################################*/
 
-.equipment-bathroom .equipment-section__container-01 .equipment-section__item:nth-last-child(2) {
+/* .equipment-bathroom .equipment-section__container-01 .equipment-section__item:nth-last-child(2) {
     width: calc(33% - 12px);
 }
 .equipment-bathroom .equipment-section__container-01 .equipment-section__item:last-child {
     width: calc(68% - 12px);
+} */
+
+.equipment-bathroom .equipment-section__container-01 .equipment-section__item {
+    width: 34%;
+    margin-right: 2%;
+}
+.equipment-bathroom .equipment-section__container-01 .equipment-section__item.mr0 {
+    margin-right: 0%;
+}
+.equipment-bathroom .equipment-section__container-01 .equipment-section__item.double {
+    width: 64%;
+    margin-right: 2%;
+}
+.equipment-bathroom .equipment-section__container-01 .equipment-section__item.double.mr0 {
+    margin-right: 0%;
 }
 
 .equipment-bathroom .equipment-section__container-02 {
     flex-wrap: wrap;
+}
+.equipment-bathroom .toilet_txt {
+    text-align: center;
+    font-size: 20px;
 }
 
 
@@ -987,9 +1027,9 @@ equipment
     margin-bottom: 40px;
 }
 
-.equipment-section__container-01 .equipment-section__block .bathroom_list{
+/* .equipment-section__container-01 .equipment-section__block .bathroom_list{
     justify-content: space-between;
-}
+} */
 
 
 /*
@@ -1014,37 +1054,45 @@ equipment
 /*--- レスポンシブ ---------------------------------------------------*/
 
 @media screen and (max-width:640px) {
-    .equipment-bathroom .equipment-section__container-01 .equipment-section__item:nth-last-child(2) {
+    /* .equipment-bathroom .equipment-section__container-01 .equipment-section__item:nth-last-child(2) {
         width: calc(50% - 10px);
     }
     .equipment-bathroom .equipment-section__container-01 .equipment-section__item:last-child {
         width: 100%;
-    }
+    } */
     
     .equipment-bathroom .equipment-section__container-02 .equipment-section__block {
         width: 100%;
     }
     
-.equipment-bathroom .equipment-section__container-02 .equipment-section__block:first-child,
-.equipment-bathroom .equipment-section__container-02 .equipment-section__block:last-child{
+    .equipment-bathroom .equipment-section__container-02 .equipment-section__block:first-child,
+    .equipment-bathroom .equipment-section__container-02 .equipment-section__block:last-child{
         width: 100%;
-    margin-bottom: 0;
-}
+        margin-bottom: 0;
+    }
     
-.equipment-bathroom .equipment-section__container-01 ul .equipment-section__item:last-child{
-    margin-bottom: 0;
+    .equipment-bathroom .equipment-section__container-01 ul .equipment-section__item:last-child{
+        margin-bottom: 0;
     }
         
 
-.equipment-bathroom .equipment-section__container-02 .equipment-section__block:nth-child(2){
-    width: 100%;
-    margin-bottom: 0;
-}
-
-.equipment-bathroom .equipment-section__container-02 .equipment-section__block:nth-child(3){
+    .equipment-bathroom .equipment-section__container-02 .equipment-section__block:nth-child(2){
         width: 100%;
-    margin-bottom: 0px;
-}    
+        margin-bottom: 0;
+    }
+
+    .equipment-bathroom .equipment-section__container-02 .equipment-section__block:nth-child(3){
+        width: 100%;
+        margin-bottom: 0px;
+    }
+    .equipment-bathroom .equipment-section__container-01 .equipment-section__item {
+        width: 100%;
+        margin-right: auto;
+    }
+    .equipment-bathroom .equipment-section__container-01 .equipment-section__item.double {
+        width: 100%;
+        margin-right: auto;
+    }  
     
     
 }
@@ -1119,6 +1167,9 @@ equipment
 /*### powderroom end ###################################################*/
 
 /*### toilet start ###################################################*/
+.equipment-toilet {
+    display: none;
+}
 
 .equipment-toilet .equipment-section__container-01 {
     background-color: #F7F5F2;
@@ -1210,15 +1261,17 @@ equipment
     }
     
     .equipment-toilet .equipment-section__container-02 .equipment-section__item:first-child {
-        width: calc(50% - 10px);
+        /* width: calc(50% - 10px); */
+        width: 35%;
+        margin-bottom: 30px;
     }
 
-    .equipment-toilet .equipment-section__container-02 .equipment-section__item:nth-child(2) {
+    /* .equipment-toilet .equipment-section__container-02 .equipment-section__item:nth-child(2) {
         width: calc(50% - 10px);
-    }
-    .equipment-toilet .equipment-section__container-02 .equipment-section__item:nth-child(3) {
+    } */
+    /* .equipment-toilet .equipment-section__container-02 .equipment-section__item:nth-child(3) {
         width: 100%;
-    }
+    } */
 }
 
 
@@ -1237,13 +1290,16 @@ equipment
 
 
 .equipment-amenity .equipment-section__block ul.amenity_list{
-    flex-wrap: wrap;
-    justify-content: space-between;
+    /* flex-wrap: wrap;
+    justify-content: space-between; */
 }
 
 
 .equipment-amenity .equipment-section__container-01 .equipment-section__item {
-    width: calc((100% - 60px) / 3);
+    /* width: calc((100% - 60px) / 3); */
+    width: 35%;
+    margin-right: 2%;
+    margin-bottom: 30px;
 }
 
 .equipment-amenity .equipment-section__container-01 .equipment-section__item .photo{
@@ -1286,11 +1342,12 @@ equipment
 }
 
 .equipment-amenity .equipment-section__container-01 .amenity_banner_con.harf .left{
-    width: 43%;
+    width: 100%;
+    margin-right: 3%;
     position: relative;
 }
 .equipment-amenity .equipment-section__container-01 .amenity_banner_con.harf .right{
-    width: 53%;
+    width: 100%;
 }
 
 
@@ -1320,7 +1377,7 @@ equipment
 }
     
 .equipment-amenity .equipment-section__container-01 .amenity_banner_con.harf{
-    flex-direction:row;
+    /* flex-direction:row; */
 }    
     
 .equipment-amenity .equipment-section__container-01 .amenity_banner_con .left,
@@ -1530,8 +1587,9 @@ equipment
 
 @media screen and (max-width:640px) {
     .equipment-amenity .equipment-section__container-01 .equipment-section__item {
-        justify-content: space-between;
-        width: calc(50% - 10px);
+        /* justify-content: space-between;
+        width: calc(50% - 10px); */
+        width: 100%;
     }
 
     
